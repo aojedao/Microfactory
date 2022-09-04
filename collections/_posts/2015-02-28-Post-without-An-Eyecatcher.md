@@ -1,13 +1,13 @@
 ---
 layout: article
-title: Post without An Eyecatcher
+title: Legal Framework
 categories: Administrative
 tags: example
 ---
 
 In the legal aspect there are multiple considerations to take into account, the first I've researched about is the PCB quality production.
 
-[Standard Quality Assurance Requirements for Printed Circuit Boards] (https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/gsfc-std-8001.pdf)
+[Standard Quality Assurance Requirements for Printed Circuit Boards](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/gsfc-std-8001.pdf)
 
 This document contains quality characteristicas required by NASA Standards.
 
@@ -29,3 +29,6 @@ Additionally there are some more requirements.
 - Solderability
   - Surface and plated-through-hole solderability shall be evaluated in accordance with J-STD-003, Category 2.
 
+[List of Industry Workmanship Standards Commonly Invoked by NASA](https://nepp.nasa.gov/index.cfm/5553)
+
+This is another shortlist to different Standards for Printed Circuit Wiring Boards 
