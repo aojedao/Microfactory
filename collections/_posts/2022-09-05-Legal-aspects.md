@@ -2,7 +2,7 @@
 layout: article
 title: Legal Framework
 categories: demo
-tags: Administrative
+tags: example
 ---
 
 In the legal aspect there are multiple considerations to take into account, the first I've researched about is the PCB quality production.
