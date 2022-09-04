@@ -1,8 +1,9 @@
 ---
 layout: article
-title: Welcome to Jekyll!
-abstract: Thanks for your interest in this theme! Let's see how you can build an awesome website with Jekyll and Antarctica……
-eyeCatcher: https://get.wallhere.com/photo/sea-nature-iceberg-ice-coast-cliff-cape-Arctic-Terrain-ocean-wave-wind-wave-sea-ice-arctic-ocean-ice-cap-glacial-landform-226275.jpg
+title: Microfactory
+abstract: This is an introduction to the Microfactory Project.
+eyeCatcher: https://lh3.googleusercontent.com/f9mdszblzNUL9zA3Wse2mNVsSDC8SYb8KOSif6wDQFe59ADgX-hYUTYMLFoNixAUIauokhqgW8lMHU_lUhFFyg3HiLZzTijZNC5AJnxzWAdkaKru6r5Jks536v1-g3TK18wAXJWGrg=w2400
+
 categories: misc
 tags: demo jekyll
 properties: pinned

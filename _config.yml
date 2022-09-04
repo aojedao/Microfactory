@@ -19,9 +19,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Theme Antarctica
-email: your-email@domain.com
-author: SdtElectronics
+title: Microfactory
+email: aojedao@unal.edu.co
+author: Alejandro Ojeda Olarte
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -35,7 +35,7 @@ author: SdtElectronics
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "2021-{currentYear} {author}"
+copyright: "2022-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -43,14 +43,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "/Microfactory" # the subpath of your site, e.g. /blog
 url: "https://aojedao.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-favicon: "" # the favicon for your site
+favicon: "f013" # the favicon for your site
 #avatar: ""
 
 template:
 # date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
   date_format: "%b %d, %Y"
-  widgets: colophon comment global_cmt post_meta share related_sites table_of_content
+  widgets: colophon post_meta share related_sites table_of_content
   portfolios: projects gallery
   propIcons:
     pinned: "&#x1f4cc;&#xFE0E;"
@@ -78,7 +78,7 @@ projects_categories:
 related_sites:
   Jekyll | Static site generator: https://jekyllrb.com
   Source Repo | Theme antarctica: https://github.com/SdtElectronics/jekyll-theme-antarctica
-  My Homepage | SdtElectronics: https://sdtelectronics.github.io/
+  My Homepage | Alejandro Ojeda: https://aojedao.github.io/neumorphism/
 
 defaults:
   - scope:
