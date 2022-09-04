@@ -1,8 +1,8 @@
 ---
 layout: article
 title: Microfactory
-abstract: Thanks for your interest in this theme! Let's see how you can build an awesome website with Jekyll and Antarctica……
-eyeCatcher: https://scontent.fbog4-2.fna.fbcdn.net/v/t1.6435-9/53617036_2415818098429671_2803892424789721088_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3f864&_nc_ohc=4s7q6OSx_CUAX9sa5Og&_nc_pt=1&_nc_ht=scontent.fbog4-2.fna&oh=00_AT8gte0VdDx85p42dPmYytA4o0nZK8JV3MT3w7KqjLSn-A&oe=6338F847
+abstract: This is an introduction to the Microfactory Project.
+eyeCatcher: https://drive.google.com/file/d/1XasY-brrOqvrI0iQfXwLo82EupXGT_im/view?usp=sharing
 categories: misc
 tags: demo jekyll
 properties: pinned
