@@ -14,7 +14,7 @@ The goal of Antarctica is evolving to an elegant and feature-rich theme across p
 * Reduced JavaScript usage to accelerate loading. No external js file for main frame (Some widgets require external JavaScript).
 
 ## Installation
-There are three ways to install:
+There are three ways to install ?:
 * If you are hosting the site by yourself, you may prefer to [install as a gem-based theme](https://jekyllrb.com/docs/themes/#installing-a-theme)
 * If you are hosting the site on Github pages, you can [install as a remote theme](https://github.blog/2017-11-29-use-any-theme-with-github-pages/)
 * You can also fork the release branch of this repository
