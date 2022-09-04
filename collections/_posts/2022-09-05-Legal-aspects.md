@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Legal Framework
-categories: Legal
+categories: demo
 tags: Administrative
 ---
 
