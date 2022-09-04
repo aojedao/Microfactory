@@ -50,7 +50,7 @@ template:
 # date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
   date_format: "%b %d, %Y"
-  widgets: colophon comment global_cmt post_meta share related_sites table_of_content
+  widgets: colophon post_meta share related_sites table_of_content
   portfolios: projects gallery
   propIcons:
     pinned: "&#x1f4cc;&#xFE0E;"
