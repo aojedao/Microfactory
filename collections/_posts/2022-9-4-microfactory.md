@@ -2,7 +2,7 @@
 layout: article
 title: Microfactory
 abstract: This is an introduction to the Microfactory Project.
-eyeCatcher: https://drive.google.com/file/d/1XasY-brrOqvrI0iQfXwLo82EupXGT_im/view?usp=sharing
+eyeCatcher: https://drive.google.com/file/d/1XasY-brrOqvrI0iQfXwLo82EupXGT_im
 categories: misc
 tags: demo jekyll
 properties: pinned
