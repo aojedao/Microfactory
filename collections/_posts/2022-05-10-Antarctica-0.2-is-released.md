@@ -1,13 +1,14 @@
 ---
 layout: article
-title: Antarctica 0.2 Is Released
+title: Networking Structure
 abstract: Highlights in the second release of Antarctica
 categories: announcement
 tags: antarctica release-note
-eyeCatcher: https://i.pinimg.com/originals/82/21/fc/8221fc6897d8824e9f4a612662a6f38e.jpg
+eyeCatcher: https://lh3.googleusercontent.com/YeM0082lHiDDVaeMbm2B0PIox4s1MmRKEfhtPF38uftTQuwHn02c5kWu92s7VWGr1VdE5Yt6VMSbpCXv8C7gwybjDATcO2UCsRv5IHu3zSKEAk0luJTbo0kHYDlOeXjILmWFjzrtkw=w2400
 ---
 
-Months after the Antarctica 0.1, the second release of Antarctica is finally arrived. This update includes some minor changes in appearance, and some major functional enhancements:
+The networking diagram for the project
+
 * Scrollable widget bar
 * Comment widget improvement
 * Related sites widget
