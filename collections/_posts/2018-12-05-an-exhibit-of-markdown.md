@@ -1,6 +1,6 @@
 ---
 layout: article
-title: An Exhibit of Markdown
+title: Solder Masking Module
 abstract: Show the usage of lists, quotes, images and other functions in Markdown
 categories: markdown
 tags: example markdown

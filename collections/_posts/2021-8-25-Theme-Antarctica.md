@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Theme Antarctica
+title: Machining Module
 abstract: An overview of this theme, including highlights and instructions of use
 categories: misc
 tags: antarctica theme
