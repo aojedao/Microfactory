@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Antarctica 0.1 Is Released
+title: Preprocessing Module
 abstract: My random thoughts on the first release of this theme
 categories: announcement
 tags: antarctica release-note

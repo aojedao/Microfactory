@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Legal Framework
+title: Module Architecture
 categories: Administrative
 tags: example
 ---

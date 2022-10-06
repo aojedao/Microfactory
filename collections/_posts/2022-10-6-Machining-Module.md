@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Theme Antarctica
+title: Machining Module
 abstract: An overview of this theme, including highlights and instructions of use
 categories: misc
 tags: antarctica theme
@@ -10,13 +10,17 @@ eyeCatcher: https://refstatic.sk/article/od-antarktidy-sa-odtrhol-jeden-z-najvac
 ---
 ![4U6cuV.png](https://z3.ax1x.com/2021/09/22/4U6cuV.png)
 
-The goal of Antarctica is evolving to an elegant and feature-rich theme across platforms.
+The machining module has two machines integrated in one model, the CNC and admission module.
 
-[Live demo](https://sdtelectronics.github.io/jekyll-theme-antarctica/)
+The CNC machine was designed by [Julian Luna](https://github.com/juflunaca) and [Alejandro Ojeda](https://github.com/aojedao) for the Sensors and Actuators class at UNAL. You can view the design document in the following link.
 
-## Highlights
-* Fully responsive layout achieves best visual on different screens
-* Flexible widgets provide extensible functionality
+[Design Paper](https://www.overleaf.com/read/fgbdprymfzjc)
+
+
+
+## CNC 
+* The machine has a 30 cm x 20 cm work area. 
+* The machine works with a 
 * Integrated [NerdFonts](www.nerdfonts.com) with 3000+ icons
 * Automatic sitemap generation with [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
 * Configuration-free search engine optimization with [Jekyll Seo Tag](https://github.com/jekyll/jekyll-seo-tag)
