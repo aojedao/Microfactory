@@ -20,35 +20,28 @@ The CNC machine was designed by [Julian Luna](https://github.com/juflunaca) and 
 
 ## CNC 
 * The machine has a 30 cm x 20 cm work area. 
-* The machine mills using a Dremel 4000 
-* Integrated [NerdFonts](www.nerdfonts.com) with 3000+ icons
-* Automatic sitemap generation with [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
-* Configuration-free search engine optimization with [Jekyll Seo Tag](https://github.com/jekyll/jekyll-seo-tag)
-* Reduced JavaScript usage to accelerate loading. No external js file for main frame (Some widgets require external JavaScript).
+* The machine mills using a Dremel 4000 and a 30° V type milling bit.
+* The machine controller uses an Arduino UNO and a CNC shield board. The firmware running is [GRBL](https://github.com/grbl/grbl).
 
-## Installation
-There are three ways to install:
-* If you are hosting the site by yourself, you may prefer to [install as a gem-based theme](https://jekyllrb.com/docs/themes/#installing-a-theme)
-* If you are hosting the site on Github pages, you can [install as a remote theme](https://github.blog/2017-11-29-use-any-theme-with-github-pages/)
-* You can also fork the release branch of this repository
 
-## Customization
-Customizable options are under [_config.yml](_config.yml). Coments inside will help you to edit them.
+## File preparation
+
+ But before that the process needed to design the board requires the following steps.
+
+1. ECAD files: A normal gerber file must be loaded per face to mill, this microfactory was concieved using only one face of the PCW, therefore only one is needed. There are multiple Electronic Computer Aided Design (ECAD) tools like [KiCAD](https://www.kicad.org/), [Proteus](https://www.labcenter.com/) and [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&tab=subscription). Export the gerber files for the next step.
+
+2. CAM files: Here the is where the Gcode files are produced, so there are multiple options to generate these files. Due to the application I recommend using [FlatCAM](http://flatcam.org/), as it has automatic tools for PCB production, like automatic cutting depht calculation given a mill angle and type. 
+
+3. Gcode Sender: Files must be loaded into the Gcode sender software, they only recieve G code files, like `.gcode` or `.nc` files. There are two Gcode sender softwares being used in the moment, [Universal Gcode Sender](https://winder.github.io/ugs_website/) and [CNCjs](https://cnc.js.org/). CNCjs offers the capability of being installed in a debian device (like Raspberry Pi) to be used over a local network via UI at the device IP. Both have the capaciblity of controlling the machine position and reconfiguring GRBL parameters, like `mm/rev` or maximum velocities.
+
 
 ## Roadmap
 
-| Feature                       | Planned Version  | Status |
+| Feature                       | Module           | Status |
 | :---------------------------- | :--------------: | :----: |
-| Scrollable widget bar         | 0.2              | √      |
-| Comment widget improvement    | 0.2              | √      |
-| Related sites widget          | 0.2              | √      |
-| Table of contents widget      | 0.2              | √      |
-| Pinned post                   | 0.2              | √      |
-| Abstract/excerpt in preview   | 0.2              | √      |
-| Optimize view on large screen | 0.3              |        |
-| Arcylic color scheme          | 0.3              |        |
-
-## License
-This project is available under [GPLv3](LICENSE) License.
-
-If you find this project useful, please star this repository. Thanks.
+| CNC Machine Assembly          | CNC              | √      |
+| CNC repetability test         | CNC              | √      |
+| CNC PCW milling test          | CNC              |        |
+| Admission module assembly     | Admission        |        |
+| Admission module integration  | Admission        |        |
+| MicroSDV integration          | CNC + Admission  |        |
