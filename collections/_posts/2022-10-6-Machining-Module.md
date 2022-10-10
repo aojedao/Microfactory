@@ -8,7 +8,7 @@ eyeCatcher: https://refstatic.sk/article/od-antarktidy-sa-odtrhol-jeden-z-najvac
 ---
 
 ---
-![4U6cuV.png](https://z3.ax1x.com/2021/09/22/4U6cuV.png)
+![CNC.png](https://photos.app.goo.gl/VdBRN9BYeMD8kn8H7)
 
 The machining module has two machines integrated in one model, the CNC and admission module.
 
