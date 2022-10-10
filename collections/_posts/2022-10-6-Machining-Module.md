@@ -20,7 +20,7 @@ The CNC machine was designed by [Julian Luna](https://github.com/juflunaca) and 
 
 ## CNC 
 * The machine has a 30 cm x 20 cm work area. 
-* The machine works with a 
+* The machine mills using a Dremel 4000 
 * Integrated [NerdFonts](www.nerdfonts.com) with 3000+ icons
 * Automatic sitemap generation with [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
 * Configuration-free search engine optimization with [Jekyll Seo Tag](https://github.com/jekyll/jekyll-seo-tag)
