@@ -1,10 +1,11 @@
 ---
 layout: article
 title: Machining Module
-abstract: An overview of this theme, including highlights and instructions of use
+abstract: An overview of the CNC module, it's design and how it works.
 categories: misc
 tags: antarctica theme
 eyeCatcher: https://lh3.googleusercontent.com/Yo0C6PLjh2yv660AlKndmPzjhnVhvCVqA9ok0jv8Z9l4nC9KBwjdLe2mmRvRK0PBr3kulFGUyM339tQ9Tw2wDxR6iZ2-57AcEUN8oT_UZKkf5wrWqnNpZizUWI4VNJ5flnxtkSLN9w=w2400
+mathjax: true
 ---
 
 ---
@@ -37,6 +38,8 @@ The CNC machine was designed by [Julian Luna](https://github.com/juflunaca) and 
 First set the maximum current allowed by the DRV8825 drivers by adjusting the potentiometer (with a philips screwdriver) voltage according to the following expression.
 
 $$V_{ref} = \frac{I_{max}}{2}$$
+
+Afterward, the `mm/rev` units must be configured to verify the machine's correct precision.
 
 
 ## Roadmap
