@@ -34,6 +34,10 @@ The CNC machine was designed by [Julian Luna](https://github.com/juflunaca) and 
 
 3. Gcode Sender: Files must be loaded into the Gcode sender software, they only recieve G code files, like `.gcode` or `.nc` files. There are two Gcode sender softwares being used in the moment, [Universal Gcode Sender](https://winder.github.io/ugs_website/) and [CNCjs](https://cnc.js.org/). CNCjs offers the capability of being installed in a debian device (like Raspberry Pi) to be used over a local network via UI at the device IP. Both have the capaciblity of controlling the machine position and reconfiguring GRBL parameters, like `mm/rev` or maximum velocities.
 
+First set the maximum current allowed by the DRV8825 drivers by adjusting the potentiometer (with a philips screwdriver) voltage according to the following expression.
+
+$$V_{ref} = \frac{I_{max}}{2}$$
+
 
 ## Roadmap
 
@@ -41,7 +45,7 @@ The CNC machine was designed by [Julian Luna](https://github.com/juflunaca) and 
 | :---------------------------- | :--------------: | :----: |
 | CNC Machine Assembly          | CNC              | √      |
 | CNC repetability test         | CNC              | √      |
-| CNC PCW milling test          | CNC              |        |
+| CNC PCW milling test          | CNC              | √      |
 | Admission module assembly     | Admission        |        |
 | Admission module integration  | Admission        |        |
 | MicroSDV integration          | CNC + Admission  |        |
