@@ -41,7 +41,7 @@ $$V_{ref} = \frac{I_{max}}{2}$$
 
 Afterward, the $\frac{mm}{rev}$ units must be configured to verify the machine's correct precision. For this use the following equation:
 
-$$\frac{motor steps}{lead or mm per rev on the leadscrew}\cdot microsteps$$
+$$\frac{motor \; steps \; per \; revolution}{leadscrew \; pitch \; (mm \; per \; rev)}\cdot microsteps$$
 $$\frac{200}{8}\cdot 2 = 50 $$
 
 And afterward configure the advance per axis with the code `$100=50`. Do this as well for 101 and 102 
