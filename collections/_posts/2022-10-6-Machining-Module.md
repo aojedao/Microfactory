@@ -39,7 +39,12 @@ First set the maximum current allowed by the DRV8825 drivers by adjusting the po
 
 $$V_{ref} = \frac{I_{max}}{2}$$
 
-Afterward, the `mm/rev` units must be configured to verify the machine's correct precision.
+Afterward, the $\frac{mm}{rev}$ units must be configured to verify the machine's correct precision. For this use the following equation:
+
+$$\frac{motor steps}{lead or mm per rev on the leadscrew}\cdot microsteps$$
+$$\frac{200}{8}\cdot 2 = 50 $$
+
+And afterward configure the advance per axis with the code `$100=50`. Do this as well for 101 and 102 
 
 
 ## Roadmap
