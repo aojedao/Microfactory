@@ -42,9 +42,14 @@ $$V_{ref} = \frac{I_{max}}{2}$$
 Afterward, the $\frac{mm}{rev}$ units must be configured to verify the machine's correct precision. For this use the following equation:
 
 $$\frac{motor \; steps \; per \; revolution}{leadscrew \; pitch \; (mm \; per \; rev)}\cdot microsteps$$
-$$\frac{200}{8}\cdot 2 = 50 $$
 
-And afterward configure the advance per axis with the code `$100=50`. Do this as well for 101 and 102 
+$$= \frac{200}{8}\cdot 2 = 50 $$
+
+And afterward configure the advance per axis with the code `$100=50`. Do this as well for 101 and 102.
+
+The driver microsteps are configured trough jumpers in the CNC Shield. The pins in the connectors on M0, M1 and M2.
+
+![Shield.png](https://lh3.googleusercontent.com/Yo0C6PLjh2yv660AlKndmPzjhnVhvCVqA9ok0jv8Z9l4nC9KBwjdLe2mmRvRK0PBr3kulFGUyM339tQ9Tw2wDxR6iZ2-57AcEUN8oT_UZKkf5wrWqnNpZizUWI4VNJ5flnxtkSLN9w=w2400)
 
 
 ## Roadmap
