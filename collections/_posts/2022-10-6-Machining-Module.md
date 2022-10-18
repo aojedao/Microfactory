@@ -49,7 +49,7 @@ And afterward configure the advance per axis with the code `$100=50`. Do this as
 
 The driver microsteps are configured trough jumpers in the CNC Shield. The pins in the connectors on M0, M1 and M2.
 
-![Shield.png](https://lh3.googleusercontent.com/Yo0C6PLjh2yv660AlKndmPzjhnVhvCVqA9ok0jv8Z9l4nC9KBwjdLe2mmRvRK0PBr3kulFGUyM339tQ9Tw2wDxR6iZ2-57AcEUN8oT_UZKkf5wrWqnNpZizUWI4VNJ5flnxtkSLN9w=w2400)
+![Shield.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zyltech.com%2Farduino-cnc-shield-instructions%2F&psig=AOvVaw2-1ux8jLtTR4uieYVgnwg5&ust=1666141529894000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKC9iILL6PoCFQAAAAAdAAAAABAD)
 
 
 ## Roadmap
