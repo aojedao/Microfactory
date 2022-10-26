@@ -18,7 +18,6 @@ The CNC machine was designed by [Julian Luna](https://github.com/juflunaca) and 
 [Design Paper](https://www.overleaf.com/read/fgbdprymfzjc)
 
 
-
 ## CNC 
 * The machine has a 30 cm x 20 cm work area. 
 * The machine mills using a Dremel 4000 and a 30° V type milling bit.
@@ -49,7 +48,7 @@ And afterward configure the advance per axis with the code `$100=50`. Do this as
 
 The driver microsteps are configured trough jumpers in the CNC Shield. The pins in the connectors on M0, M1 and M2.
 
-![Shield.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zyltech.com%2Farduino-cnc-shield-instructions%2F&psig=AOvVaw2-1ux8jLtTR4uieYVgnwg5&ust=1666141529894000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKC9iILL6PoCFQAAAAAdAAAAABAD)
+![Shield.png](https://osoyoo.com/wp-content/uploads/2017/04/Arduino-CNC-Shield-V3-Layout.png)
 
 
 ## Roadmap
