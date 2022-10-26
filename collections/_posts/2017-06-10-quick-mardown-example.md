@@ -11,7 +11,11 @@ eyeCatcher: https://im0-tub-ru.yandex.net/i?id=7f2cbd15e00d025f9967cf5e98b06bab-
 
 In manufacturing scalability is a word widely mentioned, but for this project, multiple definitions will be mentioned to create a consensus as for the scope the word will have in this project.
 
-First, 
+First, in software engineering, Weinstock, C. B., & Goodenough, J. B. (2006) from Carnegie Mellon University provided two definitions on their *On scalability* work.
+  * Scalability is the ability to handle increased workload (without adding resources to a system). 
+  * Scalability is the ability to handle increased workload by repeatedly applying a costeffective strategy for extending a system's capacity.
+
+There is an agreement about the capacity to increase the workload as the most important factor in scalability.
 
 2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
 look like:
