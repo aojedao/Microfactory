@@ -8,6 +8,8 @@ eyeCatcher: https://lh3.googleusercontent.com/HT8q9vMl5-NA6gO6i66Z7Ij_zU_gob5ZVe
 mathjax: true
 ---
 
+# Transport Module - microSDV
+
 The transport module was designed with the following characteristics in mind:
 - Manufacturing
   - Fast manufacturing
@@ -16,7 +18,10 @@ The transport module was designed with the following characteristics in mind:
 - Basic unit on a Fleet Management System (FMS)
 - Optimized size for desktop manufacturing equipment
 
+## SDV
 Likewise, the Self Driving Vehicle model was elected for navigation, instead of an Autonomous Guided Vehicle one, as the routing flexibility (capability of reordering the production steps) of the Microfactory would be the reduced with the second option, as well as the necessity of placing reference beacons or guidelines which would increase the implementation cost.
+
+## Differential Configuration
 
 Afterwards, the traction system was designed. The differential model allows turning over a point, in other words, the robot's central axis perpendicular to the ground. This is important as it reduces space required for maneuvering in small areas, unlike the Ackermann model.
 
@@ -43,9 +48,13 @@ $$ \begin{bmatrix}
 
 And the robot velocities are:
 
-$$\dot x=v \cos{\theta}$$
-$$\dot y = v \sin{\theta}$$
-$$\dot \theta = \omega$$
+$$\dot x=v \cos{\theta}$$ \\
+$$\dot y = v \sin{\theta}$$ \\
+$$\dot \theta = \omega$$ \\
+
+## Electronic Equipment
+
+Due to the necessity of a 
 
 **Here is some bold text**
 
