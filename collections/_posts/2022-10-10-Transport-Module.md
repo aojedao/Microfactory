@@ -5,9 +5,47 @@ abstract: MicroSDV design
 categories: markdown
 tags: test
 eyeCatcher: https://lh3.googleusercontent.com/HT8q9vMl5-NA6gO6i66Z7Ij_zU_gob5ZVe9l8X7FHe6MNZZowya9Xx2XMv1UVoE8TKAc1V1ZV3t2XW2qDMAJg7cpwyvkTD31FX3ldHtoeT5fkkNwzBCDYiHDB8Rs2ShbnXb9u6SdhA=w2400
+mathjax: true
 ---
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+The transport module was designed with the following characteristics in mind:
+- Manufacturing
+  - Fast manufacturing
+  - Replicable
+  - Low cost
+- Basic unit on a Fleet Management System (FMS)
+- Optimized size for desktop manufacturing equipment
+
+Likewise, the Self Driving Vehicle model was elected for navigation, instead of an Autonomous Guided Vehicle one, as the routing flexibility (capability of reordering the production steps) of the Microfactory would be the reduced with the second option, as well as the necessity of placing reference beacons or guidelines which would increase the implementation cost.
+
+Afterwards, the traction system was designed. The differential model allows turning over a point, in other words, the robot's central axis perpendicular to the ground. This is important as it reduces space required for maneuvering in small areas, unlike the Ackermann model.
+
+![Kinematic Model Diagram](https://www.researchgate.net/profile/Davide-Spinello/publication/282918322/figure/fig1/AS:337397943422976@1457453346302/Kinematic-model-of-a-differential-drive-mobile-robot.png)
+
+In this diagram we observe a line that crosses the wheels and the orientation line, that is the point mentioned beforehand. The kinematic model is described as follows:
+
+$$ \begin{bmatrix}
+  x_k\\
+  y_k\\
+  \theta_k
+  \end{bmatrix} = \begin{bmatrix}
+  x_{k-1}\\
+  y_{k-1}\\
+  \theta_{k-1}
+  \end{bmatrix} + \begin{bmatrix}
+  \cos{\theta} & 0 \\
+  \sin{\theta} & 0 \\
+  0 & 1
+  \end{bmatrix} \begin{bmatrix}
+  \Delta s\\
+  \Delta \theta 
+\end{bmatrix}$$
+
+And the robot velocities are:
+
+$$\dot x=v \cos{\theta}$$
+$$\dot y = v \sin{\theta}$$
+$$\dot \theta = \omega$$
 
 **Here is some bold text**
 
