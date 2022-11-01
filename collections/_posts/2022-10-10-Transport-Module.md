@@ -48,15 +48,23 @@ $$ \begin{bmatrix}
 
 And the robot velocities are:
 
-$$\dot x=v \cos{\theta}$$ \\
-$$\dot y = v \sin{\theta}$$ \\
-$$\dot \theta = \omega$$ \\
+$$\dot x=v \cos{\theta}$$ 
+
+$$\dot y = v \sin{\theta}$$ 
+
+$$\dot \theta = \omega$$ 
 
 ## Electronic Equipment
 
-Due to the necessity of a 
+Due to the necessity of a high complexity task item and an integrated process two boards to execute each task group was selected. The first board is a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/), that works as the ROS Master node, as well as the LIDAR and task sequence execution. The second board is a [BeagleBone Blue](https://beagleboard.org/blue), another Single Board Computer with a robotics cap integrated in it (DC Motor drivers, servo motors, IMU, etc.).
+
+The BBBlue has two TB6612FNG dual motor drivers, and are controlling two Pololu [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453). As well, the board is powered by a 2S 1000mAh battery, that connects directly with the balance port to the on-board connector.
+
+
 
 **Here is some bold text**
+
+
 
 ## Here is a secondary heading
 
