@@ -60,7 +60,7 @@ Due to the necessity of a high complexity task item and an integrated process tw
 
 The BBBlue has two TB6612FNG dual motor drivers, and are controlling two Pololu [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453). As well, the board is powered by a 2S 1000mAh battery, that connects directly with the balance port to the on-board connector.
 
-
+<!---
 
 ## Here is a secondary heading
 
@@ -101,5 +101,5 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-
+-->
 

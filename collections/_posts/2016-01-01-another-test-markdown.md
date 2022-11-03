@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Another Test Markdown
+title: Another Template Markdown
 abstract: Another demonstration of some features of Markdown
 categories: markdown
 tags: test
