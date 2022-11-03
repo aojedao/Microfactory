@@ -5,7 +5,7 @@ categories: Administrative
 tags: example
 ---
 
-In the legal aspect there are multiple considerations to take into account, the first I've researched about is the PCB quality production.
+ 
 
 [Standard Quality Assurance Requirements for Printed Circuit Boards](https://s3vi.ndc.nasa.gov/ssri-kb/static/resources/gsfc-std-8001.pdf)
 
