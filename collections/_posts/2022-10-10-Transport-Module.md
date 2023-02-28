@@ -48,11 +48,11 @@ $$ \begin{bmatrix}
 
 And the robot velocities are:
 
-$$\dot x=v \cos{\theta}$$ 
+  $$\dot x=v \cos{\theta}$$ 
 
-$$\dot y = v \sin{\theta}$$ 
+  $$\dot y = v \sin{\theta}$$ 
 
-$$\dot \theta = \omega$$ 
+  $$\dot \theta = \omega$$ 
 
 ## Electronic Equipment
 

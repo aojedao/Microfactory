@@ -3,7 +3,11 @@ layout: article
 title: Module Architecture
 categories: Administrative
 tags: example
+eyeCatcher: https://lh3.googleusercontent.com/Gu9M2WcP0v1X_nRPBRumfAhn6PC00Qwxjx6-LaU61nabHzYM8je_OWWPgl69kPjKsfmALVlcqjptW2gE1Cg9W0QPtTlxBjp82MrVbnAx_dQkADtVE-nYct5mvWn_F8VWw4MOJwN2kg=w2400 
 ---
+
+
+
 
 This diagram shows the four modules for the microfactory, there are four in total.
 

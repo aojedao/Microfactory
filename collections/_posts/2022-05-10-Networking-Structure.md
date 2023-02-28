@@ -4,7 +4,7 @@ title: Networking Structure
 abstract: Highlights in the second release of Antarctica
 categories: announcement
 tags: antarctica release-note
-
+eyeCatcher: https://lh3.googleusercontent.com/CVM2T_flN3REz2co5hmyuQBEGuUVRv_oNnL4cVo_cTBQcnxKurLG4Ogj16VDDuWOEBjUuZEpWqqCob5Yi8GlBlLP8CYk9y2DkdEx3xql7Ym6O7PmxNUfKxkYhJ4AaO9azbS5WINrJQ=w2400
 ---
 
 The networking diagram for the project, about its connections and methods of accesing the modules are shown in the following diagram.

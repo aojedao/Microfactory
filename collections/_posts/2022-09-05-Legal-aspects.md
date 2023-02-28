@@ -3,6 +3,7 @@ layout: article
 title: Legal Framework
 categories: demo
 tags: example
+eyeCatcher: https://lh3.googleusercontent.com/O3ESn6gSWwAGI-p424u4OIgCS4uCN68DvcclJXfho5sErHLjTKlxiOWA3xGwpDDr5Wx4EjtaOTWhziPjI4nrIUKTd163syGYnwGeHLJOIRhi1TO9hbm0Lm2jTSFUqwxGknsAj5OieQ=w2400 
 ---
 
 In the legal aspect there are multiple considerations to take into account, the first I've researched about is the PCB quality production.
