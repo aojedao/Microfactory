@@ -21,7 +21,7 @@ The transport module was designed with the following characteristics in mind:
 ## Mind Map
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
 
-[Mind Map](https://lh3.googleusercontent.com/pw/AJFCJaWGYCNRNBE5FYuvXPsg3QFc-eF-jMe2TvyWld7_uHiC3sMo9i_mCS8AmDO3ic1GaMdp5wOrEzrIrrN9ZGOADHD4huRVXy7cz4OA34TcYo7t2HxWgUs=w2400)
+[Mind Map]:https://lh3.googleusercontent.com/pw/AJFCJaWGYCNRNBE5FYuvXPsg3QFc-eF-jMe2TvyWld7_uHiC3sMo9i_mCS8AmDO3ic1GaMdp5wOrEzrIrrN9ZGOADHD4huRVXy7cz4OA34TcYo7t2HxWgUs=w2400
 
 ## SDV
 Likewise, the Self Driving Vehicle model was elected for navigation, instead of an Autonomous Guided Vehicle one, as the routing flexibility (capability of reordering the production steps) of the Microfactory would be the reduced with the second option, as well as the necessity of placing reference beacons or guidelines which would increase the implementation cost.
@@ -37,9 +37,9 @@ Matrix A
 | 360 degree perceptiom      | 0 | 0 | x  | 0 |0   |
 | Lab Integrated             | 0 | 0 | 0  | x | 0  |
 | Replicable                 | 0 | 0 | 0  | 0 | x  |
+{:class="custom-table"}
 
 Matrix B
-Matrix A
 | Requirement    | Raspberry Pi | Gearmotor   | RPLIDAR A1 | TurtlePRIA | Docker |
 | -------- | ------- | -------- | ------- | -------- | ------- |
 | ROS                        | x | 0 | 0  | 0 | 0  |
@@ -47,6 +47,7 @@ Matrix A
 | LIDAR                      | 0 | 0 | x  | 0 |0   |
 | PRIA Integrated            | 0 | 0 | 0  | x | 0  |
 | Containerized              | 0 | 0 | 0  | 0 | x  |
+{:class="custom-table"}
 
 ## Differential Configuration
 
