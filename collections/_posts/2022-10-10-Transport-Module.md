@@ -18,8 +18,35 @@ The transport module was designed with the following characteristics in mind:
 - Basic unit on a Fleet Management System (FMS)
 - Optimized size for desktop manufacturing equipment
 
+## Mind Map
+With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
+
+[Mind Map](https://lh3.googleusercontent.com/pw/AJFCJaWGYCNRNBE5FYuvXPsg3QFc-eF-jMe2TvyWld7_uHiC3sMo9i_mCS8AmDO3ic1GaMdp5wOrEzrIrrN9ZGOADHD4huRVXy7cz4OA34TcYo7t2HxWgUs=w2400)
+
 ## SDV
 Likewise, the Self Driving Vehicle model was elected for navigation, instead of an Autonomous Guided Vehicle one, as the routing flexibility (capability of reordering the production steps) of the Microfactory would be the reduced with the second option, as well as the necessity of placing reference beacons or guidelines which would increase the implementation cost.
+
+## Axiomatic Design
+Given that this robot will reduce custom built components to replace with Commercial Off The Shelf (COTS) components, the axiomatic design on tihs robot was only applied up to matrix B, because manufacturing processes parameters will be reduced as much as possible.
+
+Matrix A
+| Requirement    | ROS | Differential Configuration    | LIDAR | PRIA Integrated | Containerized |
+| -------- | ------- | -------- | ------- | -------- | ------- |
+| Autonomous Driving         | x | 0 | 0  | 0 | 0  |
+| 360 degree movement        | 0 | x | 0  | 0 | 0  |
+| 360 degree perceptiom      | 0 | 0 | x  | 0 |0   |
+| Lab Integrated             | 0 | 0 | 0  | x | 0  |
+| Replicable                 | 0 | 0 | 0  | 0 | x  |
+
+Matrix B
+Matrix A
+| Requirement    | Raspberry Pi | Gearmotor   | RPLIDAR A1 | TurtlePRIA | Docker |
+| -------- | ------- | -------- | ------- | -------- | ------- |
+| ROS                        | x | 0 | 0  | 0 | 0  |
+| Differential Configuration | 0 | x | 0  | 0 | 0  |
+| LIDAR                      | 0 | 0 | x  | 0 |0   |
+| PRIA Integrated            | 0 | 0 | 0  | x | 0  |
+| Containerized              | 0 | 0 | 0  | 0 | x  |
 
 ## Differential Configuration
 
