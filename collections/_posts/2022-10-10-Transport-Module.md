@@ -30,6 +30,7 @@ Likewise, the Self Driving Vehicle model was elected for navigation, instead of 
 Given that this robot will reduce custom built components to replace with Commercial Off The Shelf (COTS) components, the axiomatic design on tihs robot was only applied up to matrix B, because manufacturing processes parameters will be reduced as much as possible.
 
 Matrix A
+
 | Requirement | ROS | Differential Configuration | LIDAR | PRIA Integrated | Containerized |
 |  :----:  |  :----:  |  :----:  |  :----:  |  :----:  |  :----:  |
 | Autonomous Driving         | x | 0 | 0  | 0 | 0  |
@@ -39,6 +40,7 @@ Matrix A
 | Replicable                 | 0 | 0 | 0  | 0 | x  |
 
 Matrix B
+
 | Requirement    | Raspberry Pi | Gearmotor   | RPLIDAR A1 | TurtlePRIA | Docker |
 | -------- | ------- | -------- | ------- | -------- | ------- |
 | ROS                        | x | 0 | 0  | 0 | 0  |
