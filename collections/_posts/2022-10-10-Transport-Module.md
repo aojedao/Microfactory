@@ -99,14 +99,37 @@ The encoders are using Enhanced Quadrature Encoder Pulse (eQEP) to read both mag
 This encoder reports a 20 Count Per Revolution, yet as seen in the following image, the number of pulses (or Pulse Per Revolution, PPR), is 4 times the amount of CPR's.
 ![ENcoderGIF](https://lh3.googleusercontent.com/pw/AIL4fc_TfmjUckRxufbgMaMF5kRZhQ-XwwZGFkqK9xRWm7_mGk0aUEd964H2Ekps7XcX8f2OZ4ndetaumULkJJ6toBafXYr89tm3fLmLe257tLaaEch3b2Y=w2400)
 
-$$ 1 CPR = 4PPR $$
-$$ 20 CPR = 80 PPR$$
+$$ 1 CPR = 4PPR \\$$
+$$ 20 CPR = 80 PPR $$
 
 Furthermore, taking into account the reductor on the Gearmotor, and the diameter of the wheel, the equivalency between distance traveled by the wheel and the CPR's by the encoder is given by:
 
 ![Encoder revolution diagram](https://lh3.googleusercontent.com/pw/AIL4fc_8nzxd6GgnlTlnInrNYQjQ-Z-ZLHm1bUhUs77IdI_3GZmln0q32n9ABfgszKuwzp42wMu3iV85Sug31KXji_x-sRcdJnqq08N10KIu5mVHVJwB6VM=w2400)
 
 $$\frac{Wheel \, Perimeter}{Encoder \, CPR \cdot N \, Relation}$$
+
+## Control
+
+### Block diagram
+Currently the mechatronic system of the robot works as following: 
+
+![BLockDiagram](https://lh3.googleusercontent.com/pw/AIL4fc_F9VMqPcS74A4crEyAyH7VdnpWcjJgJ62QavjkrozBp2qwMLwni1CPYkPXM1Cai4bZs5PcT2XWLXHBJA9qeybvydu5YNtquNH-kn04GBhtwfHc8lU=w2400)
+
+The Powerbank, provides energy for the Raspberry Pi, which connects to the RPLidar A1 via microUSB port and serial communication, and to the BeagleBone Blue via USB. This connection uses the USB port as a virtual ethernet port, assigning the 192.168.7.1 IP address to the RPi, and 192.168.7.2 address to the BeagleBone. Afterwards, to move the motors, the topics ran in the RPi (that is executing the ROS Master node), are captured by the bbdrivers package in the BeagleBone. This package implements directly the rc_library files to both, capture the encoder readings, and send movement signals to the motor drivers. As a side note, the robot is capable of executing all of the program without feeding the BeagleBone with it's power supply (a 2S Lipo board in this case, using the balance port) yet it won't be able to move.
+
+### On/Off Control
+Initally, to verify that the robot is moving the wheels accordingly to the direction it's given, a simple order-two system was modeled to identify possible values for a speed controller, directly on the bbdrivers package. It was done to model the following control sequence.
+
+![onoffBlockControl](https://lh3.googleusercontent.com/pw/AIL4fc-toEcV0n29m8TNOab-brin9YcRseVjtOT43LVTBJwn56Kjo7QaBcY9ZIaCNkXq4aBqdzBJp-gt7_T7fh0M6jq3BdOhgIYKKnLNWGcGPjY_Ypy8dCw=w2400) 
+
+Two types of pulses were analyzed, in order to contrast if the perceived position due to odometry was correct, first, an angular speed pulse. A python node was coded to send pulses of an specific speed command, alternating between a top value and 0, to check the hardware's ability to follow it. (Given it's differential architecture, the speed considers the wheels turning in different directions simultaneously).
+
+![SpeedPulses](https://lh3.googleusercontent.com/pw/AIL4fc9JxBown9uVlf_2tmlwwCSy6nHRB1g3Ekb_STTlAP146GsIGeQnum1AhMR3leha9Nly3b95r2a-HK7vWf1WhCHcdgi1D9YL6sZTZrK4b017yxIed4M=w2400)
+
+And afterwards, only linear speed pulses were analyzed. 
+
+![LinearPulses](https://lh3.googleusercontent.com/pw/AIL4fc8N96IjVzN3JuxchqSO9h8HKaYNzztR2-CGXU_SHxQ78UiD85cvTIMz8FPN9l1JU5P_phYAFiYf38rDGgOYN19cR35TwoOpU9wjxamXtp8tmxQUvR8=w2400)
+
 
 <!---
 
