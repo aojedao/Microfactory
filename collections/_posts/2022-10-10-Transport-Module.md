@@ -84,9 +84,29 @@ And the robot velocities are:
 
 ## Electronic Equipment
 
-Due to the necessity of a high complexity task item and an integrated process two boards to execute each task group was selected. The first board is a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/), that works as the ROS Master node, as well as the LIDAR and task sequence execution. The second board is a [BeagleBone Blue](https://beagleboard.org/blue), another Single Board Computer with a robotics cap integrated in it (DC Motor drivers, servo motors, IMU, etc.).
+Due to the necessity of a high complexity task item and an integrated process two boards to execute each task group was selected. The first board is a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/), that works as the ROS Master node, as well as the LIDAR and task sequence execution. The second board is a [BeagleBone Blue](https://beagleboard.org/blue), another Single Board Computer with a robotics cap integrated in it (DC Motor drivers, servo motors, IMU, etc.). This was done taking into account the [OpenRoACH](https://ieeexplore.ieee.org/document/8794042) project. 
+
+![BeagleBone Blue](https://lh3.googleusercontent.com/pw/AIL4fc_X3cJ-DspzTihO8PR0O44jXXM83AhP6ivHcS1Y_CsLhDsZnvLqAs2JIDSa-WFilN9ym-kxTmomk2iNhWAUh4qpE5WGFxMaJrew4zn_RB9mcbreZzY=w2400)
 
 The BBBlue has two TB6612FNG dual motor drivers, and are controlling two Pololu [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453). As well, the board is powered by a 2S 1000mAh battery, that connects directly with the balance port to the on-board connector.
+
+## Encoders
+
+The encoders are using Enhanced Quadrature Encoder Pulse (eQEP) to read both magnetic encoders. The [encoders for 20D](https://www.pololu.com/product/3499) motors were selected. They count with an operating voltage of 2.7V up to 18V. It consists of a dual channel Hall effect sensor board, and a 10-pole magnetic disk.
+
+![Encoder](https://lh3.googleusercontent.com/pw/AIL4fc-0PVx-QAxM_1lX_-5-0U7bIAufCGeziI-vtuCA6q_8F27RXdn_esIsSan-IyZ6VulcsbYeCQB1--xfaRxvHP8ZfCd4EX_BFw_AgrPiSkJH3ToxIzA=w2400) 
+
+This encoder reports a 20 Count Per Revolution, yet as seen in the following image, the number of pulses (or Pulse Per Revolution, PPR), is 4 times the amount of CPR's.
+![ENcoderGIF](https://lh3.googleusercontent.com/pw/AIL4fc_TfmjUckRxufbgMaMF5kRZhQ-XwwZGFkqK9xRWm7_mGk0aUEd964H2Ekps7XcX8f2OZ4ndetaumULkJJ6toBafXYr89tm3fLmLe257tLaaEch3b2Y=w2400)
+
+$$ 1 CPR = 4PPR $$
+$$ 20 CPR = 80 PPR$$
+
+Furthermore, taking into account the reductor on the Gearmotor, and the diameter of the wheel, the equivalency between distance traveled by the wheel and the CPR's by the encoder is given by:
+
+![Encoder revolution diagram](https://lh3.googleusercontent.com/pw/AIL4fc_8nzxd6GgnlTlnInrNYQjQ-Z-ZLHm1bUhUs77IdI_3GZmln0q32n9ABfgszKuwzp42wMu3iV85Sug31KXji_x-sRcdJnqq08N10KIu5mVHVJwB6VM=w2400)
+
+$$\frac{Wheel \, Perimeter}{Encoder \, CPR \cdot N \, Relation}$$
 
 <!---
 
