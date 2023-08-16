@@ -28,7 +28,9 @@ Finally [Spicer, P., Yip-Hoi, D., & Koren, Y. (2005)](https://www.tandfonline.co
 > The specific definition given for scalability in Korenet al.(1998) is ‘the ability to adjust the production capacity of a system through system reconfiguration with minimal cost, in minimal time, over a large capacity range, at given capacity increments’.
 
 
+Therefore our definition for scalability is:
 
+Scalability is a system's or device's ability to modify their Key Performance Indicators (KPI) as a function of a set of controlled variables, such as size, module quantity, component quality, etc.
 
  Here's a footnote [^1].
 
