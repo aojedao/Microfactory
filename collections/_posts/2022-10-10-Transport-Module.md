@@ -113,7 +113,7 @@ And the robot velocities are:
 
 ### Boards
 
-Due to the necessity of a high complexity task item and an integrated process two boards to execute each task group was selected. The first board is a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/), that works as the ROS Master node, as well as the LIDAR and task sequence execution. The second board is a [BeagleBone Blue](https://beagleboard.org/blue), another Single Board Computer (SBC) with a robotics cap integrated in it (DC Motor drivers, servo motors, IMU, etc.). This was done taking into account the [OpenRoACH](https://ieeexplore.ieee.org/document/8794042) project. 
+Due to the necessity of a high complexity task item and an integrated process two boards to execute each task group was selected. The first board is a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/), that works as the ROS Master node, as well as the LIDAR and task sequence execution. The second board is a [BeagleBone Blue](https://beagleboard.org/blue), another Single Board Computer (SBC) with a robotics cap integrated in it (DC Motor drivers, servo motors, IMU, etc.). This was done taking into account the [OpenRoACH](https://ieeexplore.ieee.org/document/8794042) project and the [University of Michigan MBot](https://github.com/levymp/MBOT) robot, with help of professor Peter Gaskell. 
 
 ![Raspberry Pi 4](https://secure.sayal.com/images_ext/Raspberry_PI4_overview.jpg)
 
