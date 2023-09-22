@@ -19,10 +19,7 @@ The transport module was designed with the following characteristics in mind:
 - Optimized size for desktop manufacturing equipment
 
 <!-- Import the component -->
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-
-<model-viewer src="assets/stl/cyaxis.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"> </model-viewer>
-
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"</script>> <div style="height: 600px; flex: 1; display: flex; justify-content: center; border: 0px; box-sizing: border-box;"><model-viewer style="width: 100%; height: 100%; background-color: #eee;" src="https://media.keyshot.com/scenes/envoy/envoy-opt.glb" ios-src="https://media.keyshot.com/scenes/envoy/envoy.usdz" poster="https://media.keyshot.com/scenes/envoy/envoy-scan.jpg" alt="3D Export from KeyShot" ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ar auto-rotate camera-controls></model-viewer></div> 
 
 ## Mind Map
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
