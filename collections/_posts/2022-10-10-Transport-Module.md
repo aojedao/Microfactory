@@ -24,7 +24,7 @@ The transport module was designed with the following characteristics in mind:
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
 <!-- Use it like any other HTML element -->
-<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="https://media.keyshot.com/scenes/envoy/envoy-opt.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="https://media.keyshot.com/scenes/envoy/envoy-scan.jpg" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="https://media.keyshot.com/scenes/envoy/envoy-opt.glb" ar environment-image="shared-assets/environments/moon_1k.hdr"  shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
 
 ## Mind Map
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
