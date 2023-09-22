@@ -22,10 +22,19 @@ The transport module was designed with the following characteristics in mind:
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
 
 ![Mind Map](https://lh3.googleusercontent.com/pw/AJFCJaWGYCNRNBE5FYuvXPsg3QFc-eF-jMe2TvyWld7_uHiC3sMo9i_mCS8AmDO3ic1GaMdp5wOrEzrIrrN9ZGOADHD4huRVXy7cz4OA34TcYo7t2HxWgUs=w2400)
+
 *Mind Map of the Robot design*
 
 ## SDV
 Likewise, the Self Driving Vehicle model was elected for navigation, instead of an Autonomous Guided Vehicle one, as the routing flexibility (capability of reordering the production steps) of the Microfactory would be the reduced with the second option, as well as the necessity of placing reference beacons or guidelines which would increase the implementation cost.
+
+## Design Characteristics
+
+Hykabaï has the following Key Performance Indicators (KPI):
+
+![Robot KPIs](https://lh3.googleusercontent.com/pw/AIL4fc--RAqqyvKbAOGQ4tbamXyovSsYcGzlak5Ck1VoMXK9QXds8FabHVYlppiBShBfgqEp7Wp9mWeSmjqzpiIR447XBga63XyZ0X-tmnoU28bWJRB8pMg=w2400)
+
+*Hykabaï Key Performance Indicators*
 
 ## Axiomatic Design
 Given that this robot will reduce custom built components to replace with Commercial Off The Shelf (COTS) components, the axiomatic design on tihs robot was only applied up to matrix B, because manufacturing processes parameters will be reduced as much as possible.
@@ -84,6 +93,12 @@ And the robot velocities are:
   $$\dot y = v \sin{\theta}$$ 
 
   $$\dot \theta = \omega$$ 
+
+### Assembly
+
+![Assembly](https://lh3.googleusercontent.com/pw/AIL4fc9u4K2Q9BEcAQNGzbTW2ixEP9HojInIdUGSTZ--NV_WabCnxr6KaEdqGv9drvLHY2Hy1t67FYtsAr1vmBfKdkaxSyLR5bI59AR1uvhBc9KNaSDa-DQ=w2400)
+
+*Assembly of Hykabaï*
 
 ## Electronic Design 
 
