@@ -22,6 +22,7 @@ The transport module was designed with the following characteristics in mind:
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
 
 ![Mind Map](https://lh3.googleusercontent.com/pw/AJFCJaWGYCNRNBE5FYuvXPsg3QFc-eF-jMe2TvyWld7_uHiC3sMo9i_mCS8AmDO3ic1GaMdp5wOrEzrIrrN9ZGOADHD4huRVXy7cz4OA34TcYo7t2HxWgUs=w2400)
+*Mind Map of the Robot design*
 
 ## SDV
 Likewise, the Self Driving Vehicle model was elected for navigation, instead of an Autonomous Guided Vehicle one, as the routing flexibility (capability of reordering the production steps) of the Microfactory would be the reduced with the second option, as well as the necessity of placing reference beacons or guidelines which would increase the implementation cost.
@@ -55,6 +56,7 @@ Matrix B
 Afterwards, the traction system was designed. The differential model allows turning over a point, in other words, the robot's central axis perpendicular to the ground. This is important as it reduces space required for maneuvering in small areas, unlike the Ackermann model.
 
 ![Kinematic Model Diagram](https://www.researchgate.net/profile/Davide-Spinello/publication/282918322/figure/fig1/AS:337397943422976@1457453346302/Kinematic-model-of-a-differential-drive-mobile-robot.png)
+*Kinematic Model of a Differential Robot*
 
 In this diagram we observe a line that crosses the wheels and the orientation line, that is the point mentioned beforehand. The kinematic model is described as follows:
 
