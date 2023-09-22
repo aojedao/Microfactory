@@ -1,14 +1,14 @@
 ---
 layout: article
-title: Transport Module
-abstract: MicroSDV design
+title: Hykabaï - Transport Module
+abstract: Hykabï MicroSDV design
 categories: markdown
 tags: test
 eyeCatcher: https://lh3.googleusercontent.com/HT8q9vMl5-NA6gO6i66Z7Ij_zU_gob5ZVe9l8X7FHe6MNZZowya9Xx2XMv1UVoE8TKAc1V1ZV3t2XW2qDMAJg7cpwyvkTD31FX3ldHtoeT5fkkNwzBCDYiHDB8Rs2ShbnXb9u6SdhA=w2400
 mathjax: true
 ---
 
-# Transport Module - microSDV
+# Hykabaï
 
 The transport module was designed with the following characteristics in mind:
 - Manufacturing
@@ -49,7 +49,8 @@ Matrix B
 | PRIA Integrated            | 0 | 0 | 0  | x | 0  |
 | Containerized              | 0 | 0 | 0  | 0 | x  |
 
-## Differential Configuration
+## Mechanical Design
+### Differential Configuration
 
 Afterwards, the traction system was designed. The differential model allows turning over a point, in other words, the robot's central axis perpendicular to the ground. This is important as it reduces space required for maneuvering in small areas, unlike the Ackermann model.
 
@@ -82,7 +83,9 @@ And the robot velocities are:
 
   $$\dot \theta = \omega$$ 
 
-## Electronic Equipment
+## Electronic Design 
+
+### Boards
 
 Due to the necessity of a high complexity task item and an integrated process two boards to execute each task group was selected. The first board is a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/), that works as the ROS Master node, as well as the LIDAR and task sequence execution. The second board is a [BeagleBone Blue](https://beagleboard.org/blue), another Single Board Computer with a robotics cap integrated in it (DC Motor drivers, servo motors, IMU, etc.). This was done taking into account the [OpenRoACH](https://ieeexplore.ieee.org/document/8794042) project. 
 
@@ -90,7 +93,7 @@ Due to the necessity of a high complexity task item and an integrated process tw
 
 The BBBlue has two TB6612FNG dual motor drivers, and are controlling two Pololu [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453). As well, the board is powered by a 2S 1000mAh battery, that connects directly with the balance port to the on-board connector.
 
-## Encoders
+### Encoders
 
 The encoders are using Enhanced Quadrature Encoder Pulse (eQEP) to read both magnetic encoders. The [encoders for 20D](https://www.pololu.com/product/3499) motors were selected. They count with an operating voltage of 2.7V up to 18V. It consists of a dual channel Hall effect sensor board, and a 10-pole magnetic disk.
 
@@ -108,7 +111,8 @@ Furthermore, taking into account the reductor on the Gearmotor, and the diameter
 
 $$\frac{Wheel \, Perimeter}{Encoder \, CPR \cdot N \, Relation}$$
 
-## Control
+## Software Design
+### Control
 
 ### Block diagram
 Currently the mechatronic system of the robot works as following: 
@@ -117,7 +121,7 @@ Currently the mechatronic system of the robot works as following:
 
 The Powerbank, provides energy for the Raspberry Pi, which connects to the RPLidar A1 via microUSB port and serial communication, and to the BeagleBone Blue via USB. This connection uses the USB port as a virtual ethernet port, assigning the 192.168.7.1 IP address to the RPi, and 192.168.7.2 address to the BeagleBone. Afterwards, to move the motors, the topics ran in the RPi (that is executing the ROS Master node), are captured by the bbdrivers package in the BeagleBone. This package implements directly the rc_library files to both, capture the encoder readings, and send movement signals to the motor drivers. As a side note, the robot is capable of executing all of the program without feeding the BeagleBone with it's power supply (a 2S Lipo board in this case, using the balance port) yet it won't be able to move.
 
-### On/Off Control
+#### On/Off Control
 Initally, to verify that the robot is moving the wheels accordingly to the direction it's given, a simple order-two system was modeled to identify possible values for a speed controller, directly on the bbdrivers package. It was done to model the following control sequence.
 
 ![onoffBlockControl](https://lh3.googleusercontent.com/pw/AIL4fc-toEcV0n29m8TNOab-brin9YcRseVjtOT43LVTBJwn56Kjo7QaBcY9ZIaCNkXq4aBqdzBJp-gt7_T7fh0M6jq3BdOhgIYKKnLNWGcGPjY_Ypy8dCw=w2400) 
