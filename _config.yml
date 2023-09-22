@@ -87,7 +87,7 @@ defaults:
 
 # Build settings
 highlighter: rouge
-markdown: kramdown
+markdown: GFM
 kmarkdown:
   input: GFM
 
