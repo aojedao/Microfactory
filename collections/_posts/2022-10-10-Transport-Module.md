@@ -18,6 +18,12 @@ The transport module was designed with the following characteristics in mind:
 - Basic unit on a Fleet Management System (FMS)
 - Optimized size for desktop manufacturing equipment
 
+<!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
+<!-- Use it like any other HTML element -->
+<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+
 ## Mind Map
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
 
@@ -185,6 +191,17 @@ And afterwards, only linear speed pulses were analyzed.
 ![LinearPulses](https://lh3.googleusercontent.com/pw/AIL4fc8N96IjVzN3JuxchqSO9h8HKaYNzztR2-CGXU_SHxQ78UiD85cvTIMz8FPN9l1JU5P_phYAFiYf38rDGgOYN19cR35TwoOpU9wjxamXtp8tmxQUvR8=w2400)
 
 *Theoretical vs Experimental Linear Velocities*
+
+## Troubleshooting
+
+<style>
+.responsive-wrap iframe{ max-width: 100%;}
+</style>
+<div class="responsive-wrap">
+<!-- this is the embed code provided by Google -->
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPWCqU09mavsYeHc9mMIke2vDJ_xBY_6HWYhL0JbsP9D7fc7dqRVr1valfcYS63WeDf3NSehouM9HY/pubhtml?gid=0&single=true" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- Google embed ends -->
+</div>
 
 
 <!---
