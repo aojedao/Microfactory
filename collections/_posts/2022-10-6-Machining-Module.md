@@ -52,8 +52,6 @@ The driver microsteps are configured trough jumpers in the CNC Shield. The pins 
 
 ## 3D Model test
 
-{% include stlviewer.html src="ASX1_AyASCII.stl" width=500 height=300 extrastyle="" %}
-{% include stlviewer.html src="BDremelCarriage.stl" width=500 height=300 extrastyle="" %}
 
 ```stl
 solid Uranium STLWriter Fri 28 Jul 2023 15:26:43
@@ -26728,7 +26726,6 @@ facet normal 0.0 0.0 0.0
   endloop
 endfacet
 endsolid Uranium STLWriter Fri 28 Jul 2023 15:26:43
-
 ```
 
 ## Roadmap
