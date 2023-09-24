@@ -17,6 +17,7 @@ mathjax: true
 3. [Third Example](#third-example)
 4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
 
+ 
 ## Design Goal
 
 The transport module was designed with the following characteristics in mind:
@@ -43,7 +44,7 @@ This is the built robot, available at the Experimental Fabrication Laboratory (L
 
 Hykabaï means horse in Chibcha, one of the Colombian native languages, and given the similarities as transport, the name was adopted.
 
-## Mind Map
+## Mind Map <a name="MindMap"></a>
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
 
 ![Mind Map](https://lh3.googleusercontent.com/pw/AJFCJaWGYCNRNBE5FYuvXPsg3QFc-eF-jMe2TvyWld7_uHiC3sMo9i_mCS8AmDO3ic1GaMdp5wOrEzrIrrN9ZGOADHD4huRVXy7cz4OA34TcYo7t2HxWgUs=w2400)
