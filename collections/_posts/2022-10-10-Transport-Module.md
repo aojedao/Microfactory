@@ -112,6 +112,20 @@ And the robot velocities are:
 
 *Electrical Assembly*
 
+### Battery
+
+For the Raspberry Pi, any 5V, 2A or greater current will be enough to power the board. The current model uses an Adata P10000QCD such as the one represented in the image.
+
+![Power Bank](https://falabella.scene7.com/is/image/FalabellaCO/gsc_117715690_1868380_1?wid=800&hei=800&qlt=70)
+
+*Example of a power bank*
+
+As for the BeagleBone Blue, the board supports using a 2S (2 Cell battery) directly trough its connector. There are multiple storage capacity presentations, this design uses 1000mAh by Turnigy.
+
+![LiPo Battery](https://www.vistronica.com/10769-large_default/bateria-lipo-turnigy-1000mah-7-4v-30c.jpg)
+
+*LiPo Battery*
+
 ## Electronic Design 
 
 ### Boards
