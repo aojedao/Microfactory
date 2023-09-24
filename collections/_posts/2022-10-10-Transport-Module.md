@@ -18,10 +18,7 @@ The transport module was designed with the following characteristics in mind:
 - Basic unit on a Fleet Management System (FMS)
 - Optimized size for desktop manufacturing equipment
 
-<div class="online_3d_viewer"
-    style="width: 800px; height: 600px;"
-    model="assets/stl/cyaxis.obj">
-</div>
+<script src="https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl"></script>
 
 ## Mind Map
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
