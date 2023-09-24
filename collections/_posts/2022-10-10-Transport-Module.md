@@ -198,6 +198,13 @@ Furthermore, taking into account the reductor on the Gearmotor, and the diameter
 
 $$\frac{Wheel \, Perimeter}{Encoder \, CPR \cdot N \, Relation}$$
 
+There was an error identified where the robot drifts towards the left side of the robot, in order to solve this issue an statistc evaluation of the ticks recorded on a turn command were analyzed. In next figure you can see the graph of the difference in the ticks recorded and there is a constant proportional value, so the average error was used to find a constant value to multiply the left wheel velocity command.
+
+![Encoder Correction](https://lh3.googleusercontent.com/pw/ADCreHdL5yXikIAE2dfzJcTimnKQYGsVZFEWi-3XZQgT64xIaPbFxbtx9Fpj8RS0kbiLjHoEDB0ECKoxjxh97lU9p7ntJWtoU4c_KiDW_-cNoDtucdcq8Vk=w2400)
+
+
+*Encoder Correction*
+
 ## Software Design
 ### Control
 
@@ -228,6 +235,12 @@ And afterwards, only linear speed pulses were analyzed.
 ![LinearPulses](https://lh3.googleusercontent.com/pw/AIL4fc8N96IjVzN3JuxchqSO9h8HKaYNzztR2-CGXU_SHxQ78UiD85cvTIMz8FPN9l1JU5P_phYAFiYf38rDGgOYN19cR35TwoOpU9wjxamXtp8tmxQUvR8=w2400)
 
 *Theoretical vs Experimental Linear Velocities*
+
+## ROS
+
+![Mapping RQT Graph](https://lh3.googleusercontent.com/pw/ADCreHdue1xNt7oAtGBCV2VUxceSGFc7qdR6AOLfWzRtYbJIB7IxwPBLOChIXw9esOEWFEP8ZnFopoDj4Himc3ybzuobk-WLNGeR5_bz-PCyFQnkQABDPuI=w2400)
+
+*RQT Graph of the mapping process*
 
 ## Troubleshooting
 
