@@ -18,17 +18,10 @@ The transport module was designed with the following characteristics in mind:
 - Basic unit on a Fleet Management System (FMS)
 - Optimized size for desktop manufacturing equipment
 
-
-
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-
-<!-- Import the component -->
-<model-viewer style="width: 100%; height: 100%; background-color: #eee;" src="https://media.keyshot.com/scenes/envoy/envoy-opt.glb" ios-src="https://media.keyshot.com/scenes/envoy/envoy.usdz" poster="https://media.keyshot.com/scenes/envoy/envoy-scan.jpg" alt="3D Export from KeyShot" ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ar auto-rotate camera-controls></model-viewer>
-
-<!-- Use it like any other HTML element -->
-<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="https://media.keyshot.com/scenes/envoy/envoy-opt.glb" ar environment-image="shared-assets/environments/moon_1k.hdr"  shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-
-<script type="module" src="bundle.js"></script>
+<div class="online_3d_viewer"
+    style="width: 800px; height: 600px;"
+    model="assets/stl/cyaxis.obj">
+</div>
 
 ## Mind Map
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
