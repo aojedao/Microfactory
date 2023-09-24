@@ -20,7 +20,7 @@ The transport module was designed with the following characteristics in mind:
 
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/MicroRobotURDFv1.stl"></script>
 
-<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/MicroRobotURDFv1Color.stl"></script>
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/ASX1_Hykabaiv4.stl"></script>
 
 
 ## Mind Map
