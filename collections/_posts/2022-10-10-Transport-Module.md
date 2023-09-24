@@ -12,7 +12,8 @@ mathjax: true
 
 # Table of Contents
 1. [Design Goal](#design-goal)
-2. [Example2](#example2)
+   1. [Name](#name)
+2. [Mind Map](#MindMap)
 3. [Third Example](#third-example)
 4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
 
