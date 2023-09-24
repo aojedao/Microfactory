@@ -18,13 +18,21 @@ The transport module was designed with the following characteristics in mind:
 - Basic unit on a Fleet Management System (FMS)
 - Optimized size for desktop manufacturing equipment
 
+This 3D model shows the design of the robot, you can move it around to check some of it's components.
+
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/Hykabaiv4Web.stl"></script>
 
 *Interactive 3D Model of Hykabaï, click and move it*
 
+This is the built robot, available at the Experimental Fabrication Laboratory (LabFabEx) at Universidad Nacional de Colombia.
+
 ![HykabaiPic](https://lh3.googleusercontent.com/pw/ADCreHcBrCqs4BqAPo4G-aViOwapNKJfKQIxqkXK2FBclAOABAeJzk5-ZGsTyfXHVj4cgEcz_k_0XlTFGHUSQqJRpmzJOe8c68KsfuX11CdB3acaCAULMlg=w2400)
 
 *Picture of Hykabaï*
+
+### Name
+
+Hykabaï means horse in Chibcha, one of the Colombian native languages, and given the similarities as transport, the name was adopted.
 
 ## Mind Map
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
@@ -103,55 +111,6 @@ And the robot velocities are:
 
   $$\dot \theta = \omega$$ 
 
-### Assembly
-
-![AssemblyV1](https://lh3.googleusercontent.com/pw/AIL4fc9u4K2Q9BEcAQNGzbTW2ixEP9HojInIdUGSTZ--NV_WabCnxr6KaEdqGv9drvLHY2Hy1t67FYtsAr1vmBfKdkaxSyLR5bI59AR1uvhBc9KNaSDa-DQ=w2400)
-
-*Assembly of Hykabaï*
-
-![Assembly of Hykabai V2](https://lh3.googleusercontent.com/pw/ADCreHcD0zvb1TboD0HqLfT3C_GS_VtEv4qT0F9BKF6Cd8_E1SeyzX24G3vfmU3ngjBilbXByE0DZhZwR-Lz2V0RRtUSHeonYxlVVM1SdPWAXHJuHCmPCfg=w2400)
-
-<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBigSubassembly.stl"></script>
-
-![Subassembly1](https://lh3.googleusercontent.com/pw/ADCreHcKSMmxujTSfV9F7TuUsx4jvizfNT2XBleC4dS3adUl5Bhnwn-4fd2yd1ysjKMpqXLYSux2k-dwFahxBYwtURSF4pdDLkoLy5ZPfWJiFIRLCiE0Zfo=w2400)
-
-<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBase1.stl"></script>
-
-
-![SubAssembly2](https://lh3.googleusercontent.com/pw/ADCreHdTWYHNMTFozDwL_WWUqArvbzbDwpxU_q-qFIM04tqYLCHIgZ7DcSuZZUCyFyHpVz1w6pbVMH4taeFC9d-pDoS_Zz5ddMXoYYLT6ADsy4miUlzqwR4=w2400)
-
-<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBase2.stl"></script>
-
-## Electrical Design
-
-![Electrical Assembly](https://lh3.googleusercontent.com/pw/ADCreHdYkgntXdndOTYpGhulEnjEqPvdUF_jNj6WnQ0y0ro7WAbsvN-Hus66u4L-h2e2Vkah89xYevX4YiTc_ubp-T8qJpWTU8Zw71BkTxvCzJmVkANX9gU=w2400)
-
-*Electrical Assembly*
-
-### Battery
-
-For the Raspberry Pi, any 5V, 2A or greater current will be enough to power the board. The current model uses an Adata P10000QCD such as the one represented in the image.
-
-![Power Bank](https://falabella.scene7.com/is/image/FalabellaCO/gsc_117715690_1868380_1?wid=800&hei=800&qlt=70)
-
-*Example of a power bank*
-
-As for the BeagleBone Blue, the board supports using a 2S (2 Cell battery) directly trough its connector. There are multiple storage capacity presentations, this design uses 1000mAh by Turnigy.
-
-![LiPo Battery](https://www.vistronica.com/10769-large_default/bateria-lipo-turnigy-1000mah-7-4v-30c.jpg)
-
-*LiPo Battery*
-
-### Motors
-
-Motors: Two [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453) were selected. They have a 78:1 reduction
-ratio, operate on 6V and count with an extended motor shaft. The maximum speed is 180
-rpm under no load, and a 2.4 kg-cm peak torque
-
-![Motor](https://lh3.googleusercontent.com/pw/ADCreHc-g5o6UkkiFM_Il4L4WMUv4dz-BwJDKJ75Hya4d7rO5q9W1iY75iCzWrrf2HJuocA0K1vUhWyWJnxA2Fhqzl6Nxs3KzEUum1e-2ZOIn3MUd0G4V7I=w2400)
-
-*Motor Efficiency Diagram*
-
 ## Electronic Design 
 
 ### Boards
@@ -213,17 +172,111 @@ There was an error identified where the robot drifts towards the left side of th
 
 *Encoder Correction*
 
+
+## Electrical Design
+
+### Battery
+
+For the Raspberry Pi, any 5V, 2A or greater current will be enough to power the board. The current model uses an Adata P10000QCD such as the one represented in the image.
+
+![Power Bank](https://falabella.scene7.com/is/image/FalabellaCO/gsc_117715690_1868380_1?wid=800&hei=800&qlt=70)
+
+*Example of a power bank*
+
+As for the BeagleBone Blue, the board supports using a 2S (2 Cell battery) directly trough its connector. There are multiple storage capacity presentations, this design uses 1000mAh by Turnigy.
+
+![LiPo Battery](https://www.vistronica.com/10769-large_default/bateria-lipo-turnigy-1000mah-7-4v-30c.jpg)
+
+*LiPo Battery*
+
+### Motors
+
+Motors: Two [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453) were selected. They have a 78:1 reduction
+ratio, operate on 6V and count with an extended motor shaft. The maximum speed is 180
+rpm under no load, and a 2.4 kg-cm peak torque.
+
+![Motor](https://a.pololu-files.com/picture/0J7474.1200.jpg?0157d52ce89f0ed9ff3b279e72b632fa)
+
+*Image of the Pololu motors used*
+
+![MotorEfficieny](https://lh3.googleusercontent.com/pw/ADCreHc-g5o6UkkiFM_Il4L4WMUv4dz-BwJDKJ75Hya4d7rO5q9W1iY75iCzWrrf2HJuocA0K1vUhWyWJnxA2Fhqzl6Nxs3KzEUum1e-2ZOIn3MUd0G4V7I=w2400)
+
+*Motor Efficiency Diagram*
+
+### Connections
+
+![Electrical Assembly](https://lh3.googleusercontent.com/pw/ADCreHdYkgntXdndOTYpGhulEnjEqPvdUF_jNj6WnQ0y0ro7WAbsvN-Hus66u4L-h2e2Vkah89xYevX4YiTc_ubp-T8qJpWTU8Zw71BkTxvCzJmVkANX9gU=w2400)
+
+*Electrical Assembly*
+
+
+### Assembly
+
+The robot counts with two types of componentes, COTS and manufacturable components. Most of the manufactured parts are the structure chassis, and can be done trough multiple technologies and materials. Proposed methods are displayed in the following picture, where blue figures represent a manufacturing method and orange ones represent materials.
+
+![Materials](https://lh3.googleusercontent.com/pw/ADCreHcuM2Qd_XVo5OGRBaGNGJHFeIkeA_U4_8SftHZbULm5z_IUpvsIBvjwCCfPHg6MfC5seOL8v4YDgFfOiAiU3ffxIk21QOo0H_a_txjlAnEVlOffXzQ=w2400)
+
+*Possible manufacturing methods and materials*
+
+AS for the assembly here is shown the assembly process for the Hykabaï V1, a prototype designed for the Manufacturing Processes Automation class at UNAL.
+
+![AssemblyV1](https://lh3.googleusercontent.com/pw/AIL4fc9u4K2Q9BEcAQNGzbTW2ixEP9HojInIdUGSTZ--NV_WabCnxr6KaEdqGv9drvLHY2Hy1t67FYtsAr1vmBfKdkaxSyLR5bI59AR1uvhBc9KNaSDa-DQ=w2400)
+
+*Assembly of Hykabaï*
+
+The second assembly corresponds to the actual robot at the lab. It also has the same colors as seen in the first part od the page.
+
+![Assembly of Hykabai V2](https://lh3.googleusercontent.com/pw/ADCreHcD0zvb1TboD0HqLfT3C_GS_VtEv4qT0F9BKF6Cd8_E1SeyzX24G3vfmU3ngjBilbXByE0DZhZwR-Lz2V0RRtUSHeonYxlVVM1SdPWAXHJuHCmPCfg=w2400)
+
+*Assembly of the actual Hykabaï robot*
+
+Here we can see the robot in two subassemblies, the upper chassis where the Raspberry Pi and RPLidar are located, and the inferior one.
+
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBigSubassembly.stl"></script>
+
+The inferior chassis holds both motors and the BeagleBone Blue. Motor supports can be placed over or under the base. It is recommended to screw the motor supports to the base first.
+
+![Subassembly1](https://lh3.googleusercontent.com/pw/ADCreHcKSMmxujTSfV9F7TuUsx4jvizfNT2XBleC4dS3adUl5Bhnwn-4fd2yd1ysjKMpqXLYSux2k-dwFahxBYwtURSF4pdDLkoLy5ZPfWJiFIRLCiE0Zfo=w2400)
+
+This is the base of the inferior chassis.
+
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBase1.stl"></script>
+
+*Inferior chassis base*
+
+And this is the motor support:
+
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiMotorSupport.stl"></script>
+
+*Motor support*
+
+
+The superior chassis is better built by mounting the Raspberry Pi and the superior base first, and the other components afterwards.
+
+![SubAssembly2](https://lh3.googleusercontent.com/pw/ADCreHdTWYHNMTFozDwL_WWUqArvbzbDwpxU_q-qFIM04tqYLCHIgZ7DcSuZZUCyFyHpVz1w6pbVMH4taeFC9d-pDoS_Zz5ddMXoYYLT6ADsy4miUlzqwR4=w2400)
+
+*Assembly of the superior components*
+
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBase2.stl"></script>
+
+*Model of the superior base*
+
+
+
 ## Software Design
 ### Control
 
+
 ### Block diagram
 Currently the mechatronic system of the robot works as following: 
-
 ![BLockDiagram](https://lh3.googleusercontent.com/pw/AIL4fc_F9VMqPcS74A4crEyAyH7VdnpWcjJgJ62QavjkrozBp2qwMLwni1CPYkPXM1Cai4bZs5PcT2XWLXHBJA9qeybvydu5YNtquNH-kn04GBhtwfHc8lU=w2400)
 
 *Block diagram of the Mechanical, Electrical and Communication systems*
 
 The Powerbank, provides energy for the Raspberry Pi, which connects to the RPLidar A1 via microUSB port and serial communication, and to the BeagleBone Blue via USB. This connection uses the USB port as a virtual ethernet port, assigning the 192.168.7.1 IP address to the RPi, and 192.168.7.2 address to the BeagleBone. Afterwards, to move the motors, the topics ran in the RPi (that is executing the ROS Master node), are captured by the bbdrivers package in the BeagleBone. This package implements directly the rc_library files to both, capture the encoder readings, and send movement signals to the motor drivers. As a side note, the robot is capable of executing all of the program without feeding the BeagleBone with it's power supply (a 2S Lipo board in this case, using the balance port) yet it won't be able to move.
+
+
+
 
 #### On/Off Control
 Initally, to verify that the robot is moving the wheels accordingly to the direction it's given, a simple order-two system was modeled to identify possible values for a speed controller, directly on the bbdrivers package. It was done to model the following control sequence.
