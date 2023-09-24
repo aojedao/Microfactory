@@ -20,7 +20,7 @@ The transport module was designed with the following characteristics in mind:
 
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/MicroRobotURDFv1.stl"></script>
 
-<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/MicroRobotURDFv1.stl"></script>
+<script src="https://drive.google.com/file/d/1Gg0xdF78JcWC3LvhwzkZlczh-_6atnAT/view"></script>
 
 ## Mind Map
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
