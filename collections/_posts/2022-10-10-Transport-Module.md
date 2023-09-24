@@ -106,6 +106,12 @@ And the robot velocities are:
 
 *Assembly of Hykabaï*
 
+## Electrical Design
+
+![Electrical Assembly](https://lh3.googleusercontent.com/pw/ADCreHdYkgntXdndOTYpGhulEnjEqPvdUF_jNj6WnQ0y0ro7WAbsvN-Hus66u4L-h2e2Vkah89xYevX4YiTc_ubp-T8qJpWTU8Zw71BkTxvCzJmVkANX9gU=w2400)
+
+*Electrical Assembly*
+
 ## Electronic Design 
 
 ### Boards
