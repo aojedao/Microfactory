@@ -10,6 +10,14 @@ mathjax: true
 
 # Hykabaï
 
+# Table of Contents
+1. [Design Goal](#design-goal)
+2. [Example2](#example2)
+3. [Third Example](#third-example)
+4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+
+## Design Goal
+
 The transport module was designed with the following characteristics in mind:
 - Manufacturing
   - Fast manufacturing
@@ -191,13 +199,13 @@ As for the BeagleBone Blue, the board supports using a 2S (2 Cell battery) direc
 
 ### Motors
 
-Motors: Two [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453) were selected. They have a 78:1 reduction
-ratio, operate on 6V and count with an extended motor shaft. The maximum speed is 180
-rpm under no load, and a 2.4 kg-cm peak torque.
+Two [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453) were selected. They have a 78:1 reduction ratio, operate on 6V and count with an extended motor shaft. The maximum speed is 180 rpm under no load, and a 2.4 kg-cm peak torque.
 
 ![Motor](https://a.pololu-files.com/picture/0J7474.1200.jpg?0157d52ce89f0ed9ff3b279e72b632fa)
 
 *Image of the Pololu motors used*
+
+The manufacturer provides the following graph for it's rpm, current consumption and eficciency.
 
 ![MotorEfficieny](https://lh3.googleusercontent.com/pw/ADCreHc-g5o6UkkiFM_Il4L4WMUv4dz-BwJDKJ75Hya4d7rO5q9W1iY75iCzWrrf2HJuocA0K1vUhWyWJnxA2Fhqzl6Nxs3KzEUum1e-2ZOIn3MUd0G4V7I=w2400)
 
@@ -205,9 +213,11 @@ rpm under no load, and a 2.4 kg-cm peak torque.
 
 ### Connections
 
-![Electrical Assembly](https://lh3.googleusercontent.com/pw/ADCreHdYkgntXdndOTYpGhulEnjEqPvdUF_jNj6WnQ0y0ro7WAbsvN-Hus66u4L-h2e2Vkah89xYevX4YiTc_ubp-T8qJpWTU8Zw71BkTxvCzJmVkANX9gU=w2400)
+The 
 
-*Electrical Assembly*
+![Electrical Connections](https://lh3.googleusercontent.com/pw/ADCreHdYkgntXdndOTYpGhulEnjEqPvdUF_jNj6WnQ0y0ro7WAbsvN-Hus66u4L-h2e2Vkah89xYevX4YiTc_ubp-T8qJpWTU8Zw71BkTxvCzJmVkANX9gU=w2400)
+
+*Electrical Connections*
 
 
 ### Assembly
