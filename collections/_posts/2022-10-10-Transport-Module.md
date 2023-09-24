@@ -18,7 +18,7 @@ The transport module was designed with the following characteristics in mind:
 - Basic unit on a Fleet Management System (FMS)
 - Optimized size for desktop manufacturing equipment
 
-<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/MicroRobotURDFv1.stl"></script>
+
 
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/Hykabaiv4Web.stl"></script>
 
@@ -106,6 +106,14 @@ And the robot velocities are:
 
 *Assembly of Hykabaï*
 
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBigSubassembly.stl"></script>
+
+
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBase1.stl"></script>
+
+
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBase2.stl"></script>
+
 ## Electrical Design
 
 ![Electrical Assembly](https://lh3.googleusercontent.com/pw/ADCreHdYkgntXdndOTYpGhulEnjEqPvdUF_jNj6WnQ0y0ro7WAbsvN-Hus66u4L-h2e2Vkah89xYevX4YiTc_ubp-T8qJpWTU8Zw71BkTxvCzJmVkANX9gU=w2400)
@@ -125,6 +133,16 @@ As for the BeagleBone Blue, the board supports using a 2S (2 Cell battery) direc
 ![LiPo Battery](https://www.vistronica.com/10769-large_default/bateria-lipo-turnigy-1000mah-7-4v-30c.jpg)
 
 *LiPo Battery*
+
+### Motors
+
+Motors: Two [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453) were selected. They have a 78:1 reduction
+ratio, operate on 6V and count with an extended motor shaft. The maximum speed is 180
+rpm under no load, and a 2.4 kg-cm peak torque
+
+![Motor](https://lh3.googleusercontent.com/pw/ADCreHc-g5o6UkkiFM_Il4L4WMUv4dz-BwJDKJ75Hya4d7rO5q9W1iY75iCzWrrf2HJuocA0K1vUhWyWJnxA2Fhqzl6Nxs3KzEUum1e-2ZOIn3MUd0G4V7I=w2400)
+
+*Motor Efficiency Diagram*
 
 ## Electronic Design 
 
