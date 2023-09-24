@@ -18,10 +18,13 @@ The transport module was designed with the following characteristics in mind:
 - Basic unit on a Fleet Management System (FMS)
 - Optimized size for desktop manufacturing equipment
 
-
-
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/Hykabaiv4Web.stl"></script>
 
+*Interactive 3D Model of Hykabaï, click and move it*
+
+![HykabaiPic](https://lh3.googleusercontent.com/pw/ADCreHcBrCqs4BqAPo4G-aViOwapNKJfKQIxqkXK2FBclAOABAeJzk5-ZGsTyfXHVj4cgEcz_k_0XlTFGHUSQqJRpmzJOe8c68KsfuX11CdB3acaCAULMlg=w2400)
+
+*Picture of Hykabaï*
 
 ## Mind Map
 With these considerations, the following mind map was designed, aiming to provide a tree of possible options to different design arquitectures.
@@ -102,15 +105,20 @@ And the robot velocities are:
 
 ### Assembly
 
-![Assembly](https://lh3.googleusercontent.com/pw/AIL4fc9u4K2Q9BEcAQNGzbTW2ixEP9HojInIdUGSTZ--NV_WabCnxr6KaEdqGv9drvLHY2Hy1t67FYtsAr1vmBfKdkaxSyLR5bI59AR1uvhBc9KNaSDa-DQ=w2400)
+![AssemblyV1](https://lh3.googleusercontent.com/pw/AIL4fc9u4K2Q9BEcAQNGzbTW2ixEP9HojInIdUGSTZ--NV_WabCnxr6KaEdqGv9drvLHY2Hy1t67FYtsAr1vmBfKdkaxSyLR5bI59AR1uvhBc9KNaSDa-DQ=w2400)
 
 *Assembly of Hykabaï*
 
+![Assembly of Hykabai V2](https://lh3.googleusercontent.com/pw/ADCreHcD0zvb1TboD0HqLfT3C_GS_VtEv4qT0F9BKF6Cd8_E1SeyzX24G3vfmU3ngjBilbXByE0DZhZwR-Lz2V0RRtUSHeonYxlVVM1SdPWAXHJuHCmPCfg=w2400)
+
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBigSubassembly.stl"></script>
 
+![Subassembly1](https://lh3.googleusercontent.com/pw/ADCreHcKSMmxujTSfV9F7TuUsx4jvizfNT2XBleC4dS3adUl5Bhnwn-4fd2yd1ysjKMpqXLYSux2k-dwFahxBYwtURSF4pdDLkoLy5ZPfWJiFIRLCiE0Zfo=w2400)
 
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBase1.stl"></script>
 
+
+![SubAssembly2](https://lh3.googleusercontent.com/pw/ADCreHdTWYHNMTFozDwL_WWUqArvbzbDwpxU_q-qFIM04tqYLCHIgZ7DcSuZZUCyFyHpVz1w6pbVMH4taeFC9d-pDoS_Zz5ddMXoYYLT6ADsy4miUlzqwR4=w2400)
 
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBase2.stl"></script>
 
@@ -241,6 +249,18 @@ And afterwards, only linear speed pulses were analyzed.
 ![Mapping RQT Graph](https://lh3.googleusercontent.com/pw/ADCreHdue1xNt7oAtGBCV2VUxceSGFc7qdR6AOLfWzRtYbJIB7IxwPBLOChIXw9esOEWFEP8ZnFopoDj4Himc3ybzuobk-WLNGeR5_bz-PCyFQnkQABDPuI=w2400)
 
 *RQT Graph of the mapping process*
+
+![Robot Executing Trajectories](https://lh3.googleusercontent.com/pw/ADCreHc6tRByGsYoPe2S6NQD71Xi6iDtqzZ6COGu6hSulasijknnBeCNT-23c7ZTaZpp3CVs7SQZYqWQzTCS4HaOyKmCLFxpv57SJ7HcwWMQykVGE3dIfwc=w2400)
+
+*Hykabaï executing trajectories*
+
+![PRIA Integration](https://lh3.googleusercontent.com/pw/ADCreHcHKF-NW766VyY5rqTJ8dzbJJBWLWgr2mSOQM9P_fqVxiYxngXsfyJqZPMoYzwr6MDpyQql7Yyf1evNFkNNHvCIKAlECZ_3rjckxIZtOiywjNMw_7M=w2400)
+
+*Integration in PRIA*
+
+![POA Process](https://lh3.googleusercontent.com/pw/ADCreHc_xQ_PWzzt1QaUdJNSaRpljCmqnLrQ8_vZWDwlmWZ3nxLPIbrRb1gj7UqvUL3UPhGVLs0EPQ36F2ckuwXXAWTnA3-Jvq2_Z3NJzl2Eje1deJNJh7k=w2400)
+
+*Process Oriented Analysis Diagram of the robot*
 
 ## Troubleshooting
 
