@@ -331,23 +331,35 @@ And afterwards, only linear speed pulses were analyzed.
 
 ## ROS
 
+ROS is a communication framework to connect nodes that execute tasks, such as moving a motor, locating the robot or sending a goal, with other nodes through a topic, which is the name of the channel where certain message types, such as images, veloctities or point clouds are transferred.
+
+The nodes running on the robot when performing mapping with Hector SLAM algorithm is presented in the next image, using RQT, a common graph tool for nodes and topics in ROS.
+
 ![Mapping RQT Graph](https://lh3.googleusercontent.com/pw/ADCreHdue1xNt7oAtGBCV2VUxceSGFc7qdR6AOLfWzRtYbJIB7IxwPBLOChIXw9esOEWFEP8ZnFopoDj4Himc3ybzuobk-WLNGeR5_bz-PCyFQnkQABDPuI=w2400)
 
 *RQT Graph of the mapping process*
+
+The robot is communicated with PRIA UN using the following architechture, where the ROS Logic uses the generic PRIA package to communicate with an action server, and the robot locally uses the same nodes mentioned before.
+
+![PRIA Integration](https://lh3.googleusercontent.com/pw/ADCreHcHKF-NW766VyY5rqTJ8dzbJJBWLWgr2mSOQM9P_fqVxiYxngXsfyJqZPMoYzwr6MDpyQql7Yyf1evNFkNNHvCIKAlECZ_3rjckxIZtOiywjNMw_7M=w2400)
+
+*Integration in PRIA*
+
+The robot can be observed navigating in a square trajectory, simulating tranport between the modules of the microfactory, it is done using a PI controller to follow a predefined n-sided figure, and scale-adjusted as the user may need. The square figures show the placement where the other modules may be placed.
 
 ![Robot Executing Trajectories](https://lh3.googleusercontent.com/pw/ADCreHc6tRByGsYoPe2S6NQD71Xi6iDtqzZ6COGu6hSulasijknnBeCNT-23c7ZTaZpp3CVs7SQZYqWQzTCS4HaOyKmCLFxpv57SJ7HcwWMQykVGE3dIfwc=w2400)
 
 *Hykabaï executing trajectories*
 
-![PRIA Integration](https://lh3.googleusercontent.com/pw/ADCreHcHKF-NW766VyY5rqTJ8dzbJJBWLWgr2mSOQM9P_fqVxiYxngXsfyJqZPMoYzwr6MDpyQql7Yyf1evNFkNNHvCIKAlECZ_3rjckxIZtOiywjNMw_7M=w2400)
-
-*Integration in PRIA*
+The route the robot uses to know when to be activated and start a transportation routine is described in the following Process Oriented Analysis (POA) diagram, where the central section illustrates the inner Hykabaï workings, and in the exterior area, it's integration with a PCB Microfactory manufacturing process.
 
 ![POA Process](https://lh3.googleusercontent.com/pw/ADCreHc_xQ_PWzzt1QaUdJNSaRpljCmqnLrQ8_vZWDwlmWZ3nxLPIbrRb1gj7UqvUL3UPhGVLs0EPQ36F2ckuwXXAWTnA3-Jvq2_Z3NJzl2Eje1deJNJh7k=w2400)
 
 *Process Oriented Analysis Diagram of the robot*
 
 ## Troubleshooting
+
+If the robot is operating incorrectly, or issues are identified, the following FMECA analysis is presented, and the recommended solution for each case.
 
 <style>
 .responsive-wrap iframe{ max-width: 100%;}
