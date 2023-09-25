@@ -2,8 +2,8 @@
 layout: article
 title: Hykabaï - Transport Module
 abstract: Hykabï MicroSDV design
-categories: markdown
-tags: test
+categories: Robot
+tags: Hykabaï
 eyeCatcher: https://lh3.googleusercontent.com/HT8q9vMl5-NA6gO6i66Z7Ij_zU_gob5ZVe9l8X7FHe6MNZZowya9Xx2XMv1UVoE8TKAc1V1ZV3t2XW2qDMAJg7cpwyvkTD31FX3ldHtoeT5fkkNwzBCDYiHDB8Rs2ShbnXb9u6SdhA=w2400
 mathjax: true
 ---
