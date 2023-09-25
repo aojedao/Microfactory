@@ -31,8 +31,9 @@ mathjax: true
     - [Connections](#connections)
   - [Assembly](#assembly)
   - [Software Design ](#software-design-)
-    - [Control](#control)
+    - [Install Steps](#install-steps)
     - [Block diagram ](#block-diagram-)
+    - [Control](#control)
       - [On/Off Control ](#onoff-control-)
   - [ROS](#ros)
   - [Troubleshooting](#troubleshooting)
@@ -298,8 +299,19 @@ The superior chassis is better built by mounting the Raspberry Pi and the superi
 
 
 ## Software Design <a name="Software-design"></a>
-### Control
 
+### Install Steps
+
+1. Installing OS on the Single Board Computers.
+
+	1. Install Debian Buster on the Raspberry Pi using RPi Imager.
+	2. Install ROS Melodic from [source](https://www.linkedin.com/pulse/easiest-way-install-ros-melodic-raspberrypi-4-shubham-nandi) 
+      Use the sources for ros from [Seedstudio](https://www.seeedstudio.com/blog/2019/08/01/installing-ros-melodic-on-raspberry-pi-4-and-rplidar-a1m8/)
+	3. Clone the BeagleBone Blue OS using this [command](https://emteria.com/kb/clone-sd-cards-linux)
+	
+2. Install RPLidar
+   1. Configure the [serial port](https://github.com/berndporr/rplidar_rpi)
+   2. Check using the following commands: ls -l /dev/ |grep ttyUSB and      sudo chmod 666 /dev/ttyUSB0
 
 ### Block diagram <a name="Block-diagram"></a>
 Currently the mechatronic system of the robot works as following: 
@@ -309,6 +321,9 @@ Currently the mechatronic system of the robot works as following:
 
 The Powerbank, provides energy for the Raspberry Pi, which connects to the RPLidar A1 via microUSB port and serial communication, and to the BeagleBone Blue via USB. This connection uses the USB port as a virtual ethernet port, assigning the 192.168.7.1 IP address to the RPi, and 192.168.7.2 address to the BeagleBone. Afterwards, to move the motors, the topics ran in the RPi (that is executing the ROS Master node), are captured by the bbdrivers package in the BeagleBone. This package implements directly the rc_library files to both, capture the encoder readings, and send movement signals to the motor drivers. As a side note, the robot is capable of executing all of the program without feeding the BeagleBone with it's power supply (a 2S Lipo board in this case, using the balance port) yet it won't be able to move.
 
+### Control
+
+The robot uses multiple control options, whether it's using our own PID controller for speed and position control, or integrated using the ROS Control package.
 
 #### On/Off Control <a name="Onoff-Control"></a>
 Initally, to verify that the robot is moving the wheels accordingly to the direction it's given, a simple order-two system was modeled to identify possible values for a speed controller, directly on the bbdrivers package. It was done to model the following control sequence.
