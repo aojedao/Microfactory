@@ -11,11 +11,31 @@ mathjax: true
 # Hykabaï
 
 # Table of Contents
-1. [Design Goal](#design-goal)
-   1. [Name](#name)
-2. [Mind Map](#MindMap)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+- [Hykabaï](#hykabaï)
+- [Table of Contents](#table-of-contents)
+  - [Design Goal](#design-goal)
+    - [Name](#name)
+  - [Mind Map ](#mind-map-)
+  - [SDV](#sdv)
+  - [Design Characteristics ](#design-characteristics-)
+  - [Axiomatic Design ](#axiomatic-design-)
+  - [Mechanical Design ](#mechanical-design-)
+    - [Differential Configuration ](#differential-configuration-)
+    - [Materials](#materials)
+  - [Electronic Design ](#electronic-design-)
+    - [Boards](#boards)
+    - [Encoders](#encoders)
+  - [Electrical Design ](#electrical-design-)
+    - [Battery](#battery)
+    - [Motors](#motors)
+    - [Connections](#connections)
+  - [Assembly](#assembly)
+  - [Software Design ](#software-design-)
+    - [Control](#control)
+    - [Block diagram ](#block-diagram-)
+      - [On/Off Control ](#onoff-control-)
+  - [ROS](#ros)
+  - [Troubleshooting](#troubleshooting)
 
  
 ## Design Goal
@@ -54,7 +74,7 @@ With these considerations, the following mind map was designed, aiming to provid
 ## SDV
 Likewise, the Self Driving Vehicle model was elected for navigation, instead of an Autonomous Guided Vehicle one, as the routing flexibility (capability of reordering the production steps) of the Microfactory would be the reduced with the second option, as well as the necessity of placing reference beacons or guidelines which would increase the implementation cost.
 
-## Design Characteristics
+## Design Characteristics <a name="Design-characteristics"></a>
 
 Hykabaï has the following Key Performance Indicators (KPI):
 
@@ -62,7 +82,7 @@ Hykabaï has the following Key Performance Indicators (KPI):
 
 *Hykabaï Key Performance Indicators*
 
-## Axiomatic Design
+## Axiomatic Design <a name="Axiomatic-design"></a>
 Given that this robot will reduce custom built components to replace with Commercial Off The Shelf (COTS) components, the axiomatic design on tihs robot was only applied up to matrix B, because manufacturing processes parameters will be reduced as much as possible.
 
 Matrix A
@@ -85,8 +105,8 @@ Matrix B
 | PRIA Integrated            | 0 | 0 | 0  | x | 0  |
 | Containerized              | 0 | 0 | 0  | 0 | x  |
 
-## Mechanical Design
-### Differential Configuration
+## Mechanical Design <a name="mechanical design"></a>
+### Differential Configuration <a name="differential-conf"></a>
 
 Afterwards, the traction system was designed. The differential model allows turning over a point, in other words, the robot's central axis perpendicular to the ground. This is important as it reduces space required for maneuvering in small areas, unlike the Ackermann model.
 
@@ -121,7 +141,15 @@ And the robot velocities are:
 
   $$\dot \theta = \omega$$ 
 
-## Electronic Design 
+### Materials
+
+  The robot counts with two types of componentes, COTS and manufacturable components. Most of the manufactured parts are the structure chassis, and can be done trough multiple technologies and materials. Proposed methods are displayed in the following picture, where blue figures represent a manufacturing method and orange ones represent materials.
+
+![Materials](https://lh3.googleusercontent.com/pw/ADCreHcuM2Qd_XVo5OGRBaGNGJHFeIkeA_U4_8SftHZbULm5z_IUpvsIBvjwCCfPHg6MfC5seOL8v4YDgFfOiAiU3ffxIk21QOo0H_a_txjlAnEVlOffXzQ=w2400)
+
+*Possible manufacturing methods and materials*
+
+## Electronic Design <a name="Electronic-design"></a>
 
 ### Boards
 
@@ -183,7 +211,7 @@ There was an error identified where the robot drifts towards the left side of th
 *Encoder Correction*
 
 
-## Electrical Design
+## Electrical Design <a name="Electrical-design"></a>
 
 ### Battery
 
@@ -222,15 +250,9 @@ The
 *Electrical Connections*
 
 
-### Assembly
+## Assembly
 
-The robot counts with two types of componentes, COTS and manufacturable components. Most of the manufactured parts are the structure chassis, and can be done trough multiple technologies and materials. Proposed methods are displayed in the following picture, where blue figures represent a manufacturing method and orange ones represent materials.
-
-![Materials](https://lh3.googleusercontent.com/pw/ADCreHcuM2Qd_XVo5OGRBaGNGJHFeIkeA_U4_8SftHZbULm5z_IUpvsIBvjwCCfPHg6MfC5seOL8v4YDgFfOiAiU3ffxIk21QOo0H_a_txjlAnEVlOffXzQ=w2400)
-
-*Possible manufacturing methods and materials*
-
-AS for the assembly here is shown the assembly process for the Hykabaï V1, a prototype designed for the Manufacturing Processes Automation class at UNAL.
+As for the assembly here is shown the assembly process for the Hykabaï V1, a prototype designed for the Manufacturing Processes Automation class at UNAL.
 
 ![AssemblyV1](https://lh3.googleusercontent.com/pw/AIL4fc9u4K2Q9BEcAQNGzbTW2ixEP9HojInIdUGSTZ--NV_WabCnxr6KaEdqGv9drvLHY2Hy1t67FYtsAr1vmBfKdkaxSyLR5bI59AR1uvhBc9KNaSDa-DQ=w2400)
 
@@ -275,11 +297,11 @@ The superior chassis is better built by mounting the Raspberry Pi and the superi
 
 
 
-## Software Design
+## Software Design <a name="Software-design"></a>
 ### Control
 
 
-### Block diagram
+### Block diagram <a name="Block-diagram"></a>
 Currently the mechatronic system of the robot works as following: 
 ![BLockDiagram](https://lh3.googleusercontent.com/pw/AIL4fc_F9VMqPcS74A4crEyAyH7VdnpWcjJgJ62QavjkrozBp2qwMLwni1CPYkPXM1Cai4bZs5PcT2XWLXHBJA9qeybvydu5YNtquNH-kn04GBhtwfHc8lU=w2400)
 
@@ -288,9 +310,7 @@ Currently the mechatronic system of the robot works as following:
 The Powerbank, provides energy for the Raspberry Pi, which connects to the RPLidar A1 via microUSB port and serial communication, and to the BeagleBone Blue via USB. This connection uses the USB port as a virtual ethernet port, assigning the 192.168.7.1 IP address to the RPi, and 192.168.7.2 address to the BeagleBone. Afterwards, to move the motors, the topics ran in the RPi (that is executing the ROS Master node), are captured by the bbdrivers package in the BeagleBone. This package implements directly the rc_library files to both, capture the encoder readings, and send movement signals to the motor drivers. As a side note, the robot is capable of executing all of the program without feeding the BeagleBone with it's power supply (a 2S Lipo board in this case, using the balance port) yet it won't be able to move.
 
 
-
-
-#### On/Off Control
+#### On/Off Control <a name="Onoff-Control"></a>
 Initally, to verify that the robot is moving the wheels accordingly to the direction it's given, a simple order-two system was modeled to identify possible values for a speed controller, directly on the bbdrivers package. It was done to model the following control sequence.
 
 ![onoffBlockControl](https://lh3.googleusercontent.com/pw/AIL4fc-toEcV0n29m8TNOab-brin9YcRseVjtOT43LVTBJwn56Kjo7QaBcY9ZIaCNkXq4aBqdzBJp-gt7_T7fh0M6jq3BdOhgIYKKnLNWGcGPjY_Ypy8dCw=w2400) 
