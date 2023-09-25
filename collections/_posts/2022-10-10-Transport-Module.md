@@ -303,12 +303,10 @@ The superior chassis is better built by mounting the Raspberry Pi and the superi
 ### Install Steps
 
 1. Installing OS on the Single Board Computers.
-
-	1. Install Debian Buster on the Raspberry Pi using RPi Imager.
-	2. Install ROS Melodic from [source](https://www.linkedin.com/pulse/easiest-way-install-ros-melodic-raspberrypi-4-shubham-nandi) 
+   1. Install Debian Buster on the Raspberry Pi using RPi Imager.
+   2. Install ROS Melodic from [source](https://www.linkedin.com/pulse/easiest-way-install-ros-melodic-raspberrypi-4-shubham-nandi) 
       Use the sources for ros from [Seedstudio](https://www.seeedstudio.com/blog/2019/08/01/installing-ros-melodic-on-raspberry-pi-4-and-rplidar-a1m8/)
-	3. Clone the BeagleBone Blue OS using this [command](https://emteria.com/kb/clone-sd-cards-linux)
-	
+   3. Clone the BeagleBone Blue OS using this [command](https://emteria.com/kb/clone-sd-cards-linux)
 2. Install RPLidar
    1. Configure the [serial port](https://github.com/berndporr/rplidar_rpi)
    2. Check using the following commands: ls -l /dev/ |grep ttyUSB and      sudo chmod 666 /dev/ttyUSB0
