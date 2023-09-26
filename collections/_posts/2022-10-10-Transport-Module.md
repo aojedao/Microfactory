@@ -364,7 +364,7 @@ The nodes running on the robot when performing mapping with Hector SLAM algorith
 
 *RQT Graph of the mapping process*
 
-The robot is communicated with PRIA UN using the following architechture, where the ROS Logic uses the generic PRIA package to communicate with an action server, and the robot locally uses the same nodes mentioned before.
+The robot is communicated with PRIA UN using the following architechture, where the ROS Logic uses the generic PRIA package to communicate with an action server, and the robot locally uses the same nodes mentioned before. For more information on the connection in the Lab network visit this [link](https://aojedao.github.io/Microfactory/announcement/2022/05/10/Networking-Structure.html)
 
 ![PRIA Integration](https://lh3.googleusercontent.com/pw/ADCreHcHKF-NW766VyY5rqTJ8dzbJJBWLWgr2mSOQM9P_fqVxiYxngXsfyJqZPMoYzwr6MDpyQql7Yyf1evNFkNNHvCIKAlECZ_3rjckxIZtOiywjNMw_7M=w2400)
 
