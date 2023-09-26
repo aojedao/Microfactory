@@ -252,14 +252,9 @@ The manufacturer provides the following graph for it's rpm, current consumption 
 
 The electrical diagram the connections is the following:
 
-<style>
-.responsive-wrap iframe{ max-width: 100%;}
-</style>
-<div class="responsive-wrap">
-<!-- this is the embed code provided by Google -->
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwKvrwoscWyVKc64vXgdrojiPnni7DepgVOsFLHG_R3yJlaKua6ostb0L2eAxcHrXRgf3eYZnjnBms/pub?start=false&loop=false&delayms=60000" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-<!-- Google embed ends -->
-</div>
+<figure class="video_container">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwKvrwoscWyVKc64vXgdrojiPnni7DepgVOsFLHG_R3yJlaKua6ostb0L2eAxcHrXRgf3eYZnjnBms/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</figure>
 
 As a simpler diagram the following image illustrates the connections that should be perfomed.
 
