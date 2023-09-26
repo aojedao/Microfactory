@@ -236,7 +236,7 @@ Two [78:1 Metal Gearmotor 20Dx43L mm 6V](https://www.pololu.com/product/3453) we
 
 *Image of the Pololu motors used*
 
-The manufacturer provides the following graph for it's rpm, current consumption and eficciency.
+The manufacturer provides the following graph for it's rpm, current consumption and eficciency. The robot works only at 0.6 m/s therefore, the efficiency is around the midpoint of it's maximum, given that this linear speed has a lower load on the drivers, and allows for a soft movement profile.
 
 ![MotorEfficieny](https://lh3.googleusercontent.com/pw/ADCreHc-g5o6UkkiFM_Il4L4WMUv4dz-BwJDKJ75Hya4d7rO5q9W1iY75iCzWrrf2HJuocA0K1vUhWyWJnxA2Fhqzl6Nxs3KzEUum1e-2ZOIn3MUd0G4V7I=w2400)
 
@@ -244,7 +244,18 @@ The manufacturer provides the following graph for it's rpm, current consumption 
 
 ### Connections
 
-The 
+The electrical diagram the connections is the following:
+
+<style>
+.responsive-wrap iframe{ max-width: 100%;}
+</style>
+<div class="responsive-wrap">
+<!-- this is the embed code provided by Google -->
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUHV9NkOp_5ahZWF3x34aCqF8UQv5dp8LclNPRKtbZaGg3-tciOPB05Hz6V5nuYQ/pub?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- Google embed ends -->
+</div>
+
+As a simpler diagram the following image illustrates the connections that should be perfomed.
 
 ![Electrical Connections](https://lh3.googleusercontent.com/pw/ADCreHdYkgntXdndOTYpGhulEnjEqPvdUF_jNj6WnQ0y0ro7WAbsvN-Hus66u4L-h2e2Vkah89xYevX4YiTc_ubp-T8qJpWTU8Zw71BkTxvCzJmVkANX9gU=w2400)
 
