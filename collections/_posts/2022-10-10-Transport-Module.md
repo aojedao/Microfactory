@@ -182,19 +182,21 @@ The components of the BeagleBone Blue used are:
 
 ### Encoders
 
-The encoders are using Enhanced Quadrature Encoder Pulse (eQEP) to read both magnetic encoders. The [encoders for 20D](https://www.pololu.com/product/3499) motors were selected. They count with an operating voltage of 2.7V up to 18V. It consists of a dual channel Hall effect sensor board, and a 10-pole magnetic disk.
+The encoders are using Enhanced Quadrature Encoder Pulse (eQEP) to read both magnetic encoders. The [encoders for 20D](https://www.pololu.com/product/3499) motors were selected. They count with an operating voltage of 2.7V up to 18V. It consists of a dual channel Hall effect sensor board, and a 10-pole magnetic disk. These are incremental encoders.
 
 ![Encoder](https://lh3.googleusercontent.com/pw/AIL4fc-0PVx-QAxM_1lX_-5-0U7bIAufCGeziI-vtuCA6q_8F27RXdn_esIsSan-IyZ6VulcsbYeCQB1--xfaRxvHP8ZfCd4EX_BFw_AgrPiSkJH3ToxIzA=w2400) 
 
 *Encoder selected*
 
-This encoder reports a 20 Count Per Revolution, yet as seen in the following image, the number of pulses (or Pulse Per Revolution, PPR), is 4 times the amount of CPR's.
-![ENcoderGIF](https://lh3.googleusercontent.com/pw/AIL4fc_TfmjUckRxufbgMaMF5kRZhQ-XwwZGFkqK9xRWm7_mGk0aUEd964H2Ekps7XcX8f2OZ4ndetaumULkJJ6toBafXYr89tm3fLmLe257tLaaEch3b2Y=w2400)
+This encoder reports a 20 Count Per Revolution, yet as seen in the following image, the number of pulses (or Pulse Per Revolution, PPR), is 4 times the amount of CPR's. The following figure represents the reading of an incremental encoder.
+![EncoderGIF](https://lh3.googleusercontent.com/pw/AIL4fc_TfmjUckRxufbgMaMF5kRZhQ-XwwZGFkqK9xRWm7_mGk0aUEd964H2Ekps7XcX8f2OZ4ndetaumULkJJ6toBafXYr89tm3fLmLe257tLaaEch3b2Y=w2400)
 
 *How an encoder reads data*
 
 $$ 1 CPR = 4PPR \\$$
 $$ 20 CPR = 80 PPR $$
+
+
 
 Furthermore, taking into account the reductor on the Gearmotor, and the diameter of the wheel, the equivalency between distance traveled by the wheel and the CPR's by the encoder is given by:
 
@@ -251,7 +253,7 @@ The electrical diagram the connections is the following:
 </style>
 <div class="responsive-wrap">
 <!-- this is the embed code provided by Google -->
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUHV9NkOp_5ahZWF3x34aCqF8UQv5dp8LclNPRKtbZaGg3-tciOPB05Hz6V5nuYQ/pub?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTwKvrwoscWyVKc64vXgdrojiPnni7DepgVOsFLHG_R3yJlaKua6ostb0L2eAxcHrXRgf3eYZnjnBms/pub?start=false&loop=false&delayms=60000" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <!-- Google embed ends -->
 </div>
 
@@ -324,7 +326,7 @@ The superior chassis is better built by mounting the Raspberry Pi and the superi
 
 ### Block diagram <a name="Block-diagram"></a>
 Currently the mechatronic system of the robot works as following: 
-![BLockDiagram](https://lh3.googleusercontent.com/pw/AIL4fc_F9VMqPcS74A4crEyAyH7VdnpWcjJgJ62QavjkrozBp2qwMLwni1CPYkPXM1Cai4bZs5PcT2XWLXHBJA9qeybvydu5YNtquNH-kn04GBhtwfHc8lU=w2400)
+![BlockDiagram](https://lh3.googleusercontent.com/pw/AIL4fc_F9VMqPcS74A4crEyAyH7VdnpWcjJgJ62QavjkrozBp2qwMLwni1CPYkPXM1Cai4bZs5PcT2XWLXHBJA9qeybvydu5YNtquNH-kn04GBhtwfHc8lU=w2400)
 
 *Block diagram of the Mechanical, Electrical and Communication systems*
 
