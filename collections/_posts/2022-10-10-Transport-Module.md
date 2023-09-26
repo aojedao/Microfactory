@@ -196,7 +196,11 @@ This encoder reports a 20 Count Per Revolution, yet as seen in the following ima
 $$ 1 CPR = 4PPR \\$$
 $$ 20 CPR = 80 PPR $$
 
+The absolute encoder instead measures the absolute position, and every step is predefined by a unique set of values combined, in the next image provided by RealPars, we can observe how this type of encoder works.
 
+![AbsoluteEncoder](https://realpars.com/wp-content/uploads/2019/06/Rotary-Absolute-Encoder.gif)
+
+*How an absolute encoder works*
 
 Furthermore, taking into account the reductor on the Gearmotor, and the diameter of the wheel, the equivalency between distance traveled by the wheel and the CPR's by the encoder is given by:
 
