@@ -404,6 +404,19 @@ The route the robot uses to know when to be activated and start a transportation
 
 ## Testing
 
+The robot has multiple operational modes.
+
+To launch mapping using HectorSlam node by node do this:
+
+1. Execute roscore
+2. Execute roslaunch rplidar_ros rplidar.launch
+a. ls -l /dev/ |grep ttyUSB (check usb)
+b. sudo chmod 666 /dev/ttyUSB0
+c. roslaunch rplidar_ros view_rplidar.launch ( if wann cehck)
+1. rosrun bbblue_drivers vel_control_odom ( on BBBlue)
+2. roslaunch hykabai_simulations rviz.launch ( load config on hector_slam_launch folder)
+roslaunch hector_slam_launch tutorial.launch
+
 ## Troubleshooting
 
 If the robot is operating incorrectly, or issues are identified, the following FMECA analysis is presented, and the recommended solution for each case.
