@@ -308,9 +308,9 @@ And this is the motor support:
 
 *Motor support*
 
-This is the second version of the support design, as the first one failed due to the load, and broke trough the motor fastener holes, new versions are welcome to improve its 
+This is the second version of the support design, as the first one failed due to the load, and broke trough the motor fastener holes, new versions are welcome to improve its life cycles. If the wheels are not parallel to each other,(check Troubleshooting), the motor supports may be too weak for your robot's weight r payload.
 
-The superior chassis is better built by mounting the Raspberry Pi and the superior base first, and the other components afterwards.
+The superior chassis is better built by mounting the Raspberry Pi and the superior base first, and the other components afterwards. The RPLiDAR uses M2 screws, insted of M3 ones, therefore either it's standoffs must be changed, or M2 screws should be used. Height of the RPLiDAR may be adjusted as the robot's enviroment changes.
 
 ![SubAssembly2](https://lh3.googleusercontent.com/pw/ADCreHdTWYHNMTFozDwL_WWUqArvbzbDwpxU_q-qFIM04tqYLCHIgZ7DcSuZZUCyFyHpVz1w6pbVMH4taeFC9d-pDoS_Zz5ddMXoYYLT6ADsy4miUlzqwR4=w2400)
 
@@ -327,13 +327,18 @@ The superior chassis is better built by mounting the Raspberry Pi and the superi
 ### Install Steps
 
 1. Installing OS on the Single Board Computers.
-   1. Install Debian Buster on the Raspberry Pi using RPi Imager.
+   1. Install Debian Buster on the Raspberry Pi using [RPi Imager](https://www.raspberrypi.com/software/). Instructions on how to install it can be found [here](https://www.pragmaticlinux.com/2021/08/install-the-raspberry-pi-imager-on-ubuntu-debian-fedora-and-opensuse/).
    2. Install ROS Melodic from [source](https://www.linkedin.com/pulse/easiest-way-install-ros-melodic-raspberrypi-4-shubham-nandi) 
       Use the sources for ros from [Seedstudio](https://www.seeedstudio.com/blog/2019/08/01/installing-ros-melodic-on-raspberry-pi-4-and-rplidar-a1m8/)
-   3. Clone the BeagleBone Blue OS using this [command](https://emteria.com/kb/clone-sd-cards-linux)
+   3. Clone the BeagleBone Blue OS using this [command](https://emteria.com/kb/clone-sd-cards-linux) or install it trough this [image](https://rcn-ee.net/rootfs/). If installed by yourself don't forget to configure ROS_IP, ROS_MASTER_URI and all packages. Also use this [fork](https://github.com/aojedao/bbblue_drivers_microsdv) for the motor drivers
 2. Install RPLidar
-   1. Configure the [serial port](https://github.com/berndporr/rplidar_rpi)
+   1. Configure the [serial port](https://github.com/berndporr/rplidar_rpi) and use the following [package](https://github.com/Slamtec/rplidar_ros)
    2. Check using the following commands: `ls -l /dev/ |grep ttyUSB` to check the correct connection and `sudo chmod 666 /dev/ttyUSB0` to give the required permissions
+3. Install Hykabaï packages
+   - For the general [robot](https://github.com/aojedao/APM20221-MicroRobot)
+   - For [simulation](https://github.com/aojedao/hykabai_simulations)
+   - For [mapping](https://github.com/aojedao/hykabai_mapping)
+   - For [navigation](https://github.com/aojedao/hykabai_navigation)
 
 ### Block diagram <a name="Block-diagram"></a>
 Currently the mechatronic system of the robot works as following: 
