@@ -281,7 +281,18 @@ Here we can see the robot in two subassemblies, the upper chassis where the Rasp
 
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBigSubassembly.stl"></script>
 
-The inferior chassis holds both motors and the BeagleBone Blue. Motor supports can be placed over or under the base. It is recommended to screw the motor supports to the base first.
+Some of the tools required to assemble the robot are:
+- Screwdriver (the tip depends on the screws for your robot) for each screw type. This robot used three, one for M3 screws, one for the motor, and one for the LiDAR M2 screws.
+  
+- Pliers, to block the nut from moving when fastening the screw (embedded nuts could be used while manufacturing the base)
+
+- Soldering Iron (to solder the motor and encoder wires)
+  
+- Soldering Paste (For a better soldering quality)
+  
+- Multimeter, to check continuity while soldering the pins
+
+The inferior chassis holds both motors and the BeagleBone Blue. Motor supports can be placed over or under the base. It is recommended to screw the motor supports to the base first. Either plastic or metallic screws can be used, Hykabaï uses M3 screws and nuts to fix the supports. It is recommended to build this subassembly first.
 
 ![Subassembly1](https://lh3.googleusercontent.com/pw/ADCreHcKSMmxujTSfV9F7TuUsx4jvizfNT2XBleC4dS3adUl5Bhnwn-4fd2yd1ysjKMpqXLYSux2k-dwFahxBYwtURSF4pdDLkoLy5ZPfWJiFIRLCiE0Zfo=w2400)
 
