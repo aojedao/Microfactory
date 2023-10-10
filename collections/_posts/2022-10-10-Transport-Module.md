@@ -296,7 +296,7 @@ The inferior chassis holds both motors and the BeagleBone Blue. Motor supports c
 
 ![Subassembly1](https://lh3.googleusercontent.com/pw/ADCreHcKSMmxujTSfV9F7TuUsx4jvizfNT2XBleC4dS3adUl5Bhnwn-4fd2yd1ysjKMpqXLYSux2k-dwFahxBYwtURSF4pdDLkoLy5ZPfWJiFIRLCiE0Zfo=w2400)
 
-This is the base of the inferior chassis.
+This is the base of the inferior chassis. The holes are to pass the motor and encoder wires, and to fix the battery strap if it is planned to be located at the bottom.
 
 <script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/HykabaiBase1.stl"></script>
 
@@ -308,6 +308,7 @@ And this is the motor support:
 
 *Motor support*
 
+This is the second version of the support design, as the first one failed due to the load, and broke trough the motor fastener holes, new versions are welcome to improve its 
 
 The superior chassis is better built by mounting the Raspberry Pi and the superior base first, and the other components afterwards.
 
