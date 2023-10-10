@@ -406,6 +406,16 @@ The route the robot uses to know when to be activated and start a transportation
 
 The robot has multiple operational modes.
 
+To Turn on the Robot:
+
+1. Place the battery or strap it
+2. Turn on the Raspberry Pi, with the BBBlue disconnected, and the RPLidar connected to the Raspberry with microUSB cable
+3. Wait for the VNC connection
+4. Configure the RPlidar
+5. Connect the BBlue using the USB Cable
+6. Launch roscore and test the RPlidar
+7. Connect the LiPo battery to the BBBlue
+
 To launch mapping using HectorSlam node by node do this:
 
 1. Execute `roscore`
