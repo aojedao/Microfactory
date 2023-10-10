@@ -408,14 +408,24 @@ The robot has multiple operational modes.
 
 To launch mapping using HectorSlam node by node do this:
 
-1. Execute roscore
-2. Execute roslaunch rplidar_ros rplidar.launch
-   1. Execute ls -l /dev/ |grep ttyUSB (to check usb)
-   2. Execute sudo chmod 666 /dev/ttyUSB0
-   3. Execute roslaunch rplidar_ros view_rplidar.launch (if you want to verify it's working)
-3. Execute rosrun bbblue_drivers vel_control_odom (on the BBBlue)
-4. Execute roslaunch hykabai_simulations rviz.launch (load config on hector_slam_launch folder)
-5. Execute roslaunch hector_slam_launch tutorial.launch
+1. Execute `roscore`
+2. Execute `roslaunch rplidar_ros rplidar.launch`
+   1. Execute `ls -l /dev/ |grep ttyUSB` (to check usb)
+   2. Execute `sudo chmod 666 /dev/ttyUSB0`
+   3. Execute `roslaunch rplidar_ros view_rplidar.launch` (if you want to verify it's working)
+3. Execute `rosrun bbblue_drivers vel_control_odom` (on the BBBlue)
+4. Execute `roslaunch hykabai_simulations rviz.launch` (load config on hector_slam_launch folder)
+5. Execute `roslaunch hector_slam_launch tutorial.launch`
+
+
+To run HectorSLAM with Launch
+1. Config RPLidar
+   1. Execute `ls -l /dev/ |grep ttyUSB` (check usb)
+   2. Execute `sudo chmod 666 /dev/ttyUSB0`
+2. Execute `rosrun bbblue_drivers vel_control_odom` ( on BBBlue)
+   1. Execute `roslaunch hector_slam hykabai_hector_slam.launch`
+   2. Navigate using `rosrun teleop_twsit_keyboard teleop_twist_keyboard.py`, at a 0.104 linear speed
+3. When you're satisfied with the map, execute `rosrun map_server map_saver`
 
 ## Troubleshooting
 
