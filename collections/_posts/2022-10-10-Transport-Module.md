@@ -410,12 +410,12 @@ To launch mapping using HectorSlam node by node do this:
 
 1. Execute roscore
 2. Execute roslaunch rplidar_ros rplidar.launch
-a. ls -l /dev/ |grep ttyUSB (check usb)
-b. sudo chmod 666 /dev/ttyUSB0
-c. roslaunch rplidar_ros view_rplidar.launch ( if wann cehck)
-1. rosrun bbblue_drivers vel_control_odom ( on BBBlue)
-2. roslaunch hykabai_simulations rviz.launch ( load config on hector_slam_launch folder)
-roslaunch hector_slam_launch tutorial.launch
+   1. Execute ls -l /dev/ |grep ttyUSB (to check usb)
+   2. Execute sudo chmod 666 /dev/ttyUSB0
+   3. Execute roslaunch rplidar_ros view_rplidar.launch (if you want to verify it's working)
+3. Execute rosrun bbblue_drivers vel_control_odom (on the BBBlue)
+4. Execute roslaunch hykabai_simulations rviz.launch (load config on hector_slam_launch folder)
+5. Execute roslaunch hector_slam_launch tutorial.launch
 
 ## Troubleshooting
 
