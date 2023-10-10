@@ -416,6 +416,13 @@ To Turn on the Robot:
 6. Launch roscore and test the RPlidar
 7. Connect the LiPo battery to the BBBlue
 
+For the VNC Server this is the data you need (using a local network):
+
+User:pi
+Password:raspi
+
+And to check the IP Address, connect it once to a display and execute `ifconfig`. The WLAN 
+
 To launch mapping using HectorSlam node by node do this:
 
 1. Execute `roscore`
@@ -436,6 +443,12 @@ To run HectorSLAM with Launch
    1. Execute `roslaunch hector_slam hykabai_hector_slam.launch`
    2. Navigate using `rosrun teleop_twsit_keyboard teleop_twist_keyboard.py`, at a 0.104 linear speed
 3. When you're satisfied with the map, execute `rosrun map_server map_saver`
+
+To shut down the robot:
+
+First use Ctrl+C in all the terminals running, then:
+1. Execute `sudo shutdown now` in the BBBlue (`sudo` password is temppwd)
+2. Execute `sudo shutdown now` in the RPi.
 
 ## Troubleshooting
 
