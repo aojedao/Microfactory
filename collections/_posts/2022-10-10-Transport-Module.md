@@ -36,6 +36,7 @@ mathjax: true
     - [Control](#control)
       - [On/Off Control ](#onoff-control-)
   - [ROS](#ros)
+  - [Testing](#testing)
   - [Troubleshooting](#troubleshooting)
 
  
@@ -340,6 +341,8 @@ The superior chassis is better built by mounting the Raspberry Pi and the superi
    - For [mapping](https://github.com/aojedao/hykabai_mapping)
    - For [navigation](https://github.com/aojedao/hykabai_navigation)
 
+Installation of these packages can be done using Windows or Debian OS, and each SBC requires a microSD card, at least 16gb is required, but 32gb is recommended.
+
 ### Block diagram <a name="Block-diagram"></a>
 Currently the mechatronic system of the robot works as following: 
 ![BlockDiagram](https://lh3.googleusercontent.com/pw/AIL4fc_F9VMqPcS74A4crEyAyH7VdnpWcjJgJ62QavjkrozBp2qwMLwni1CPYkPXM1Cai4bZs5PcT2XWLXHBJA9qeybvydu5YNtquNH-kn04GBhtwfHc8lU=w2400)
@@ -398,6 +401,8 @@ The route the robot uses to know when to be activated and start a transportation
 ![POA Process](https://lh3.googleusercontent.com/pw/ADCreHc_xQ_PWzzt1QaUdJNSaRpljCmqnLrQ8_vZWDwlmWZ3nxLPIbrRb1gj7UqvUL3UPhGVLs0EPQ36F2ckuwXXAWTnA3-Jvq2_Z3NJzl2Eje1deJNJh7k=w2400)
 
 *Process Oriented Analysis Diagram of the robot*
+
+## Testing
 
 ## Troubleshooting
 
