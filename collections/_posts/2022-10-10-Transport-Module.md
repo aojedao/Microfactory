@@ -325,13 +325,13 @@ The superior chassis is better built by mounting the Raspberry Pi and the superi
 |Adapter-integrated Wheel|Bottom Base|Upper Base|Motor Support|LiDAR Support|Bottom Board Support|Upper Board Support|Free-Wheel|Motor|Encoder|
 | :------ |:--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 |Adapter-integrated Wheel|x|0|0|0|0|0|0|0|1|0|
-|Bottom Base|0|x|0|1|0|1|0|0|0|0|
+|Bottom Base|0|x|0|1|0|1|0|1|0|0|
 |Upper Base|0|0|x|0|1|0|1|0|0|0|
 |Motor Support|0|1|0|x|0|0|0|0|1|0|
 |LiDAR Support|0|0|1|0|x|0|0|0|0|0|
 |Bottom Board Support|0|1|0|0|0|x|0|0|0|0|
 |Upper Board Support|0|0|1|0|0|0|x|0|0|0|
-|Free-Wheel|0|0|0|0|0|0|0|x|0|0|
+|Free-Wheel|0|1|0|0|0|0|0|x|0|0|
 |Motor|1|0|1|0|0|0|0|0|x|1|
 |Encoder|0|0|0|0|0|0|0|0|1|x|
 
