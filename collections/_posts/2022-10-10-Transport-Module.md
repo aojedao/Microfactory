@@ -45,7 +45,10 @@ Hykabaï has the following Key Performance Indicators (KPI):
 *Hykabaï Key Performance Indicators*
 
 ## Axiomatic Design
-Given that this robot will reduce custom built components to replace with Commercial Off The Shelf (COTS) components, the axiomatic design on tihs robot was only applied up to matrix B, because manufacturing processes parameters will be reduced as much as possible.
+
+Making use of the design tools offered by the [Axiomatic Design proposed by Professor Suh](http://alvarestech.com/temp/PDP2011/AxiomaticDesign/Nam%20Pyo%20Suh%20-%20Axiomatic%20Design_%20Advances%20and%20Applications-Oxford%20University%20Press%20(2001).pdf), the fundamental variables of the robot are modeled in the Design Matrix A, which is visualized below, with which the functionalities required by the design are satisfied.
+
+Given that this robot will reduce custom built components to replace with Commercial Off The Shelf (COTS) components, the axiomatic design on this robot was only applied up to matrix B, because manufacturing processes parameters will be reduced as much as possible.
 
 Matrix A
 
@@ -102,6 +105,14 @@ And the robot velocities are:
   $$\dot y = v \sin{\theta}$$ 
 
   $$\dot \theta = \omega$$ 
+
+Its maneuverability is :
+
+$$\delta_M = 2$$
+
+And it's mobility degree is 
+
+$$\delta_m=2$$
 
 ### Assembly
 
