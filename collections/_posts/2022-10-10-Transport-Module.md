@@ -297,7 +297,7 @@ As for the assembly here is shown the assembly process for the Hykabaï V1, a pr
 
 *Assembly of Hykabaï*
 
-The second assembly corresponds to the actual robot at the lab. It also has the same colors as seen in the first part od the page.
+The second assembly corresponds to the actual robot at the lab. It also has the same colors as seen in the first part of the page.
 
 ![Assembly of Hykabai V2](https://lh3.googleusercontent.com/pw/ADCreHcD0zvb1TboD0HqLfT3C_GS_VtEv4qT0F9BKF6Cd8_E1SeyzX24G3vfmU3ngjBilbXByE0DZhZwR-Lz2V0RRtUSHeonYxlVVM1SdPWAXHJuHCmPCfg=w2400)
 
@@ -334,7 +334,7 @@ And this is the motor support:
 
 *Motor support*
 
-This is the second version of the support design, as the first one failed due to the load, and broke trough the motor fastener holes, new versions are welcome to improve its life cycles. If the wheels are not parallel to each other,(check Troubleshooting), the motor supports may be too weak for your robot's weight r payload.
+This is the second version of the support design, as the first one failed due to the load, and broke trough the motor fastener holes, new versions are welcome to improve its life cycles. If the wheels are not parallel to each other,(check Troubleshooting), the motor supports may be too weak for your robot's weight or payload.
 
 The superior chassis is better built by mounting the Raspberry Pi and the superior base first, and the other components afterwards. The RPLiDAR uses M2 screws, insted of M3 ones, therefore either it's standoffs must be changed, or M2 screws should be used. Height of the RPLiDAR may be adjusted as the robot's enviroment changes.
 
