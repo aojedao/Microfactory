@@ -120,7 +120,7 @@ All the printed parts were manufactured in the FDM printer ar the LabFabEx. Whit
     	\caption{Motor, support and base corner fit.}
     	\label{fig:manufactura7}
     \end{figure}
-### Geometric Dimensioning and Tolerancing}
+### Geometric Dimensioning and Tolerancing
 
 In order to verify the manufacturing process multiple tolerancing methods were monitored and executed.
 
@@ -241,20 +241,15 @@ Every element that was manufactured using Additive Manufacturing defined the typ
     
 For the assembly process the following aspects of geometric control were used:
 
-\begin{itemize}
-    \item Shape
-    \begin{itemize}
-        \item Straightness
-        \item Flatness
-    \end{itemize}
-    \item Orientation
-    \begin{itemize}
-        \item Parallelism
-        \item Perpendicularity
-        \item Angularity
 
-    \end{itemize}
-\end{itemize}
+- Shape
+    - Straightness
+    - Flatness
+- Orientation
+    - Parallelism
+    - Perpendicularity
+    - Angularity
+
 
     The following coordinate axis was used as reference, shown in figure \ref{fig:gdyt1}
 
@@ -341,6 +336,367 @@ For the assembly process the following aspects of geometric control were used:
     	\includegraphics[width=120mm]{Kap2/PCBMill/gdyt11.png}
     	\caption{Aluminium profile cuts for each phase.}
     	\label{fig:gdyt11}
+    \end{figure}
+
+### Manufacturing 
+
+Two types of profiles were used, a long one for the x-axis base, and 5 profiles placed perpendicularly to the x-axis, placed evenly. Due to the use of sliding printed supports, there was no need to have eaxct measurements, but the other profiles needed as much, because a different size meant irregularity in the paralellism. For this reason, they were selected in two groups, one for the ends and another for the interior ones.
+
+To cut the profiles, first a hand saw was used, then a file was used to improve the regularity, and to obtain the final value the Leadwell CNC Machine at LabFabEx was used to mill the ends. In figure \ref{fig:profilecut} the three phases are shown. In the left, the profile was cut with the handsaw, in the middle it was filed and the final one was after being milled. The ones used at the end were threaded using an M5 tap. A $\frac{5}{32} \, inch$ was tested, but it was too loose to be used.
+
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=120mm]{Kap2/profilecut.jpg}
+    	\caption{Aluminium profile cuts for each phase.}
+    	\label{fig:profilecut}
+    \end{figure}
+
+    The milling process is shown in figure \ref{fig:manufactura1}. The mounting of the aluminium profile on the machine is shown in figure \ref{fig:manufactura14}, where a dial gauge was placed on the Leadwell's head to verify every profile was placed in the same position. 
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=40mm]{Kap2/manufactura1.jpg}
+    	\caption{Milling of the aluminium profile.}
+    	\label{fig:manufactura1}
+    \end{figure}
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=50mm]{Kap2/manufactura14.jpg}
+    	\caption{Profile cutting assembly}
+    	\label{fig:manufactura14}
+    \end{figure}
+
+    The axis rods were cut using an angle grinder, as the ends of it were free as no element blocked both ends. This was done by the LabFabEx technician as shown in figure \ref{fig:manufactura10}.
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=60mm]{Kap2/manufactura10.jpg}
+    	\caption{Axis rod cutting}
+    	\label{fig:manufactura10}
+    \end{figure}
+
+    The corner assembly is shown in figure \ref{fig:manufactura9}, where the motor support and two brackets are mounted, they were inspected on rigidity and no movement was found, proceeding with the next section assembly. For the X axis the supports are paired by left and right, each one containing a motor support and a leadscrew support. The last one counts with 628ZZ radial bearings to place the leadscrew.
+    
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=120mm]{Kap2/manufactura9.jpg}
+    	\caption{Assembly of the corner of the machine}
+    	\label{fig:manufactura9}
+    \end{figure}
+Afterwards, the support for the other 2 axis carriages was assembled, each one has two LM800U linear bearings, that slide over the axial rods. Movement is transmitted over the leadscrew, using the bronze anti-backlash nut shown in figure \ref{fig:manufactura4}.
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/manufactura4.jpg}
+    	\caption{Leadscrew with the Y axis support}
+    	\label{fig:manufactura4}
+    \end{figure}
+
+### Motion  
+
+Three motion characteristics were analyzed, the capacity to generate a higher order motion profile, the maximum rapid motion and the critical angle velocity of the leadscrew.
+
+- Smoothed Jerk Control: The objective of smoothing the control of trajectories is to convert the trapezoidal profile into an S-type profile. To achieve this, the following equipment was researched:  
+    - SmoothieBoard V2: A 32-bit control board (compared to the 8-bit Arduino UNO), using the Smoothie software. The mini version of this board costs $90$ Euros.
+    - LinuxCNC: A control software that runs on Linux, but requires a x64 or x86 architecture machine. The user hydroid7 created a branch with a smoothed trajectory planner.
+
+    - Mach4:Through the SmoothStepper board, however, it uses separate drivers, so you have to buy a breakout board. This board costs $226$ US Dollars.
+
+In no case was it found that the microprocessor with which the PCB Mill is equipped does not support the movement of profiles of higher order than trapezoidal, so it would be necessary to modify the control equipment and the board that would have the drivers. Doing so would increase the cost of the machine significantly.
+    
+- Critical Angular Velocity of the Power Screw:
+   The objective of calculating the critical velocity of the screw is to avoid resonance, which can cause damage to the system. Resonance occurs when the natural frequency of the system coincides with the frequency of an external force, such as the force applied by the motor to the screw. When this happens, the system vibrates with great amplitude, which can damage the mechanical components.
+   
+   The critical velocity of the screw can be calculated using the following formula:
+   
+   $$N=\frac{Cd_r \cdot 10^7}{L^2}$$
+  
+   where:
+- $N$ is the critical velocity in $rpm$  
+- $d_r$ is the minor diameter (root) of the power screw in $mm$
+- $L$ is the length between supporting bearings in $mm$
+    
+    $C$ is a coefficient based on the mounting of the brackets in figure \ref{fig:coceficient}
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=60mm]{Kap2/leadscrewmotion.jpg}
+    	\caption{C coeficients by Thomson\cite{Thomson_2018} }
+    	\label{fig:coceficient}
+    \end{figure}
+
+    The coefficient C depends on the type of mounting of the screw supports. The PCB Mill uses "C"-type supports, so the coefficient C is $0.25$.
+
+    The complete range of coeficients are shown in table \ref{tab:ccoeficient} \cite{Thomson_2018}.
+
+    
+  |C  |End 1| End 2|
+  |:--|:--  |:--   |
+  |3.9|  Fixed| Free|
+  |12.1|  Simple| Simple|
+  |18.7|  Fixed| Simple|
+  |27.2|  Fixed| Fixed|
+
+C coeficients values
+
+    
+    For the case of the PCB Mill, with a minor diameter of 12 mm and a length between bearings of 110 mm, the critical velocity is:
+
+    
+    $$N = \frac{18.76 \cdot 6.1 \cdot 10^7}{50^2} = 4562800\, rpm$$
+    
+    Converted to angular velocity, the critical velocity is:
+    
+    $$ \omega = 2\pi N = 2\pi \cdot 4562800 = 238907.6 \,rad$$
+    
+    The critical angular velocity of the PCB Mill is 238907.6 rad. It is important to prevent the power screw from operating at this speed, as it could enter resonance and be damaged.
+    
+    
+    \item Maximum rapid motion
+
+    The capacity of GRBL to transmit data was analyzed. Based on the speed response estimation performed by grblHAL, a modification of GRBL to run on 32-bit devices (such as a Teensy 4.1 microcontroller for example), the following estimation was made.
+
+    Considering that the Nema 17 motors used have $200$ steps per revolution, the power screw of the X axis has a feed of $2\,mm$ per revolution, it is found that every $100$ steps $1\, mm$ will be traveled; likewise, the maximum working speed defined by the design is $60 \frac{mm}{s}$, so that it would have to move $6000$ steps per second, in other words the steps will work at a frequency of $6kHz$, which is within the limit of $30kHz$ offered by a controller such as the Atmega328p that the Arduino UNO has running GRBL.
+
+    On the other hand, the motors have a maximum speed of $3000\,rpm$, and considering the feed of $2\,mm$ per revolution, it is found that the maximum feed speed would be $100\frac{mm}{s}$, based on the criteria of the motors.
+\end{itemize}
+
+### Vibration Analysis
+
+Multiple methods to analyze the structure natural frequency was used, with different results according to the modelling used.
+
+\begin{itemize}
+    \item Taking into consideration the model proposed by Kopets \cite{kopets2022estimating} for the folllwing equation:
+    $$f=\frac{1}{2 \pi} \sqrt{\frac{\sum_i k_i}{\sum_i J_i}}$$
+    \begin{equation}
+    \resizebox{\textwidth}{!}{$f= \frac{1}{2 \pi} \sqrt{\frac{4k_1+4k_1+2k_2}{4M_{v1} L_1^{2} + 2M_{v2} L_3^{2}+M_{H} L_1^{2}+3M_{m} L_1^{2} + M_m (L_1 + L_3)^2 + 2M_{G1}L_1^2 + M_{G2} (L_1 + L_3)^2 + \frac{2 M_{G3} (L_1 + L_3)^2}{3} }}$}
+    \end{equation}
+ 
+    
+    \begin{table}
+        \centering
+        \begin{tabular}{cc}
+             Parameter & Value\\
+             Torsional Stifness of printed piece $k_1$& $1.3572e+04$ \\
+             Torsional stifness of dremel carriage $k_2$& $1.7379e+04$ \\
+             Printed support mass $M_{v1}$ & $0.059$\\
+             Y carriage printed support mass $M_{v2}$& $0.103$\\
+             Machine head mass $M_H$& $0.9850$\\
+             Motors mass $M_M$& $0.2850$\\
+             X axis rod mass $M_{G1}$& $0.2080$\\
+             Y axis rod mass $M_{G2}$&$0.12$ \\
+             Z axis rod mass $M_{G3}$ & $0.0548$\\
+             Base lenght $L_1$& $0.07$\\
+             Carriage lenght $L_3$& $0.071$
+        \end{tabular}
+        \caption{Frequency Estimation using Kopets \cite{kopets2022estimating} method}
+        \label{tab:3dprintvibrationtable}
+    \end{table}
+
+    Obtaning that $f=352.79 \, Hz$.
+
+    \item Using Chopra \cite{choprastructures} method to analyze structures based on multilevel structures, for this case, due to the axial rod and power screw for the x-axis on each end of the y axis (shown in figure \ref{fig:vibration1}), a two story model was selected. 
+    
+    
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/PCBMill/vibration1.png}
+    	\caption{Structure subassembly used for the analisis}
+    	\label{fig:vibration1}
+     \end{figure}
+    
+    This model has the following characteristics:
+
+     \begin{itemize}
+         \item 2 Degree of freedom system
+         \item No damping support
+         \item First and second vibration mode
+     \end{itemize}
+
+     The model counts with three types of representation methods the first corresponds to a two level, mass centered structure (\ref{fig:vibration2}).
+
+     \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=80mm]{Kap2/PCBMill/vibration2.png}
+    	\caption{Structure model used}
+    	\label{fig:vibration2}
+     \end{figure}
+
+     The second model is a dynamic model of a mass cart on a friction-less surface, and third the cart's free body diagram, both are shown in figure \ref{fig:vibration3}. Take into account this representation shows damping, yet the PCB structure has a damping value of $0$.
+
+     \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/PCBMill/vibration3.png}
+    	\caption{Other representations of the system}
+    	\label{fig:vibration3}
+     \end{figure}
+
+     According to Chopra \cite(), the deduction of the frequency vector is as follows:
+
+     \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/PCBMill/vibration4.png}
+     \end{figure}
+
+     The stifness of each level is obtained thiw way:
+
+     $$k_j = \sum_{columns} \frac{12 EI_c}{h^3}$$
+
+     $$k_1=2 \frac{12(2EI_c}{h^3} = \frac{48 EI_c}{h^3}$$
+
+     $$k_2 = \frac{12(EI_c}{h^3} = \frac{24 EI_c}{h^3}$$
+
+
+    And the first two modes of vibration are:
+    
+     $$det[k-\omega_n^{2} m]=0$$
+     $$(2m^2)\omega^4 + (-5km)\omega^2 + 2k^2$$
+     $$w_1 = \sqrt{\frac{k}{2m}}$$
+     $$w_2 = \sqrt{\frac{2k}{m}}$$
+
+     A diagram showing the physical representation is shown in figure \ref{fig:vibration5}.
+
+     \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=120mm]{Kap2/PCBMill/vibration5.png}
+    	\caption{FoS on the Angle bracket in its standard functioning}
+    	\label{fig:vibration5}
+     \end{figure}
+
+
+     For the machine the values of the equation are:
+
+     $$I_c=2.53 \cdot10^{-6}$$
+     $$E=2.5 \, GPa$$
+     $$m=1.669\,kg$$
+     $$T=\frac{2\pi}{\omega}$$
+     $$f=\frac{1}{T}$$
+
+     For the first vibration mode:
+
+     $$\omega_1 = 763.86 \, \frac{rad}{s}$$
+     $$T_1=0.0082\,s$$
+     $$f_1=121.57\,Hz$$
+     And for the second mode:
+     $$\omega_2=915.35\, \frac{rad}{s}$$
+     $$T_2=0.0069\,s$$
+     $$f_2=145.68\,Hz$$
+
+
+    
+\end{itemize}
+
+## Electronic Design
+
+The machine is equipped with 4 Nema 17 1A motors, four DVR8825 Stepper motor drivers, a 12V, 10A source. 
+
+The connection diagram of the electronic components in this machine is observed in figure \ref{cncconnection}.
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/CNCDiagram.png}
+    	\caption{CNC connection diagram}
+    	\label{cncconnection}
+    \end{figure}
+
+
+Initially, it was checked that the motion inputs on the DVR8825 drivers were synchronized, which corresponds to the synchronization of the Arduino outputs, which can be seen in the following two graphs. The first is the analysis of the difference between the Standby value and the pulse value (since it is a square wave).In figure \ref{fig:desfasesubida} the difference between both drivers is shown, with a closer look in figure \ref{fig:desfasetop}.
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/PCBMill/DesfaseSubida.png}
+    	\caption{Driver activation signal offset}
+    	\label{fig:desfasesubida}
+    \end{figure}
+
+    Upon expanding the measurement spectrum, it is identified that it is a signal whose phase shift is less than 5 ns, the measurement limit on the RIGOL DS 1074Z oscilloscope that was used.
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/PCBMill/desfaseTop.png}
+    	\caption{Detailed offset on drivers}
+    	\label{fig:desfasetop}
+    \end{figure}
+
+
+    Once it was verified that the reception time of the signal at the drivers did not have a large phase shift compared to the pulse time, the signal was verified in the coils of the motors. Specifically, the A2 coil of each of the motors on the X axis. Similarly to the previous one, the following graphs correspond to a visualization in two different time scales to have more detail about the phase shift.The coarse signal is shown in figure \ref{fig:synch}, and the finer one \ref{fig:syncfino}.
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/PCBMill/SyncMotoresH.png}
+    	\caption{Motor signal offset}
+    	\label{fig:synch}
+    \end{figure}
+
+    In this graph, a larger phase shift is found with respect to the input signal of the driver, however, since the signal is 12V, the oscilloscope does not allow visualization below 1us. In the image it can be observed that the phase shift is less than a quarter of the measurement step, so that although the difference is of the order of nanoseconds, the exact value cannot be determined with the equipment used.
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/PCBMill/SyncMotoresFino.png}
+    	\caption{Motor signal offset in detail}
+    	\label{fig:syncfino}
+    \end{figure}
+
+\subsubsection{File preparation}
+But before that the process needed to design the board requires the following steps.
+
+\begin{enumerate}
+    \item ECAD files: A normal gerber file must be loaded per face to mill, this microfactory was concieved using only one face of the PCW, therefore only one is needed. There are multiple Electronic Computer Aided Design (ECAD) tools like KiCAD, Proteus and Autodesk Fusion 360.  For the next step Gerber files were exported.
+
+    \item CAM files: In this section the Gcode files are produced, so there are multiple options to generate these files. FlatCAM was selected as it has automatic tools for PCB production, like automatic cutting depht calculation given a mill angle and type.
+
+    \item Gcode Sender: Files must be loaded into the Gcode sender software, they only recieve G code files, like .gcode or .nc files. There are two Gcode sender softwares being used in the moment, Universal Gcode Sender and CNCjs. CNCjs offers the capability of being installed in a debian device (like Raspberry Pi) to be used over a local network via UI at the device IP. Both have the capaciblity of controlling the machine position and reconfiguring GRBL parameters, like mm/rev or maximum velocities.
+\end{enumerate}
+
+First the maximum current allowed by the DRV8825 drivers is set by adjusting the potentiometer (with a philips screwdriver) voltage according to the following expression.
+
+
+$$V_{ref} = \frac{I_{max}}{2}$$
+
+Afterward, the $\frac{mm}{rev}$ units must be configured to verify the machine's correct precision. For this the following equation was used:
+
+$$\frac{motor \; steps \; per \; revolution}{leadscrew \; pitch \; (mm \; per \; rev)}\cdot microsteps$$
+
+$$= \frac{200}{8}\cdot 2 = 50 $$
+
+And afterward, the advance per axis was configured with the code \$ 100=50. This is done as well for 101 and 102.
+
+The driver microsteps are configured trough jumpers in the CNC Shield. The pins in the connectors on M0, M1 and M2.
+
+The machining process is currently using a $60 \; \frac{mm}{s}$ feed rate, at a $10000 \; rpm$ spindle speed and a cut depht of $0.5\, mm$. It's current precision is under a milimeter fraction.The machine is built using PLA printed parts with a 60\% cubic pattern infill. It counts with 4 Nema 17 17HS4401S motors, with two parallel $8 \; mm$ pitch power screws and A36 steel rods. It counts with a 10A 12V power source connected trough 16AWG gauge wire.
+
+Currently the software usde is UGS, since the classic version offers a Command Line Interface (CLI) to execute tasks, specifically, it allows to run a Java command to mill a .gcode file. To do this, the device port must be allowed full access. Afterwards, the bin file in the Java folder is executed. 
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/CNCPriaIntegration.png}
+    	\caption{PRIA integration}
+    	\label{priacnc}
+    \end{figure}
+
+    The deployment of the server is expected to be in either a Raspberry Pi device, or a Computer, as the host controller and Gcode sender software. Figure \ref{priacnc} illustrates an example on a Raspberry Pi, with a Docker image containing the required packages to run the ROS nodes.
+
+    
+
+\subsection{Completed Machine}
+
+    The PCB Mill is shown in figure \ref{fig:manufactura3}, with a pencil tool to draw figures, it is a removable accessory that fits in the Dremel holder.
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/manufactura3.jpg}
+    	\caption{PCB Mill Completed Structure}
+    	\label{fig:manufactura3}
+    \end{figure}
+
+    In figure \ref{machinedpcb} we see the result of a milled FR4 board using the machining parameters stated before.
+
+    \begin{figure}[!ht]
+      \centering
+    	\includegraphics[width=90mm]{Kap2/MachinedPBW.jpg}
+    	\caption{Milled PWB}
+    	\label{machinedpcb}
     \end{figure}
 
 
