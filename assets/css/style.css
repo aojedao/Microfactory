@@ -20,8 +20,8 @@
     --sidebar-hori-span: calc(var(--sidebar-elem-size) + var(--sidebar-full-size));
 
     --tile-bkgr-color: rgba(255, 255, 255, 1);
-    --foreground-light: #848484;
-    --foreground-dark: #515151;
+    --foreground-light: #787f91;
+    --foreground-dark: #252323;
     --foreground-emph: #424242;
     --foreground-bkgr: #f3f3f3;
 }
