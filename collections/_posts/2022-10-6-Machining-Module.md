@@ -68,60 +68,40 @@ $$F=(\frac{2 T_R}{d_m}) (\frac{\pi d_m - fl}{l + f\pi d_m})=7.636 \,N$$
 In the scenario where only one bracket is tightened correctly the following figure shows the FoS at the end of the aluminium profile. In this case is $2.948$.
 
 
-![anglebracket1](assets/img/PCBMill/anglebracket1.png)
+![anglebracket1](/assets/img/PCBMill/anglebracket1.png)
 
 For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $1.209$.
 
-![angle support](Kap2/PCBMill/anglebracket1support.png)
-  \caption{FoS on the Angle bracket for the worst case scenario}
-  \label{fig:anglebracket2}
-\end{figure}
-
+![anglebracket2](/assets/img/PCBMill/anglebracket1support.png)
+FoS on the Angle bracket for the worst case scenario
 In the general case, the structure will count with two brackets, each with 4 fasteners, so the model obtained for this is shown in the next figure, where the minimal FoS is $8.45$.
 
-[]Kap2/PCBMill/anglebracket4support.png}
-  \caption{FoS on the Angle bracket in its standard functioning}
-  \label{fig:anglebracket4}
-\end{figure}
+![anglebracket4](/assets/img/PCBMill/anglebracket4support.png)
+FoS on the Angle bracket in its standard functioning
 
 
 ### Additive Manufacturing
 
 All the printed parts were manufactured in the FDM printer ar the LabFabEx. White PLA by 3DBots was used, with $0.8\,mm$ walls, $70\%$ cubic infill, raft support and a $50\,mm$ printing speed.
 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=120mm]{Kap2/manufactura15.jpg}
-  \caption{Axis support printing}
-  \label{fig:manufactura15}
-\end{figure}
+![manufactura15](/assets/img/PCBMill/manufactura15.jpg)
+Axis support printing
 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=60mm]{Kap2/manufactura13.jpg}
-  \caption{X axis support fit in the aluminium profile}
-  \label{fig:manufactura13}
-\end{figure}
+![manufactura13](/assets/img/PCBMill/manufactura13.jpg)
+X axis support fit in the aluminium profile
     
-    
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=60mm]{Kap2/manufactura7.jpg}
-  \caption{Motor, support and base corner fit.}
-  \label{fig:manufactura7}
-\end{figure}
+![manufactura7](/assets/img/PCBMill/manufactura7.jpg)
+Motor, support and base corner fit.
+
 ### Geometric Dimensioning and Tolerancing
 
 In order to verify the manufacturing process multiple tolerancing methods were monitored and executed.
 
-In order to verify the tolerance of the 3D FDM Printer at the laboratory, a test tool to validate the tolerance was designed and printed. The model is shown in figure \ref{fig:tolerance}. 
+In order to verify the tolerance of the 3D FDM Printer at the laboratory, a test tool to validate the tolerance was designed and printed. The model is shown in figure next figure. 
 
-\begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/tolerance.png}
-    	\caption{Printing tolerance validation piece.}
-    	\label{fig:tolerance}
-    \end{figure}
+![tolerance](/assets/img/PCBMill/tolerance.png)
+Printing tolerance validation piece.
+
 
 The measurements were registered in table \ref{tab:tolerancemeasure}, and the error was calculated in it. Measurements were taken using a caliper.
 
@@ -155,52 +135,42 @@ The measurements were registered in table \ref{tab:tolerancemeasure}, and the er
 
 Small holes were also measured using the Zoller machine at the laboratory. The error perceived for the reference $1$ was $1.0740\,mm$, for reference $4$ is $0.088\,mm$, for reference $5.1$ is $0.037\,mm$ and for reference $5.4$ is $0.019\,mm$.
 
-Errors found in the measurements are shown in graph \ref{fig:toleranceeror}
+Errors found in the measurements are shown in graph the next graph.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/Tolerance error in the reference piece.png}
-    	\caption{Tolerance error in the reference piece.}
-    	\label{fig:toleranceeror}
-    \end{figure}
+![toleranceeror](/assets/img/PCBMill/Tolerance error in the reference piece.png)
+Tolerance error in the reference piece.
 
 After knowing the tolerances for the machine production quality, and given that multiple Commercial Off The Shelve parts were selected, a Shaft-based system was selected. 
 
-    For clearance fit, parts should be able to move slightly.
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/PCBMill/gdtclearanceval.png}
-    	\caption{Clearance Fit.}
-    	\label{fig:gdtclearance}
-    \end{figure}
-    Transition fit tries to make objects are firm but not under pressure, making it easy to remove.
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/PCBMill/gdttransitionval.png}
-    	\caption{Transition Fit.}
-    	\label{fig:gdttransition}
-    \end{figure}
+For clearance fit, parts should be able to move slightly.
+
+![gdtclearance](/assets/img/PCBMill/gdtclearanceval.png)
+Clearance Fit.
+
+Transition fit tries to make objects are firm but not under pressure, making it easy to remove.
+
+![gdttransition](/assets/img/PCBMill/gdttransitionval.png)
+Transition Fit.
+
+
 Interference fit is used to use pressure to place an element on another, typically to be fixed permanently.
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/PCBMill/gdtinterferenceval.png}
-    	\caption{Interference Fit.}
-    	\label{fig:gdtinterference}
-    \end{figure}
+
+![gdtinterference](/assets/img/PCBMill/gdtinterferenceval.png)
+Interference Fit.
 
 Every element that was manufactured using Additive Manufacturing defined the type of fit that was required. For the X axis support it's elements fit are shown in figure \ref{fig:gdt1}. Y axis supports are shown in figure \ref{fig:gdt2}.
 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=150mm]{Kap2/PCBMill/gdt1.png}
-    	\caption{Fit for X axis supports.}
+    Fit for X axis supports.}
     	\label{fig:gdt1}
     \end{figure}
 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=70mm]{Kap2/PCBMill/gdt2.png}
-    	\caption{Y axis supports fit.}
+    Y axis supports fit.}
     	\label{fig:gdt2}
     \end{figure}
 
@@ -210,21 +180,21 @@ Every element that was manufactured using Additive Manufacturing defined the typ
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=70mm]{Kap2/PCBMill/gdt3.png}
-    	\caption{Z axis support fit.}
+    Z axis support fit.}
     	\label{fig:gdt3}
     \end{figure}
 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=70mm]{Kap2/PCBMill/gdt4.png}
-    	\caption{Fit for Dremel carriage (Front).}
+    Fit for Dremel carriage (Front).}
     	\label{fig:gdt4}
     \end{figure}
 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=70mm]{Kap2/PCBMill/gdt5.png}
-    	\caption{Fit for Dremel carriage (Back).}
+    Fit for Dremel carriage (Back).}
     	\label{fig:gdt5}
     \end{figure}
 
@@ -246,7 +216,7 @@ For the assembly process the following aspects of geometric control were used:
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=80mm]{Kap2/PCBMill/gdyt1.png}
-    	\caption{Coordinate axis.}
+    Coordinate axis.}
     	\label{fig:gdyt1}
     \end{figure}
 
@@ -255,51 +225,47 @@ For the assembly process the following aspects of geometric control were used:
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=100mm]{Kap2/PCBMill/gdyt2.png}
-    	\caption{Straightness of X axis.}
+    Straightness of X axis.}
     	\label{fig:gdyt2}
     \end{figure}
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/PCBMill/gdyt3.png}
-    	\caption{Usage of the dial gauge.}
+    ![](/assets/img/PCBMill/gdyt3.png}
+    Usage of the dial gauge.}
     	\label{fig:gdyt3}
     \end{figure}
 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=100mm]{Kap2/PCBMill/gdyt4.png}
-    	\caption{Straightness of the Y axis.}
+    Straightness of the Y axis.}
     	\label{fig:gdyt4}
     \end{figure}
 
     Parallellism was checked between the axis rod and the leadscrew \ref{fig:gdyt5} using the method shown in figure \ref{fig:gdyt6}. As well as one Y axis \ref{fig:gdyt7} using the method in figure \ref{fig:gdyt8}.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/PCBMill/gdyt5.png}
-    	\caption{Aluminium profile cuts for each phase.}
+    ![](/assets/img/PCBMill/gdyt5.png}
+    Aluminium profile cuts for each phase.}
     	\label{fig:gdyt5}
     \end{figure}
 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=80mm]{Kap2/PCBMill/gdyt6.png}
-    	\caption{Aluminium profile cuts for each phase.}
+    Aluminium profile cuts for each phase.}
     	\label{fig:gdyt6}
     \end{figure}
 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=100mm]{Kap2/PCBMill/gdyt7.png}
-    	\caption{Aluminium profile cuts for each phase.}
+    Aluminium profile cuts for each phase.}
     	\label{fig:gdyt7}
     \end{figure}
 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=80mm]{Kap2/PCBMill/gdyt8.png}
-    	\caption{Aluminium profile cuts for each phase.}
+    Aluminium profile cuts for each phase.}
     	\label{fig:gdyt8}
     \end{figure}
     
@@ -308,23 +274,19 @@ For the assembly process the following aspects of geometric control were used:
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=100mm]{Kap2/PCBMill/gdyt9.png}
-    	\caption{Aluminium profile cuts for each phase.}
+    Aluminium profile cuts for each phase.}
     	\label{fig:gdyt9}
     \end{figure}
 
     Finally, angularity was studied between the Z axis vs the XY plane \ref{fig:gdyt10} using the method shown in figure \ref{fig:gdyt11}.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/PCBMill/gdyt10.png}
-    	\caption{Aluminium profile cuts for each phase.}
+    ![](/assets/img/PCBMill/gdyt10.png}
+    Aluminium profile cuts for each phase.}
     	\label{fig:gdyt10}
     \end{figure}
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/PCBMill/gdyt11.png}
-    	\caption{Aluminium profile cuts for each phase.}
+    ![](/assets/img/PCBMill/gdyt11.png}
+    Aluminium profile cuts for each phase.}
     	\label{fig:gdyt11}
     \end{figure}
 
@@ -335,10 +297,8 @@ Two types of profiles were used, a long one for the x-axis base, and 5 profiles 
 To cut the profiles, first a hand saw was used, then a file was used to improve the regularity, and to obtain the final value the Leadwell CNC Machine at LabFabEx was used to mill the ends. In figure \ref{fig:profilecut} the three phases are shown. In the left, the profile was cut with the handsaw, in the middle it was filed and the final one was after being milled. The ones used at the end were threaded using an M5 tap. A $\frac{5}{32} \, inch$ was tested, but it was too loose to be used.
 
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/profilecut.jpg}
-    	\caption{Aluminium profile cuts for each phase.}
+    ![](/assets/img/PCBMill/profilecut.jpg}
+    Aluminium profile cuts for each phase.}
     	\label{fig:profilecut}
     \end{figure}
 
@@ -347,14 +307,14 @@ To cut the profiles, first a hand saw was used, then a file was used to improve 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=40mm]{Kap2/manufactura1.jpg}
-    	\caption{Milling of the aluminium profile.}
+    Milling of the aluminium profile.}
     	\label{fig:manufactura1}
     \end{figure}
 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=50mm]{Kap2/manufactura14.jpg}
-    	\caption{Profile cutting assembly}
+    Profile cutting assembly}
     	\label{fig:manufactura14}
     \end{figure}
 
@@ -363,21 +323,19 @@ To cut the profiles, first a hand saw was used, then a file was used to improve 
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=60mm]{Kap2/manufactura10.jpg}
-    	\caption{Axis rod cutting}
+    Axis rod cutting}
     	\label{fig:manufactura10}
     \end{figure}
 
     The corner assembly is shown in figure \ref{fig:manufactura9}, where the motor support and two brackets are mounted, they were inspected on rigidity and no movement was found, proceeding with the next section assembly. For the X axis the supports are paired by left and right, each one containing a motor support and a leadscrew support. The last one counts with 628ZZ radial bearings to place the leadscrew.
     
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/manufactura9.jpg}
-    	\caption{Assembly of the corner of the machine}
+    ![](/assets/img/PCBMill/manufactura9.jpg}
+    Assembly of the corner of the machine}
     	\label{fig:manufactura9}
     \end{figure}
 Afterwards, the support for the other 2 axis carriages was assembled, each one has two LM800U linear bearings, that slide over the axial rods. Movement is transmitted over the leadscrew, using the bronze anti-backlash nut shown in figure \ref{fig:manufactura4}.
     []Kap2/manufactura4.jpg}
-    	\caption{Leadscrew with the Y axis support}
+    Leadscrew with the Y axis support}
     	\label{fig:manufactura4}
     \end{figure}
 
@@ -410,7 +368,7 @@ In no case was it found that the microprocessor with which the PCB Mill is equip
     \begin{figure}[!ht]
       \centering
     	\includegraphics[width=60mm]{Kap2/leadscrewmotion.jpg}
-    	\caption{C coeficients by Thomson\cite{Thomson_2018} }
+    C coeficients by Thomson\cite{Thomson_2018} }
     	\label{fig:coceficient}
     \end{figure}
 
@@ -488,7 +446,7 @@ Multiple methods to analyze the structure natural frequency was used, with diffe
     
     
     []Kap2/PCBMill/vibration1.png}
-    	\caption{Structure subassembly used for the analisis}
+    Structure subassembly used for the analisis}
     	\label{fig:vibration1}
      \end{figure}
     
@@ -505,14 +463,14 @@ Multiple methods to analyze the structure natural frequency was used, with diffe
      \begin{figure}[!ht]
       \centering
     	\includegraphics[width=80mm]{Kap2/PCBMill/vibration2.png}
-    	\caption{Structure model used}
+    Structure model used}
     	\label{fig:vibration2}
      \end{figure}
 
      The second model is a dynamic model of a mass cart on a friction-less surface, and third the cart's free body diagram, both are shown in figure \ref{fig:vibration3}. Take into account this representation shows damping, yet the PCB structure has a damping value of $0$.
 
      []Kap2/PCBMill/vibration3.png}
-    	\caption{Other representations of the system}
+    Other representations of the system}
     	\label{fig:vibration3}
      \end{figure}
 
@@ -539,10 +497,8 @@ Multiple methods to analyze the structure natural frequency was used, with diffe
 
      A diagram showing the physical representation is shown in figure \ref{fig:vibration5}.
 
-     \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/PCBMill/vibration5.png}
-    	\caption{FoS on the Angle bracket in its standard functioning}
+     ![](/assets/img/PCBMill/vibration5.png}
+    FoS on the Angle bracket in its standard functioning}
     	\label{fig:vibration5}
      \end{figure}
 
@@ -576,7 +532,7 @@ The machine is equipped with 4 Nema 17 1A motors, four DVR8825 Stepper motor dri
 The connection diagram of the electronic components in this machine is observed in figure \ref{cncconnection}.
 
     []Kap2/CNCDiagram.png}
-    	\caption{CNC connection diagram}
+    CNC connection diagram}
     	\label{cncconnection}
     \end{figure}
 
@@ -584,14 +540,14 @@ The connection diagram of the electronic components in this machine is observed 
 Initially, it was checked that the motion inputs on the DVR8825 drivers were synchronized, which corresponds to the synchronization of the Arduino outputs, which can be seen in the following two graphs. The first is the analysis of the difference between the Standby value and the pulse value (since it is a square wave).In figure \ref{fig:desfasesubida} the difference between both drivers is shown, with a closer look in figure \ref{fig:desfasetop}.
 
     []Kap2/PCBMill/DesfaseSubida.png}
-    	\caption{Driver activation signal offset}
+    Driver activation signal offset}
     	\label{fig:desfasesubida}
     \end{figure}
 
     Upon expanding the measurement spectrum, it is identified that it is a signal whose phase shift is less than 5 ns, the measurement limit on the RIGOL DS 1074Z oscilloscope that was used.
 
     []Kap2/PCBMill/desfaseTop.png}
-    	\caption{Detailed offset on drivers}
+    Detailed offset on drivers}
     	\label{fig:desfasetop}
     \end{figure}
 
@@ -599,14 +555,14 @@ Initially, it was checked that the motion inputs on the DVR8825 drivers were syn
     Once it was verified that the reception time of the signal at the drivers did not have a large phase shift compared to the pulse time, the signal was verified in the coils of the motors. Specifically, the A2 coil of each of the motors on the X axis. Similarly to the previous one, the following graphs correspond to a visualization in two different time scales to have more detail about the phase shift.The coarse signal is shown in figure \ref{fig:synch}, and the finer one \ref{fig:syncfino}.
 
     []Kap2/PCBMill/SyncMotoresH.png}
-    	\caption{Motor signal offset}
+    Motor signal offset}
     	\label{fig:synch}
     \end{figure}
 
     In this graph, a larger phase shift is found with respect to the input signal of the driver, however, since the signal is 12V, the oscilloscope does not allow visualization below 1us. In the image it can be observed that the phase shift is less than a quarter of the measurement step, so that although the difference is of the order of nanoseconds, the exact value cannot be determined with the equipment used.
 
     []Kap2/PCBMill/SyncMotoresFino.png}
-    	\caption{Motor signal offset in detail}
+    Motor signal offset in detail}
     	\label{fig:syncfino}
     \end{figure}
 
@@ -641,7 +597,7 @@ The machining process is currently using a $60 \; \frac{mm}{s}$ feed rate, at a 
 Currently the software usde is UGS, since the classic version offers a Command Line Interface (CLI) to execute tasks, specifically, it allows to run a Java command to mill a .gcode file. To do this, the device port must be allowed full access. Afterwards, the bin file in the Java folder is executed. 
 
     []Kap2/CNCPriaIntegration.png}
-    	\caption{PRIA integration}
+    PRIA integration}
     	\label{priacnc}
     \end{figure}
 
@@ -654,14 +610,14 @@ Currently the software usde is UGS, since the classic version offers a Command L
     The PCB Mill is shown in figure \ref{fig:manufactura3}, with a pencil tool to draw figures, it is a removable accessory that fits in the Dremel holder.
 
     []Kap2/manufactura3.jpg}
-    	\caption{PCB Mill Completed Structure}
+    PCB Mill Completed Structure}
     	\label{fig:manufactura3}
     \end{figure}
 
     In figure \ref{machinedpcb} we see the result of a milled FR4 board using the machining parameters stated before.
 
     []Kap2/MachinedPBW.jpg}
-    	\caption{Milled PWB}
+    Milled PWB}
     	\label{machinedpcb}
     \end{figure}
 
