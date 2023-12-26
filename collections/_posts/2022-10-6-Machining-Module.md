@@ -67,59 +67,49 @@ $$F=(\frac{2 T_R}{d_m}) (\frac{\pi d_m - fl}{l + f\pi d_m})=7.636 \,N$$
 
 In the scenario where only one bracket is tightened correctly the following figure shows the FoS at the end of the aluminium profile. In this case is $2.948$.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/anglebracket1.png}
-    	\caption{FoS of the aluminium profile due to the failure of angle bracket}
-    	\label{fig:}
-    \end{figure}
 
-    ![anglebracket1](anglebracket1.png)
+![anglebracket1](assets/img/PCBMill/anglebracket1.png)
 
-    For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $1.209$.
+For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $1.209$.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/anglebracket1support.png}
-    	\caption{FoS on the Angle bracket for the worst case scenario}
-    	\label{fig:anglebracket2}
-    \end{figure}
+![angle support](Kap2/PCBMill/anglebracket1support.png)
+  \caption{FoS on the Angle bracket for the worst case scenario}
+  \label{fig:anglebracket2}
+\end{figure}
 
-    In the general case, the structure will count with two brackets, each with 4 fasteners, so the model obtained for this is shown in the next figure, where the minimal FoS is $8.45$.
+In the general case, the structure will count with two brackets, each with 4 fasteners, so the model obtained for this is shown in the next figure, where the minimal FoS is $8.45$.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/anglebracket4support.png}
-    	\caption{FoS on the Angle bracket in its standard functioning}
-    	\label{fig:anglebracket4}
-    \end{figure}
+[]Kap2/PCBMill/anglebracket4support.png}
+  \caption{FoS on the Angle bracket in its standard functioning}
+  \label{fig:anglebracket4}
+\end{figure}
 
 
 ### Additive Manufacturing
 
 All the printed parts were manufactured in the FDM printer ar the LabFabEx. White PLA by 3DBots was used, with $0.8\,mm$ walls, $70\%$ cubic infill, raft support and a $50\,mm$ printing speed.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=120mm]{Kap2/manufactura15.jpg}
-    	\caption{Axis support printing}
-    	\label{fig:manufactura15}
-    \end{figure}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=120mm]{Kap2/manufactura15.jpg}
+  \caption{Axis support printing}
+  \label{fig:manufactura15}
+\end{figure}
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=60mm]{Kap2/manufactura13.jpg}
-    	\caption{X axis support fit in the aluminium profile}
-    	\label{fig:manufactura13}
-    \end{figure}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=60mm]{Kap2/manufactura13.jpg}
+  \caption{X axis support fit in the aluminium profile}
+  \label{fig:manufactura13}
+\end{figure}
     
     
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=60mm]{Kap2/manufactura7.jpg}
-    	\caption{Motor, support and base corner fit.}
-    	\label{fig:manufactura7}
-    \end{figure}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=60mm]{Kap2/manufactura7.jpg}
+  \caption{Motor, support and base corner fit.}
+  \label{fig:manufactura7}
+\end{figure}
 ### Geometric Dimensioning and Tolerancing
 
 In order to verify the manufacturing process multiple tolerancing methods were monitored and executed.
@@ -386,9 +376,7 @@ To cut the profiles, first a hand saw was used, then a file was used to improve 
     	\label{fig:manufactura9}
     \end{figure}
 Afterwards, the support for the other 2 axis carriages was assembled, each one has two LM800U linear bearings, that slide over the axial rods. Movement is transmitted over the leadscrew, using the bronze anti-backlash nut shown in figure \ref{fig:manufactura4}.
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/manufactura4.jpg}
+    []Kap2/manufactura4.jpg}
     	\caption{Leadscrew with the Y axis support}
     	\label{fig:manufactura4}
     \end{figure}
@@ -499,9 +487,7 @@ Multiple methods to analyze the structure natural frequency was used, with diffe
     \item Using Chopra \cite{choprastructures} method to analyze structures based on multilevel structures, for this case, due to the axial rod and power screw for the x-axis on each end of the y axis (shown in figure \ref{fig:vibration1}), a two story model was selected. 
     
     
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/vibration1.png}
+    []Kap2/PCBMill/vibration1.png}
     	\caption{Structure subassembly used for the analisis}
     	\label{fig:vibration1}
      \end{figure}
@@ -525,18 +511,14 @@ Multiple methods to analyze the structure natural frequency was used, with diffe
 
      The second model is a dynamic model of a mass cart on a friction-less surface, and third the cart's free body diagram, both are shown in figure \ref{fig:vibration3}. Take into account this representation shows damping, yet the PCB structure has a damping value of $0$.
 
-     \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/vibration3.png}
+     []Kap2/PCBMill/vibration3.png}
     	\caption{Other representations of the system}
     	\label{fig:vibration3}
      \end{figure}
 
      According to Chopra \cite(), the deduction of the frequency vector is as follows:
 
-     \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/vibration4.png}
+     []Kap2/PCBMill/vibration4.png}
      \end{figure}
 
      The stifness of each level is obtained thiw way:
@@ -593,9 +575,7 @@ The machine is equipped with 4 Nema 17 1A motors, four DVR8825 Stepper motor dri
 
 The connection diagram of the electronic components in this machine is observed in figure \ref{cncconnection}.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/CNCDiagram.png}
+    []Kap2/CNCDiagram.png}
     	\caption{CNC connection diagram}
     	\label{cncconnection}
     \end{figure}
@@ -603,18 +583,14 @@ The connection diagram of the electronic components in this machine is observed 
 
 Initially, it was checked that the motion inputs on the DVR8825 drivers were synchronized, which corresponds to the synchronization of the Arduino outputs, which can be seen in the following two graphs. The first is the analysis of the difference between the Standby value and the pulse value (since it is a square wave).In figure \ref{fig:desfasesubida} the difference between both drivers is shown, with a closer look in figure \ref{fig:desfasetop}.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/DesfaseSubida.png}
+    []Kap2/PCBMill/DesfaseSubida.png}
     	\caption{Driver activation signal offset}
     	\label{fig:desfasesubida}
     \end{figure}
 
     Upon expanding the measurement spectrum, it is identified that it is a signal whose phase shift is less than 5 ns, the measurement limit on the RIGOL DS 1074Z oscilloscope that was used.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/desfaseTop.png}
+    []Kap2/PCBMill/desfaseTop.png}
     	\caption{Detailed offset on drivers}
     	\label{fig:desfasetop}
     \end{figure}
@@ -622,18 +598,14 @@ Initially, it was checked that the motion inputs on the DVR8825 drivers were syn
 
     Once it was verified that the reception time of the signal at the drivers did not have a large phase shift compared to the pulse time, the signal was verified in the coils of the motors. Specifically, the A2 coil of each of the motors on the X axis. Similarly to the previous one, the following graphs correspond to a visualization in two different time scales to have more detail about the phase shift.The coarse signal is shown in figure \ref{fig:synch}, and the finer one \ref{fig:syncfino}.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/SyncMotoresH.png}
+    []Kap2/PCBMill/SyncMotoresH.png}
     	\caption{Motor signal offset}
     	\label{fig:synch}
     \end{figure}
 
     In this graph, a larger phase shift is found with respect to the input signal of the driver, however, since the signal is 12V, the oscilloscope does not allow visualization below 1us. In the image it can be observed that the phase shift is less than a quarter of the measurement step, so that although the difference is of the order of nanoseconds, the exact value cannot be determined with the equipment used.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/PCBMill/SyncMotoresFino.png}
+    []Kap2/PCBMill/SyncMotoresFino.png}
     	\caption{Motor signal offset in detail}
     	\label{fig:syncfino}
     \end{figure}
@@ -668,9 +640,7 @@ The machining process is currently using a $60 \; \frac{mm}{s}$ feed rate, at a 
 
 Currently the software usde is UGS, since the classic version offers a Command Line Interface (CLI) to execute tasks, specifically, it allows to run a Java command to mill a .gcode file. To do this, the device port must be allowed full access. Afterwards, the bin file in the Java folder is executed. 
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/CNCPriaIntegration.png}
+    []Kap2/CNCPriaIntegration.png}
     	\caption{PRIA integration}
     	\label{priacnc}
     \end{figure}
@@ -683,18 +653,14 @@ Currently the software usde is UGS, since the classic version offers a Command L
 
     The PCB Mill is shown in figure \ref{fig:manufactura3}, with a pencil tool to draw figures, it is a removable accessory that fits in the Dremel holder.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/manufactura3.jpg}
+    []Kap2/manufactura3.jpg}
     	\caption{PCB Mill Completed Structure}
     	\label{fig:manufactura3}
     \end{figure}
 
     In figure \ref{machinedpcb} we see the result of a milled FR4 board using the machining parameters stated before.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=90mm]{Kap2/MachinedPBW.jpg}
+    []Kap2/MachinedPBW.jpg}
     	\caption{Milled PWB}
     	\label{machinedpcb}
     \end{figure}
