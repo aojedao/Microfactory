@@ -73,10 +73,15 @@ In the scenario where only one bracket is tightened correctly the following figu
 For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $1.209$.
 
 ![anglebracket2](https://github.com/aojedao/Microfactory/assets/img/PCBMill/anglebracket1support.png)
-FoS on the Angle bracket for the worst case scenario
+
+<img src="https://github.com/aojedao/Microfactory/assets/img/PCBMill/anglebracket1support.png" alt="anglebracket2" title="anglebracket2">
+<img src="/assets/img/PCBMill/anglebracket1support.png" alt="anglebracket2" title="anglebracket2">
+
+FoS on the Angle bracket for the worst case scenario.
+
 In the general case, the structure will count with two brackets, each with 4 fasteners, so the model obtained for this is shown in the next figure, where the minimal FoS is $8.45$.
 
-![anglebracket4](https://github.com/aojedao/Microfactory/assets/img/PCBMill/anglebracket4support.png)
+![anglebracket4](/assets/img/PCBMill/anglebracket4support.png)
 FoS on the Angle bracket in its standard functioning
 
 
@@ -84,7 +89,7 @@ FoS on the Angle bracket in its standard functioning
 
 All the printed parts were manufactured in the FDM printer ar the LabFabEx. White PLA by 3DBots was used, with $0.8\,mm$ walls, $70\%$ cubic infill, raft support and a $50\,mm$ printing speed.
 
-![manufactura15](https://github.com/aojedao/Microfactory/assets/img/PCBMill/manufactura15.jpg)
+![manufactura15](../assets/img/PCBMill/manufactura15.jpg)
 Axis support printing
 
 ![manufactura13](https://github.com/aojedao/Microfactory/assets/img/PCBMill/manufactura13.jpg)
