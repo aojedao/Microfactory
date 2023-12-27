@@ -107,6 +107,7 @@ In order to verify the manufacturing process multiple tolerancing methods were m
 In order to verify the tolerance of the 3D FDM Printer at the laboratory, a test tool to validate the tolerance was designed and printed. The model is shown in figure next figure. 
 
 ![tolerance](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/tolerance.png)
+
 Printing tolerance validation piece.
 
 
@@ -166,7 +167,7 @@ Interference fit is used to use pressure to place an element on another, typical
 ![gdtinterference](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdtinterferenceval.png)
 Interference Fit.
 
-Every element that was manufactured using Additive Manufacturing defined the type of fit that was required. For the X axis support it's elements fit are shown in figure \ref{fig:gdt1}. Y axis supports are shown in figure \ref{fig:gdt2}.
+Every element that was manufactured using Additive Manufacturing defined the type of fit that was required. For the X axis support it's elements fit are shown in figure gdt1. Y axis supports are shown in figure gdt2.
 
 ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdt1.png)
 
@@ -178,7 +179,7 @@ Y axis supports fit.
 
 
 
-For the Dremel carriage two parts are defined, the Z axis support and the Dremel carraige itself. The first one is shown in figure \ref{fig:gdt3}, and the second one in figure \ref{fig:gdt4} and \ref{fig:gdt5}.
+For the Dremel carriage two parts are defined, the Z axis support and the Dremel carraige itself. The first one is shown in figure gdt3, and the second one in figure gdt4 and gdt5.
 
 ![gdt3](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdt3.png)
 
@@ -205,25 +206,27 @@ For the assembly process the following aspects of geometric control were used:
     - Angularity
 
 
-The following coordinate axis was used as reference, shown in figure \ref{fig:gdyt1}
+The following coordinate axis was used as reference, shown in figure gdyt1
 
 ![gdyt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt1.png)
 
 Coordinate axis.
 
-First straightness was checked for the X axis \ref{fig:gdyt2}, using a dial gauge on the surface \ref{fig:gdyt3} and the Y axis \ref{fig:gdyt4}.
+First straightness was checked for the X axis gdyt2, using a dial gauge on the surface gdyt3 and the Y axis gdyt4.
 
 ![gdyt2](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt2.png)
 
 Straightness of X axis.
 
 ![gdyt3](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt3.png)
+
 Usage of the dial gauge.
 
 ![gdyt4](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt4.png)
+
 Straightness of the Y axis.
 
-Parallellism was checked between the axis rod and the leadscrew \ref{fig:gdyt5} using the method shown in figure \ref{fig:gdyt6}. As well as one Y axis \ref{fig:gdyt7} using the method in figure \ref{fig:gdyt8}.
+Parallellism was checked between the axis rod and the leadscrew gdyt5 using the method shown in figure gdyt6. As well as one Y axis gdyt7 using the method in figure gdyt8.
 
 ![gdyt5](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt5.png)
 
@@ -240,13 +243,13 @@ Aluminium profile cuts for each phase.
 ![gdyt8](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt8.png)
 
 Aluminium profile cuts for each phase.
-Perpendicularity was verified between the X and Y axis \ref{fig:gdyt9}.
+Perpendicularity was verified between the X and Y axis gdyt9.
 
 ![gdyt9](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt9.png)
 
 Aluminium profile cuts for each phase.
 
-Finally, angularity was studied between the Z axis vs the XY plane \ref{fig:gdyt10} using the method shown in figure \ref{fig:gdyt11}.
+Finally, angularity was studied between the Z axis vs the XY plane gdyt10 using the method shown in figure gdyt11.
 
 ![gdyt10](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt10.png)
 
@@ -260,14 +263,14 @@ Aluminium profile cuts for each phase.
 
 Two types of profiles were used, a long one for the x-axis base, and 5 profiles placed perpendicularly to the x-axis, placed evenly. Due to the use of sliding printed supports, there was no need to have eaxct measurements, but the other profiles needed as much, because a different size meant irregularity in the paralellism. For this reason, they were selected in two groups, one for the ends and another for the interior ones.
 
-To cut the profiles, first a hand saw was used, then a file was used to improve the regularity, and to obtain the final value the Leadwell CNC Machine at LabFabEx was used to mill the ends. In figure \ref{fig:profilecut} the three phases are shown. In the left, the profile was cut with the handsaw, in the middle it was filed and the final one was after being milled. The ones used at the end were threaded using an M5 tap. A $\frac{5}{32} \, inch$ was tested, but it was too loose to be used.
+To cut the profiles, first a hand saw was used, then a file was used to improve the regularity, and to obtain the final value the Leadwell CNC Machine at LabFabEx was used to mill the ends. In figure profilecut the three phases are shown. In the left, the profile was cut with the handsaw, in the middle it was filed and the final one was after being milled. The ones used at the end were threaded using an M5 tap. A $\frac{5}{32} \, inch$ was tested, but it was too loose to be used.
 
 
 ![profilecut](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/profilecut.jpg)
 
 Aluminium profile cuts for each phase.
 
-The milling process is shown in figure \ref{fig:manufactura1}. The mounting of the aluminium profile on the machine is shown in figure \ref{fig:manufactura14}, where a dial gauge was placed on the Leadwell's head to verify every profile was placed in the same position. 
+The milling process is shown in figure manufactura1. The mounting of the aluminium profile on the machine is shown in figure manufactura14, where a dial gauge was placed on the Leadwell's head to verify every profile was placed in the same position. 
 
 ![manufactura1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura1.jpg)
 
@@ -278,20 +281,20 @@ Milling of the aluminium profile.
 Profile cutting assembly
 
 
-The axis rods were cut using an angle grinder, as the ends of it were free as no element blocked both ends. This was done by the LabFabEx technician as shown in figure \ref{fig:manufactura10}.
+The axis rods were cut using an angle grinder, as the ends of it were free as no element blocked both ends. This was done by the LabFabEx technician as shown in figure manufactura10.
 
 ![manufactura10](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura10.jpg)
 
 Axis rod cutting
 
 
-The corner assembly is shown in figure \ref{fig:manufactura9}, where the motor support and two brackets are mounted, they were inspected on rigidity and no movement was found, proceeding with the next section assembly. For the X axis the supports are paired by left and right, each one containing a motor support and a leadscrew support. The last one counts with 628ZZ radial bearings to place the leadscrew.
+The corner assembly is shown in te next figure, where the motor support and two brackets are mounted, they were inspected on rigidity and no movement was found, proceeding with the next section assembly. For the X axis the supports are paired by left and right, each one containing a motor support and a leadscrew support. The last one counts with 628ZZ radial bearings to place the leadscrew.
     
 ![manufactura9](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura9.jpg)
 
 Assembly of the corner of the machine
 
-Afterwards, the support for the other 2 axis carriages was assembled, each one has two LM800U linear bearings, that slide over the axial rods. Movement is transmitted over the leadscrew, using the bronze anti-backlash nut shown in figure \ref{fig:manufactura4}.
+Afterwards, the support for the other 2 axis carriages was assembled, each one has two LM800U linear bearings, that slide over the axial rods. Movement is transmitted over the leadscrew, using the bronze anti-backlash nut shown in figure manufactura4.
 
 ![manufactura4](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura4.jpg)
 
@@ -321,7 +324,7 @@ In no case was it found that the microprocessor with which the PCB Mill is equip
 - $d_r$ is the minor diameter (root) of the power screw in $mm$
 - $L$ is the length between supporting bearings in $mm$
     
-    $C$ is a coefficient based on the mounting of the brackets in figure \ref{fig:coceficient}
+    $C$ is a coefficient based on the mounting of the brackets in figure coeficient
 
 ![coceficient](https://www.thomsonlinear.com/es/training/files/2c7d5826-5281-4a79-bec3-7bc337b87003/End%20supports.jpg)
 
@@ -367,20 +370,19 @@ The critical angular velocity of the PCB Mill is 238907.6 rad. It is important t
 
 Multiple methods to analyze the structure natural frequency was used, with different results according to the modelling used.
 
-\begin{itemize}
-    \item Taking into consideration the model proposed by Kopets \cite{kopets2022estimating} for the folllwing equation:
-    $$f=\frac{1}{2 \pi} \sqrt{\frac{\sum_i k_i}{\sum_i J_i}}$$
-    \begin{equation}
-    \resizebox{\textwidth}{!}{$f= \frac{1}{2 \pi} \sqrt{\frac{4k_1+4k_1+2k_2}{4M_{v1} L_1^{2} + 2M_{v2} L_3^{2}+M_{H} L_1^{2}+3M_{m} L_1^{2} + M_m (L_1 + L_3)^2 + 2M_{G1}L_1^2 + M_{G2} (L_1 + L_3)^2 + \frac{2 M_{G3} (L_1 + L_3)^2}{3} }}$}
-    \end{equation}
+
+Taking into consideration the model proposed by [Kopets](https://www.mdpi.com/2076-3417/12/9/4514) for the folllwing equation:
+
+$$f=\frac{1}{2 \pi} \sqrt{\frac{\sum_i k_i}{\sum_i J_i}}$$
+
+$$\frac{1}{2 \pi} \sqrt{\frac{4k_1+4k_1+2k_2}{4M_{v1} L_1^{2} + 2M_{v2} L_3^{2}+M_{H} L_1^{2}+3M_{m} L_1^{2} + M_m (L_1 + L_3)^2 + 2M_{G1}L_1^2 + M_{G2} (L_1 + L_3)^2 + \frac{2 M_{G3} (L_1 + L_3)^2}{3} }}$$
  
     
-
 |Parameter | Value|
 |:----     |:---  |
 |Torsional Stifness of printed piece k_1 | 1.3572e+04 |
-|Torsional stifness of dremel carriage $k_2$| $1.7379e+04$|
-Printed support mass $M_{v1}$ | $0.059$\\
+|Torsional stifness of dremel carriage $$k_2$$| $1.7379e+04$|
+Printed support mass $$M_{v1}$$ | $0.059$\\
 Y carriage printed support mass $M_{v2}$| $0.103$\\
 Machine head mass $M_H$| $0.9850$\\
 Motors mass $M_M$| $0.2850$\\
@@ -394,7 +396,7 @@ Frequency Estimation using Kopets
 
     Obtaning that $f=352.79 \, Hz$.
 
-    \item Using Chopra \cite{choprastructures} method to analyze structures based on multilevel structures, for this case, due to the axial rod and power screw for the x-axis on each end of the y axis (shown in figure \ref{fig:vibration1}), a two story model was selected. 
+    \item Using Chopra \cite{choprastructures} method to analyze structures based on multilevel structures, for this case, due to the axial rod and power screw for the x-axis on each end of the y axis (shown in figure vibration1}), a two story model was selected. 
     
     
 ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration1.png}
@@ -410,14 +412,14 @@ Frequency Estimation using Kopets
          \item First and second vibration mode
      \end{itemize}
 
-     The model counts with three types of representation methods the first corresponds to a two level, mass centered structure (\ref{fig:vibration2}).
+     The model counts with three types of representation methods the first corresponds to a two level, mass centered structure (vibration2}).
 
  ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration2.png}
     Structure model used}
     	\label{fig:vibration2}
      \end{figure}
 
-     The second model is a dynamic model of a mass cart on a friction-less surface, and third the cart's free body diagram, both are shown in figure \ref{fig:vibration3}. Take into account this representation shows damping, yet the PCB structure has a damping value of $0$.
+     The second model is a dynamic model of a mass cart on a friction-less surface, and third the cart's free body diagram, both are shown in figure vibration3}. Take into account this representation shows damping, yet the PCB structure has a damping value of $0$.
 
  ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration3.png}
     Other representations of the system}
