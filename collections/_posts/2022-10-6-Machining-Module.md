@@ -68,15 +68,15 @@ $$F=(\frac{2 T_R}{d_m}) (\frac{\pi d_m - fl}{l + f\pi d_m})=7.636 \,N$$
 In the scenario where only one bracket is tightened correctly the following figure shows the FoS at the end of the aluminium profile. In this case is $2.948$.
 
 
-![anglebracket1](/assets/img/PCBMill/anglebracket1.png)
+![anglebracket1](https://github.com/aojedao/Microfactory/blob/dev/assets/img/PCBMill/anglebracket1.png)
 
 For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $1.209$.
 
-![anglebracket2](/assets/img/PCBMill/anglebracket1support.png)
+![anglebracket2](https://github.com/aojedao/Microfactory/assets/img/PCBMill/anglebracket1support.png)
 FoS on the Angle bracket for the worst case scenario
 In the general case, the structure will count with two brackets, each with 4 fasteners, so the model obtained for this is shown in the next figure, where the minimal FoS is $8.45$.
 
-![anglebracket4](/assets/img/PCBMill/anglebracket4support.png)
+![anglebracket4](https://github.com/aojedao/Microfactory/assets/img/PCBMill/anglebracket4support.png)
 FoS on the Angle bracket in its standard functioning
 
 
@@ -84,13 +84,13 @@ FoS on the Angle bracket in its standard functioning
 
 All the printed parts were manufactured in the FDM printer ar the LabFabEx. White PLA by 3DBots was used, with $0.8\,mm$ walls, $70\%$ cubic infill, raft support and a $50\,mm$ printing speed.
 
-![manufactura15](/assets/img/PCBMill/manufactura15.jpg)
+![manufactura15](https://github.com/aojedao/Microfactory/assets/img/PCBMill/manufactura15.jpg)
 Axis support printing
 
-![manufactura13](/assets/img/PCBMill/manufactura13.jpg)
+![manufactura13](https://github.com/aojedao/Microfactory/assets/img/PCBMill/manufactura13.jpg)
 X axis support fit in the aluminium profile
     
-![manufactura7](/assets/img/PCBMill/manufactura7.jpg)
+![manufactura7](https://github.com/aojedao/Microfactory/assets/img/PCBMill/manufactura7.jpg)
 Motor, support and base corner fit.
 
 ### Geometric Dimensioning and Tolerancing
@@ -99,7 +99,7 @@ In order to verify the manufacturing process multiple tolerancing methods were m
 
 In order to verify the tolerance of the 3D FDM Printer at the laboratory, a test tool to validate the tolerance was designed and printed. The model is shown in figure next figure. 
 
-![tolerance](/assets/img/PCBMill/tolerance.png)
+![tolerance](https://github.com/aojedao/Microfactory/assets/img/PCBMill/tolerance.png)
 Printing tolerance validation piece.
 
 
@@ -137,25 +137,25 @@ Small holes were also measured using the Zoller machine at the laboratory. The e
 
 Errors found in the measurements are shown in graph the next graph.
 
-![toleranceeror](/assets/img/PCBMill/Tolerance error in the reference piece.png)
+![toleranceeror](https://github.com/aojedao/Microfactory/assets/img/PCBMill/Tolerance error in the reference piece.png)
 Tolerance error in the reference piece.
 
 After knowing the tolerances for the machine production quality, and given that multiple Commercial Off The Shelve parts were selected, a Shaft-based system was selected. 
 
 For clearance fit, parts should be able to move slightly.
 
-![gdtclearance](/assets/img/PCBMill/gdtclearanceval.png)
+![gdtclearance](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdtclearanceval.png)
 Clearance Fit.
 
 Transition fit tries to make objects are firm but not under pressure, making it easy to remove.
 
-![gdttransition](/assets/img/PCBMill/gdttransitionval.png)
+![gdttransition](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdttransitionval.png)
 Transition Fit.
 
 
 Interference fit is used to use pressure to place an element on another, typically to be fixed permanently.
 
-![gdtinterference](/assets/img/PCBMill/gdtinterferenceval.png)
+![gdtinterference](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdtinterferenceval.png)
 Interference Fit.
 
 Every element that was manufactured using Additive Manufacturing defined the type of fit that was required. For the X axis support it's elements fit are shown in figure \ref{fig:gdt1}. Y axis supports are shown in figure \ref{fig:gdt2}.
@@ -229,7 +229,7 @@ For the assembly process the following aspects of geometric control were used:
     	\label{fig:gdyt2}
     \end{figure}
 
-    ![](/assets/img/PCBMill/gdyt3.png}
+    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdyt3.png}
     Usage of the dial gauge.}
     	\label{fig:gdyt3}
     \end{figure}
@@ -243,7 +243,7 @@ For the assembly process the following aspects of geometric control were used:
 
     Parallellism was checked between the axis rod and the leadscrew \ref{fig:gdyt5} using the method shown in figure \ref{fig:gdyt6}. As well as one Y axis \ref{fig:gdyt7} using the method in figure \ref{fig:gdyt8}.
 
-    ![](/assets/img/PCBMill/gdyt5.png}
+    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdyt5.png}
     Aluminium profile cuts for each phase.}
     	\label{fig:gdyt5}
     \end{figure}
@@ -280,12 +280,12 @@ For the assembly process the following aspects of geometric control were used:
 
     Finally, angularity was studied between the Z axis vs the XY plane \ref{fig:gdyt10} using the method shown in figure \ref{fig:gdyt11}.
 
-    ![](/assets/img/PCBMill/gdyt10.png}
+    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdyt10.png}
     Aluminium profile cuts for each phase.}
     	\label{fig:gdyt10}
     \end{figure}
 
-    ![](/assets/img/PCBMill/gdyt11.png}
+    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdyt11.png}
     Aluminium profile cuts for each phase.}
     	\label{fig:gdyt11}
     \end{figure}
@@ -297,7 +297,7 @@ Two types of profiles were used, a long one for the x-axis base, and 5 profiles 
 To cut the profiles, first a hand saw was used, then a file was used to improve the regularity, and to obtain the final value the Leadwell CNC Machine at LabFabEx was used to mill the ends. In figure \ref{fig:profilecut} the three phases are shown. In the left, the profile was cut with the handsaw, in the middle it was filed and the final one was after being milled. The ones used at the end were threaded using an M5 tap. A $\frac{5}{32} \, inch$ was tested, but it was too loose to be used.
 
 
-    ![](/assets/img/PCBMill/profilecut.jpg}
+    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/profilecut.jpg}
     Aluminium profile cuts for each phase.}
     	\label{fig:profilecut}
     \end{figure}
@@ -329,7 +329,7 @@ To cut the profiles, first a hand saw was used, then a file was used to improve 
 
     The corner assembly is shown in figure \ref{fig:manufactura9}, where the motor support and two brackets are mounted, they were inspected on rigidity and no movement was found, proceeding with the next section assembly. For the X axis the supports are paired by left and right, each one containing a motor support and a leadscrew support. The last one counts with 628ZZ radial bearings to place the leadscrew.
     
-    ![](/assets/img/PCBMill/manufactura9.jpg}
+    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/manufactura9.jpg}
     Assembly of the corner of the machine}
     	\label{fig:manufactura9}
     \end{figure}
@@ -497,7 +497,7 @@ Multiple methods to analyze the structure natural frequency was used, with diffe
 
      A diagram showing the physical representation is shown in figure \ref{fig:vibration5}.
 
-     ![](/assets/img/PCBMill/vibration5.png}
+     ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/vibration5.png}
     FoS on the Angle bracket in its standard functioning}
     	\label{fig:vibration5}
      \end{figure}
