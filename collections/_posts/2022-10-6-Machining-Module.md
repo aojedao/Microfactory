@@ -73,16 +73,13 @@ In the scenario where only one bracket is tightened correctly the following figu
 
 For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $1.209$.
 
-![anglebracket2](https://github.com/aojedao/Microfactory/blob/dev/assets/img/PCBMill/anglebracket1support.png)
-
-<img src="https://github.com/aojedao/Microfactory/blob/dev/assets/img/PCBMill/anglebracket1support.png" alt="anglebracket2" title="anglebracket2">
-<img src="/assets/img/PCBMill/anglebracket1support.png" alt="anglebracket2" title="anglebracket2">
+![anglebracket2](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/anglebracket1support.png)
 
 FoS on the Angle bracket for the worst case scenario.
 
 In the general case, the structure will count with two brackets, each with 4 fasteners, so the model obtained for this is shown in the next figure, where the minimal FoS is $8.45$.
 
-![anglebracket4](/assets/img/PCBMill/anglebracket4support.png)
+![anglebracket4](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/anglebracket4support.png)
 FoS on the Angle bracket in its standard functioning
 
 
@@ -90,13 +87,13 @@ FoS on the Angle bracket in its standard functioning
 
 All the printed parts were manufactured in the FDM printer ar the LabFabEx. White PLA by 3DBots was used, with $0.8\,mm$ walls, $70\%$ cubic infill, raft support and a $50\,mm$ printing speed.
 
-![manufactura15](../assets/img/PCBMill/manufactura15.jpg)
+![manufactura15](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura15.jpg)
 Axis support printing
 
-![manufactura13](https://github.com/aojedao/Microfactory/assets/img/PCBMill/manufactura13.jpg)
+![manufactura13](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura13.jpg)
 X axis support fit in the aluminium profile
     
-![manufactura7](https://github.com/aojedao/Microfactory/assets/img/PCBMill/manufactura7.jpg)
+![manufactura7](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura7.jpg)
 Motor, support and base corner fit.
 
 ### Geometric Dimensioning and Tolerancing
@@ -105,7 +102,7 @@ In order to verify the manufacturing process multiple tolerancing methods were m
 
 In order to verify the tolerance of the 3D FDM Printer at the laboratory, a test tool to validate the tolerance was designed and printed. The model is shown in figure next figure. 
 
-![tolerance](https://github.com/aojedao/Microfactory/assets/img/PCBMill/tolerance.png)
+![tolerance](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/tolerance.png)
 Printing tolerance validation piece.
 
 
@@ -143,25 +140,26 @@ Small holes were also measured using the Zoller machine at the laboratory. The e
 
 Errors found in the measurements are shown in graph the next graph.
 
-![toleranceeror](https://github.com/aojedao/Microfactory/assets/img/PCBMill/Tolerance error in the reference piece.png)
+![toleranceeror](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/ToleranceError.png)
+
 Tolerance error in the reference piece.
 
 After knowing the tolerances for the machine production quality, and given that multiple Commercial Off The Shelve parts were selected, a Shaft-based system was selected. 
 
 For clearance fit, parts should be able to move slightly.
 
-![gdtclearance](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdtclearanceval.png)
+![gdtclearance](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdtclearanceval.png)
 Clearance Fit.
 
 Transition fit tries to make objects are firm but not under pressure, making it easy to remove.
 
-![gdttransition](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdttransitionval.png)
+![gdttransition](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdttransitionval.png)
 Transition Fit.
 
 
 Interference fit is used to use pressure to place an element on another, typically to be fixed permanently.
 
-![gdtinterference](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdtinterferenceval.png)
+![gdtinterference](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdtinterferenceval.png)
 Interference Fit.
 
 Every element that was manufactured using Additive Manufacturing defined the type of fit that was required. For the X axis support it's elements fit are shown in figure \ref{fig:gdt1}. Y axis supports are shown in figure \ref{fig:gdt2}.
