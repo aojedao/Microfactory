@@ -72,9 +72,9 @@ In the scenario where only one bracket is tightened correctly the following figu
 
 For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $1.209$.
 
-![anglebracket2](https://github.com/aojedao/Microfactory/assets/img/PCBMill/anglebracket1support.png)
+![anglebracket2](https://github.com/aojedao/Microfactory/blob/dev/assets/img/PCBMill/anglebracket1support.png)
 
-<img src="https://github.com/aojedao/Microfactory/assets/img/PCBMill/anglebracket1support.png" alt="anglebracket2" title="anglebracket2">
+<img src="https://github.com/aojedao/Microfactory/blob/dev/assets/img/PCBMill/anglebracket1support.png" alt="anglebracket2" title="anglebracket2">
 <img src="/assets/img/PCBMill/anglebracket1support.png" alt="anglebracket2" title="anglebracket2">
 
 FoS on the Angle bracket for the worst case scenario.
