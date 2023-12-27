@@ -53,7 +53,8 @@ And reordering the equation it was obtained that
 
 $$\frac{2 T_R}{d_m} (\frac{ \pi d_m - f l} {l + f \pi d_m}) = F$$
 
-The obtained force for the machine is $T_R=0.308 \, Nm$.
+The obtained force for the machine is 
+$$T_R=0.308 \, Nm$$
 
 ### Angle Brackets  
 
@@ -68,7 +69,7 @@ $$F=(\frac{2 T_R}{d_m}) (\frac{\pi d_m - fl}{l + f\pi d_m})=7.636 \,N$$
 In the scenario where only one bracket is tightened correctly the following figure shows the FoS at the end of the aluminium profile. In this case is $2.948$.
 
 
-![anglebracket1](https://github.com/aojedao/Microfactory/blob/dev/assets/img/PCBMill/anglebracket1.png)
+![anglebracket1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/anglebracket1.png)
 
 For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $1.209$.
 
