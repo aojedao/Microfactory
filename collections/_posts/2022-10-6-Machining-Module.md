@@ -80,6 +80,7 @@ FoS on the Angle bracket for the worst case scenario.
 In the general case, the structure will count with two brackets, each with 4 fasteners, so the model obtained for this is shown in the next figure, where the minimal FoS is $8.45$.
 
 ![anglebracket4](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/anglebracket4support.png)
+
 FoS on the Angle bracket in its standard functioning
 
 
@@ -88,12 +89,15 @@ FoS on the Angle bracket in its standard functioning
 All the printed parts were manufactured in the FDM printer ar the LabFabEx. White PLA by 3DBots was used, with $0.8\,mm$ walls, $70\%$ cubic infill, raft support and a $50\,mm$ printing speed.
 
 ![manufactura15](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura15.jpg)
+
 Axis support printing
 
 ![manufactura13](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura13.jpg)
+
 X axis support fit in the aluminium profile
     
 ![manufactura7](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura7.jpg)
+
 Motor, support and base corner fit.
 
 ### Geometric Dimensioning and Tolerancing
@@ -164,44 +168,30 @@ Interference Fit.
 
 Every element that was manufactured using Additive Manufacturing defined the type of fit that was required. For the X axis support it's elements fit are shown in figure \ref{fig:gdt1}. Y axis supports are shown in figure \ref{fig:gdt2}.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=150mm]{Kap2/PCBMill/gdt1.png}
-    Fit for X axis supports.}
-    	\label{fig:gdt1}
-    \end{figure}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdt1.png)
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=70mm]{Kap2/PCBMill/gdt2.png}
-    Y axis supports fit.}
-    	\label{fig:gdt2}
-    \end{figure}
+Fit for X axis supports.
+
+![gdt2](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdt2.png)
+
+Y axis supports fit.
 
 
-    For the Dremel carriage two parts are defined, the Z axis support and the Dremel carraige itself. The first one is shown in figure \ref{fig:gdt3}, and the second one in figure \ref{fig:gdt4} and \ref{fig:gdt5}.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=70mm]{Kap2/PCBMill/gdt3.png}
-    Z axis support fit.}
-    	\label{fig:gdt3}
-    \end{figure}
+For the Dremel carriage two parts are defined, the Z axis support and the Dremel carraige itself. The first one is shown in figure \ref{fig:gdt3}, and the second one in figure \ref{fig:gdt4} and \ref{fig:gdt5}.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=70mm]{Kap2/PCBMill/gdt4.png}
-    Fit for Dremel carriage (Front).}
-    	\label{fig:gdt4}
-    \end{figure}
+![gdt3](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdt3.png)
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=70mm]{Kap2/PCBMill/gdt5.png}
-    Fit for Dremel carriage (Back).}
-    	\label{fig:gdt5}
-    \end{figure}
+Z axis support fit.
 
+![gdt4](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdt4.png)
+
+Fit for Dremel carriage (Front).
+
+
+![gdt5](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdt5.png)
+
+Fit for Dremel carriage (Back).
     
 For the assembly process the following aspects of geometric control were used:
 
@@ -215,84 +205,56 @@ For the assembly process the following aspects of geometric control were used:
     - Angularity
 
 
-    The following coordinate axis was used as reference, shown in figure \ref{fig:gdyt1}
+The following coordinate axis was used as reference, shown in figure \ref{fig:gdyt1}
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=80mm]{Kap2/PCBMill/gdyt1.png}
-    Coordinate axis.}
-    	\label{fig:gdyt1}
-    \end{figure}
+![gdyt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt1.png)
 
-    First straightness was checked for the X axis \ref{fig:gdyt2}, using a dial gauge on the surface \ref{fig:gdyt3} and the Y axis \ref{fig:gdyt4}.
+Coordinate axis.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=100mm]{Kap2/PCBMill/gdyt2.png}
-    Straightness of X axis.}
-    	\label{fig:gdyt2}
-    \end{figure}
+First straightness was checked for the X axis \ref{fig:gdyt2}, using a dial gauge on the surface \ref{fig:gdyt3} and the Y axis \ref{fig:gdyt4}.
 
-    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdyt3.png}
-    Usage of the dial gauge.}
-    	\label{fig:gdyt3}
-    \end{figure}
+![gdyt2](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt2.png)
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=100mm]{Kap2/PCBMill/gdyt4.png}
-    Straightness of the Y axis.}
-    	\label{fig:gdyt4}
-    \end{figure}
+Straightness of X axis.
 
-    Parallellism was checked between the axis rod and the leadscrew \ref{fig:gdyt5} using the method shown in figure \ref{fig:gdyt6}. As well as one Y axis \ref{fig:gdyt7} using the method in figure \ref{fig:gdyt8}.
+![gdyt3](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt3.png)
+Usage of the dial gauge.
 
-    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdyt5.png}
-    Aluminium profile cuts for each phase.}
-    	\label{fig:gdyt5}
-    \end{figure}
+![gdyt4](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt4.png)
+Straightness of the Y axis.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=80mm]{Kap2/PCBMill/gdyt6.png}
-    Aluminium profile cuts for each phase.}
-    	\label{fig:gdyt6}
-    \end{figure}
+Parallellism was checked between the axis rod and the leadscrew \ref{fig:gdyt5} using the method shown in figure \ref{fig:gdyt6}. As well as one Y axis \ref{fig:gdyt7} using the method in figure \ref{fig:gdyt8}.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=100mm]{Kap2/PCBMill/gdyt7.png}
-    Aluminium profile cuts for each phase.}
-    	\label{fig:gdyt7}
-    \end{figure}
+![gdyt5](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt5.png)
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=80mm]{Kap2/PCBMill/gdyt8.png}
-    Aluminium profile cuts for each phase.}
-    	\label{fig:gdyt8}
-    \end{figure}
-    
-    Perpendicularity was verified between the X and Y axis \ref{fig:gdyt9}.
-    
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=100mm]{Kap2/PCBMill/gdyt9.png}
-    Aluminium profile cuts for each phase.}
-    	\label{fig:gdyt9}
-    \end{figure}
+Aluminium profile cuts for each phase.
 
-    Finally, angularity was studied between the Z axis vs the XY plane \ref{fig:gdyt10} using the method shown in figure \ref{fig:gdyt11}.
+![gdyt6](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt6.png)
 
-    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdyt10.png}
-    Aluminium profile cuts for each phase.}
-    	\label{fig:gdyt10}
-    \end{figure}
+Aluminium profile cuts for each phase.
 
-    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/gdyt11.png}
-    Aluminium profile cuts for each phase.}
-    	\label{fig:gdyt11}
-    \end{figure}
+![gdyt7](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt7.png)
+
+Aluminium profile cuts for each phase.
+
+![gdyt8](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt8.png)
+
+Aluminium profile cuts for each phase.
+Perpendicularity was verified between the X and Y axis \ref{fig:gdyt9}.
+
+![gdyt9](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt9.png)
+
+Aluminium profile cuts for each phase.
+
+Finally, angularity was studied between the Z axis vs the XY plane \ref{fig:gdyt10} using the method shown in figure \ref{fig:gdyt11}.
+
+![gdyt10](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt10.png)
+
+Aluminium profile cuts for each phase.
+
+![gdyt11](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/gdyt11.png)
+
+Aluminium profile cuts for each phase.
 
 ### Manufacturing 
 
@@ -301,47 +263,39 @@ Two types of profiles were used, a long one for the x-axis base, and 5 profiles 
 To cut the profiles, first a hand saw was used, then a file was used to improve the regularity, and to obtain the final value the Leadwell CNC Machine at LabFabEx was used to mill the ends. In figure \ref{fig:profilecut} the three phases are shown. In the left, the profile was cut with the handsaw, in the middle it was filed and the final one was after being milled. The ones used at the end were threaded using an M5 tap. A $\frac{5}{32} \, inch$ was tested, but it was too loose to be used.
 
 
-    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/profilecut.jpg}
-    Aluminium profile cuts for each phase.}
-    	\label{fig:profilecut}
-    \end{figure}
+![profilecut](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/profilecut.jpg)
 
-    The milling process is shown in figure \ref{fig:manufactura1}. The mounting of the aluminium profile on the machine is shown in figure \ref{fig:manufactura14}, where a dial gauge was placed on the Leadwell's head to verify every profile was placed in the same position. 
+Aluminium profile cuts for each phase.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=40mm]{Kap2/manufactura1.jpg}
-    Milling of the aluminium profile.}
-    	\label{fig:manufactura1}
-    \end{figure}
+The milling process is shown in figure \ref{fig:manufactura1}. The mounting of the aluminium profile on the machine is shown in figure \ref{fig:manufactura14}, where a dial gauge was placed on the Leadwell's head to verify every profile was placed in the same position. 
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=50mm]{Kap2/manufactura14.jpg}
-    Profile cutting assembly}
-    	\label{fig:manufactura14}
-    \end{figure}
+![manufactura1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura1.jpg)
 
-    The axis rods were cut using an angle grinder, as the ends of it were free as no element blocked both ends. This was done by the LabFabEx technician as shown in figure \ref{fig:manufactura10}.
+Milling of the aluminium profile.
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=60mm]{Kap2/manufactura10.jpg}
-    Axis rod cutting}
-    	\label{fig:manufactura10}
-    \end{figure}
+![manufactura14](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura14.jpg)
 
-    The corner assembly is shown in figure \ref{fig:manufactura9}, where the motor support and two brackets are mounted, they were inspected on rigidity and no movement was found, proceeding with the next section assembly. For the X axis the supports are paired by left and right, each one containing a motor support and a leadscrew support. The last one counts with 628ZZ radial bearings to place the leadscrew.
+Profile cutting assembly
+
+
+The axis rods were cut using an angle grinder, as the ends of it were free as no element blocked both ends. This was done by the LabFabEx technician as shown in figure \ref{fig:manufactura10}.
+
+![manufactura10](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura10.jpg)
+
+Axis rod cutting
+
+
+The corner assembly is shown in figure \ref{fig:manufactura9}, where the motor support and two brackets are mounted, they were inspected on rigidity and no movement was found, proceeding with the next section assembly. For the X axis the supports are paired by left and right, each one containing a motor support and a leadscrew support. The last one counts with 628ZZ radial bearings to place the leadscrew.
     
-    ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/manufactura9.jpg}
-    Assembly of the corner of the machine}
-    	\label{fig:manufactura9}
-    \end{figure}
+![manufactura9](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura9.jpg)
+
+Assembly of the corner of the machine
+
 Afterwards, the support for the other 2 axis carriages was assembled, each one has two LM800U linear bearings, that slide over the axial rods. Movement is transmitted over the leadscrew, using the bronze anti-backlash nut shown in figure \ref{fig:manufactura4}.
-    []Kap2/manufactura4.jpg}
-    Leadscrew with the Y axis support}
-    	\label{fig:manufactura4}
-    \end{figure}
+
+![manufactura4](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura4.jpg)
+
+Leadscrew with the Y axis support
 
 ### Motion  
 
@@ -369,48 +323,45 @@ In no case was it found that the microprocessor with which the PCB Mill is equip
     
     $C$ is a coefficient based on the mounting of the brackets in figure \ref{fig:coceficient}
 
-    \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=60mm]{Kap2/leadscrewmotion.jpg}
-    C coeficients by Thomson\cite{Thomson_2018} }
-    	\label{fig:coceficient}
-    \end{figure}
+![coceficient](https://www.thomsonlinear.com/es/training/files/2c7d5826-5281-4a79-bec3-7bc337b87003/End%20supports.jpg)
 
-    The coefficient C depends on the type of mounting of the screw supports. The PCB Mill uses "C"-type supports, so the coefficient C is $0.25$.
+C coeficients by Thomson
 
-    The complete range of coeficients are shown in table \ref{tab:ccoeficient} \cite{Thomson_2018}.
+The coefficient C depends on the type of mounting of the screw supports. The PCB Mill uses "C"-type supports, so the coefficient C is $0.25$.
+
+The complete range of coeficients are shown in table.
 
     
-  |C  |End 1| End 2|
-  |:--|:--  |:--   |
-  |3.9|  Fixed| Free|
-  |12.1|  Simple| Simple|
-  |18.7|  Fixed| Simple|
-  |27.2|  Fixed| Fixed|
+|C  |End 1| End 2|
+|:--|:--  |:--   |
+|3.9|  Fixed| Free|
+|12.1|  Simple| Simple|
+|18.7|  Fixed| Simple|
+|27.2|  Fixed| Fixed|
 
 C coeficients values
 
     
-    For the case of the PCB Mill, with a minor diameter of 12 mm and a length between bearings of 110 mm, the critical velocity is:
+For the case of the PCB Mill, with a minor diameter of 12 mm and a length between bearings of 110 mm, the critical velocity is:
 
-    
-    $$N = \frac{18.76 \cdot 6.1 \cdot 10^7}{50^2} = 4562800\, rpm$$
-    
-    Converted to angular velocity, the critical velocity is:
-    
-    $$ \omega = 2\pi N = 2\pi \cdot 4562800 = 238907.6 \,rad$$
-    
-    The critical angular velocity of the PCB Mill is 238907.6 rad. It is important to prevent the power screw from operating at this speed, as it could enter resonance and be damaged.
-    
-    
-    \item Maximum rapid motion
 
-    The capacity of GRBL to transmit data was analyzed. Based on the speed response estimation performed by grblHAL, a modification of GRBL to run on 32-bit devices (such as a Teensy 4.1 microcontroller for example), the following estimation was made.
+$$N = \frac{18.76 \cdot 6.1 \cdot 10^7}{50^2} = 4562800\, rpm$$
 
-    Considering that the Nema 17 motors used have $200$ steps per revolution, the power screw of the X axis has a feed of $2\,mm$ per revolution, it is found that every $100$ steps $1\, mm$ will be traveled; likewise, the maximum working speed defined by the design is $60 \frac{mm}{s}$, so that it would have to move $6000$ steps per second, in other words the steps will work at a frequency of $6kHz$, which is within the limit of $30kHz$ offered by a controller such as the Atmega328p that the Arduino UNO has running GRBL.
+Converted to angular velocity, the critical velocity is:
 
-    On the other hand, the motors have a maximum speed of $3000\,rpm$, and considering the feed of $2\,mm$ per revolution, it is found that the maximum feed speed would be $100\frac{mm}{s}$, based on the criteria of the motors.
-\end{itemize}
+$$ \omega = 2\pi N = 2\pi \cdot 4562800 = 238907.6 \,rad$$
+
+The critical angular velocity of the PCB Mill is 238907.6 rad. It is important to prevent the power screw from operating at this speed, as it could enter resonance and be damaged.
+
+
+- Maximum rapid motion
+
+  The capacity of GRBL to transmit data was analyzed. Based on the speed response estimation performed by grblHAL, a modification of GRBL to run on 32-bit devices (such as a Teensy 4.1 microcontroller for example), the following estimation was made.
+
+  Considering that the Nema 17 motors used have $200$ steps per revolution, the power screw of the X axis has a feed of $2\,mm$ per revolution, it is found that every $100$ steps $1\, mm$ will be traveled; likewise, the maximum working speed defined by the design is $60 \frac{mm}{s}$, so that it would have to move $6000$ steps per second, in other words the steps will work at a frequency of $6kHz$, which is within the limit of $30kHz$ offered by a controller such as the Atmega328p that the Arduino UNO has running GRBL.
+
+  On the other hand, the motors have a maximum speed of $3000\,rpm$, and considering the feed of $2\,mm$ per revolution, it is found that the maximum feed speed would be $100\frac{mm}{s}$, based on the criteria of the motors.
+
 
 ### Vibration Analysis
 
@@ -424,32 +375,29 @@ Multiple methods to analyze the structure natural frequency was used, with diffe
     \end{equation}
  
     
-    \begin{table}
-        \centering
-        \begin{tabular}{cc}
-             Parameter & Value\\
-             Torsional Stifness of printed piece $k_1$& $1.3572e+04$ \\
-             Torsional stifness of dremel carriage $k_2$& $1.7379e+04$ \\
-             Printed support mass $M_{v1}$ & $0.059$\\
-             Y carriage printed support mass $M_{v2}$& $0.103$\\
-             Machine head mass $M_H$& $0.9850$\\
-             Motors mass $M_M$& $0.2850$\\
-             X axis rod mass $M_{G1}$& $0.2080$\\
-             Y axis rod mass $M_{G2}$&$0.12$ \\
-             Z axis rod mass $M_{G3}$ & $0.0548$\\
-             Base lenght $L_1$& $0.07$\\
-             Carriage lenght $L_3$& $0.071$
-        \end{tabular}
-        \caption{Frequency Estimation using Kopets \cite{kopets2022estimating} method}
-        \label{tab:3dprintvibrationtable}
-    \end{table}
+
+|Parameter | Value|
+|:----     |:---  |
+|Torsional Stifness of printed piece k_1 | 1.3572e+04 |
+|Torsional stifness of dremel carriage $k_2$| $1.7379e+04$|
+Printed support mass $M_{v1}$ | $0.059$\\
+Y carriage printed support mass $M_{v2}$| $0.103$\\
+Machine head mass $M_H$| $0.9850$\\
+Motors mass $M_M$| $0.2850$\\
+X axis rod mass $M_{G1}$| $0.2080$\\
+Y axis rod mass $M_{G2}$|$0.12$ \\
+Z axis rod mass $M_{G3}$ | $0.0548$\\
+Base lenght $L_1$| $0.07$\\
+Carriage lenght $L_3$| $0.071$
+
+Frequency Estimation using Kopets 
 
     Obtaning that $f=352.79 \, Hz$.
 
     \item Using Chopra \cite{choprastructures} method to analyze structures based on multilevel structures, for this case, due to the axial rod and power screw for the x-axis on each end of the y axis (shown in figure \ref{fig:vibration1}), a two story model was selected. 
     
     
-    []Kap2/PCBMill/vibration1.png}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration1.png}
     Structure subassembly used for the analisis}
     	\label{fig:vibration1}
      \end{figure}
@@ -464,23 +412,21 @@ Multiple methods to analyze the structure natural frequency was used, with diffe
 
      The model counts with three types of representation methods the first corresponds to a two level, mass centered structure (\ref{fig:vibration2}).
 
-     \begin{figure}[!ht]
-      \centering
-    	\includegraphics[width=80mm]{Kap2/PCBMill/vibration2.png}
+ ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration2.png}
     Structure model used}
     	\label{fig:vibration2}
      \end{figure}
 
      The second model is a dynamic model of a mass cart on a friction-less surface, and third the cart's free body diagram, both are shown in figure \ref{fig:vibration3}. Take into account this representation shows damping, yet the PCB structure has a damping value of $0$.
 
-     []Kap2/PCBMill/vibration3.png}
+ ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration3.png}
     Other representations of the system}
     	\label{fig:vibration3}
      \end{figure}
 
      According to Chopra \cite(), the deduction of the frequency vector is as follows:
 
-     []Kap2/PCBMill/vibration4.png}
+ ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration4.png}
      \end{figure}
 
      The stifness of each level is obtained thiw way:
@@ -501,7 +447,7 @@ Multiple methods to analyze the structure natural frequency was used, with diffe
 
      A diagram showing the physical representation is shown in figure \ref{fig:vibration5}.
 
-     ![](https://github.com/aojedao/Microfactory/assets/img/PCBMill/vibration5.png}
+ ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/vibration5.png}
     FoS on the Angle bracket in its standard functioning}
     	\label{fig:vibration5}
      \end{figure}
@@ -535,7 +481,7 @@ The machine is equipped with 4 Nema 17 1A motors, four DVR8825 Stepper motor dri
 
 The connection diagram of the electronic components in this machine is observed in figure \ref{cncconnection}.
 
-    []Kap2/CNCDiagram.png}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/CNCDiagram.png}
     CNC connection diagram}
     	\label{cncconnection}
     \end{figure}
@@ -543,14 +489,14 @@ The connection diagram of the electronic components in this machine is observed 
 
 Initially, it was checked that the motion inputs on the DVR8825 drivers were synchronized, which corresponds to the synchronization of the Arduino outputs, which can be seen in the following two graphs. The first is the analysis of the difference between the Standby value and the pulse value (since it is a square wave).In figure \ref{fig:desfasesubida} the difference between both drivers is shown, with a closer look in figure \ref{fig:desfasetop}.
 
-    []Kap2/PCBMill/DesfaseSubida.png}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/DesfaseSubida.png}
     Driver activation signal offset}
     	\label{fig:desfasesubida}
     \end{figure}
 
     Upon expanding the measurement spectrum, it is identified that it is a signal whose phase shift is less than 5 ns, the measurement limit on the RIGOL DS 1074Z oscilloscope that was used.
 
-    []Kap2/PCBMill/desfaseTop.png}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/desfaseTop.png}
     Detailed offset on drivers}
     	\label{fig:desfasetop}
     \end{figure}
@@ -558,14 +504,14 @@ Initially, it was checked that the motion inputs on the DVR8825 drivers were syn
 
     Once it was verified that the reception time of the signal at the drivers did not have a large phase shift compared to the pulse time, the signal was verified in the coils of the motors. Specifically, the A2 coil of each of the motors on the X axis. Similarly to the previous one, the following graphs correspond to a visualization in two different time scales to have more detail about the phase shift.The coarse signal is shown in figure \ref{fig:synch}, and the finer one \ref{fig:syncfino}.
 
-    []Kap2/PCBMill/SyncMotoresH.png}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/SyncMotoresH.png}
     Motor signal offset}
     	\label{fig:synch}
     \end{figure}
 
     In this graph, a larger phase shift is found with respect to the input signal of the driver, however, since the signal is 12V, the oscilloscope does not allow visualization below 1us. In the image it can be observed that the phase shift is less than a quarter of the measurement step, so that although the difference is of the order of nanoseconds, the exact value cannot be determined with the equipment used.
 
-    []Kap2/PCBMill/SyncMotoresFino.png}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/SyncMotoresFino.png}
     Motor signal offset in detail}
     	\label{fig:syncfino}
     \end{figure}
@@ -600,7 +546,7 @@ The machining process is currently using a $60 \; \frac{mm}{s}$ feed rate, at a 
 
 Currently the software usde is UGS, since the classic version offers a Command Line Interface (CLI) to execute tasks, specifically, it allows to run a Java command to mill a .gcode file. To do this, the device port must be allowed full access. Afterwards, the bin file in the Java folder is executed. 
 
-    []Kap2/CNCPriaIntegration.png}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/CNCPriaIntegration.png}
     PRIA integration}
     	\label{priacnc}
     \end{figure}
@@ -613,14 +559,14 @@ Currently the software usde is UGS, since the classic version offers a Command L
 
     The PCB Mill is shown in figure \ref{fig:manufactura3}, with a pencil tool to draw figures, it is a removable accessory that fits in the Dremel holder.
 
-    []Kap2/manufactura3.jpg}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura3.jpg}
     PCB Mill Completed Structure}
     	\label{fig:manufactura3}
     \end{figure}
 
     In figure \ref{machinedpcb} we see the result of a milled FR4 board using the machining parameters stated before.
 
-    []Kap2/MachinedPBW.jpg}
+![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/MachinedPBW.jpg}
     Milled PWB}
     	\label{machinedpcb}
     \end{figure}
