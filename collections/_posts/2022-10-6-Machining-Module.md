@@ -373,14 +373,14 @@ $$\frac{1}{2 \pi} \sqrt{\frac{4k_1+4k_1+2k_2}{4M_{v1} L_1^{2} + 2M_{v2} L_3^{2}+
 |:----     |:---  |
 |Torsional Stifness of printed piece $$k_1$$ | $$1.3572e+04$$ |
 |Torsional stifness of dremel carriage $$k_2$$| $$1.7379e+04$$|
-Printed support mass $$M_{v1}$$ | $$0.059$$\
-Y carriage printed support mass $$M_{v2}$$| $$0.103$$\
-Machine head mass $$M_H$$| $$0.9850$$\
-Motors mass $$M_M$$| $$0.2850$$\
-X axis rod mass $$M_{G1}$$| $$0.2080$$\
-Y axis rod mass $$M_{G2}$$|$$0.12$$ \
-Z axis rod mass $$M_{G3}$$ | $$0.0548$$\
-Base lenght $$L_1$$| $$0.07$$\
+Printed support mass $$M_{v1}$$ | $$0.059$$
+Y carriage printed support mass $$M_{v2}$$| $$0.103$$
+Machine head mass $$M_H$$| $$0.9850$$
+Motors mass $$M_M$$| $$0.2850$$
+X axis rod mass $$M_{G1}$$| $$0.2080$$
+Y axis rod mass $$M_{G2}$$|$$0.12$$ 
+Z axis rod mass $$M_{G3}$$ | $$0.0548$$
+Base lenght $$L_1$$| $$0.07$$
 Carriage lenght $$L_3$$| $$0.071$$
 
 Frequency Estimation using Kopets 
@@ -440,23 +440,33 @@ And the first two modes of vibration are:
 
 FoS on the Angle bracket in its standard functioning
 
-  For the machine the values of the equation are:
+For the machine the values of the equation are:
 
-  $$I_c=2.53 \cdot10^{-6}$$
-  $$E=2.5 \, GPa$$
-  $$m=1.669\,kg$$
-  $$T=\frac{2\pi}{\omega}$$
-  $$f=\frac{1}{T}$$
+$$I_c=2.53 \cdot10^{-6}$$
 
-  For the first vibration mode:
+$$E=2.5 \, GPa$$
 
-  $$\omega_1 = 763.86 \, \frac{rad}{s}$$
-  $$T_1=0.0082\,s$$
-  $$f_1=121.57\,Hz$$
-  And for the second mode:
-  $$\omega_2=915.35\, \frac{rad}{s}$$
-  $$T_2=0.0069\,s$$
-  $$f_2=145.68\,Hz$$
+$$m=1.669\,kg$$
+
+$$T=\frac{2\pi}{\omega}$$
+
+$$f=\frac{1}{T}$$
+
+For the first vibration mode:
+
+$$\omega_1 = 763.86 \, \frac{rad}{s}$$
+
+$$T_1=0.0082\,s$$
+
+$$f_1=121.57\,Hz$$
+
+And for the second mode:
+
+$$\omega_2=915.35\, \frac{rad}{s}$$
+
+$$T_2=0.0069\,s$$
+
+$$f_2=145.68\,Hz$$
 
 
 ## Electronic Design
@@ -506,7 +516,7 @@ First the maximum current allowed by the DRV8825 drivers is set by adjusting the
 
 $$V_{ref} = \frac{I_{max}}{2}$$
 
-Afterward, the $\frac{mm}{rev}$ units must be configured to verify the machine's correct precision. For this the following equation was used:
+Afterward, the $$\frac{mm}{rev}$$ units must be configured to verify the machine's correct precision. For this the following equation was used:
 
 $$\frac{motor \; steps \; per \; revolution}{leadscrew \; pitch \; (mm \; per \; rev)}\cdot microsteps$$
 
@@ -516,7 +526,7 @@ And afterward, the advance per axis was configured with the code \$ 100=50. This
 
 The driver microsteps are configured trough jumpers in the CNC Shield. The pins in the connectors on M0, M1 and M2.
 
-The machining process is currently using a $$60 \; \frac{mm}{s}$$ feed rate, at a $$10000 \; rpm$$ spindle speed and a cut depht of $$0.5\, mm$$. It's current precision is under a milimeter fraction.The machine is built using PLA printed parts with a 60\% cubic pattern infill. It counts with 4 Nema 17 17HS4401S motors, with two parallel $$8 \; mm$$ pitch power screws and A36 steel rods. It counts with a 10A 12V power source connected trough 16AWG gauge wire.
+The machining process is currently using a $$60 \; \frac{mm}{s}$$ feed rate, at a $$10000 \; rpm$$ spindle speed and a cut depht of $$0.5\, mm$$. It's current precision is under a milimeter fraction.The machine is built using PLA printed parts with a $$60\%$$ cubic pattern infill. It counts with 4 Nema 17 17HS4401S motors, with two parallel $$8 \; mm$$ pitch power screws and A36 steel rods. It counts with a 10A 12V power source connected trough 16AWG gauge wire.
 
 Currently the software usde is UGS, since the classic version offers a Command Line Interface (CLI) to execute tasks, specifically, it allows to run a Java command to mill a .gcode file. To do this, the device port must be allowed full access. Afterwards, the bin file in the Java folder is executed. 
 
@@ -524,7 +534,7 @@ Currently the software usde is UGS, since the classic version offers a Command L
 
 PRIA integration
 
-The deployment of the server is expected to be in either a Raspberry Pi device, or a Computer, as the host controller and Gcode sender software. Figure \ref{priacnc} illustrates an example on a Raspberry Pi, with a Docker image containing the required packages to run the ROS nodes.
+The deployment of the server is expected to be in either a Raspberry Pi device, or a Computer, as the host controller and Gcode sender software. Figure priacnc illustrates an example on a Raspberry Pi, with a Docker image containing the required packages to run the ROS nodes.
 
     
 
@@ -549,7 +559,7 @@ First set the maximum current allowed by the DRV8825 drivers by adjusting the po
 
 $$V_{ref} = \frac{I_{max}}{2}$$
 
-Afterward, the $\frac{mm}{rev}$ units must be configured to verify the machine's correct precision. For this use the following equation:
+Afterward, the $\frac{mm}{rev}$ units must be configured to verify the machine's correct precision. For this, use the following equation:
 
 $$\frac{motor \; steps \; per \; revolution}{leadscrew \; pitch \; (mm \; per \; rev)}\cdot microsteps$$
 
@@ -559,12 +569,12 @@ And afterward configure the advance per axis with the code `$100=50`. Do this as
 
 The driver microsteps are configured trough jumpers in the CNC Shield. The pins in the connectors on M0, M1 and M2.
 
-![Shield.png](https://osoyoo.com/wp-content/uploads/2017/04/Arduino-CNC-Shield-V3-Layout.png)
+![Shield](https://osoyoo.com/wp-content/uploads/2017/04/Arduino-CNC-Shield-V3-Layout.png)
 
 ## 3D Model test
 
 
-<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/CNC_3dmodel.3mf"></script>
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/PCBMill/CNC_3dmodel.3mf"></script>
 
 
 <!--
