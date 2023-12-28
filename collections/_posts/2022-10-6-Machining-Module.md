@@ -574,7 +574,7 @@ The driver microsteps are configured trough jumpers in the CNC Shield. The pins 
 ## 3D Model test
 
 
-<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/PCBMill/CNC_3dmodel.3mf"></script>
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/PCBMill/CNCv16.stl"></script>
 
 
 <!--
