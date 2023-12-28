@@ -530,19 +530,17 @@ The deployment of the server is expected to be in either a Raspberry Pi device, 
 
 ## Completed Machine
 
-    The PCB Mill is shown in figure \ref{fig:manufactura3}, with a pencil tool to draw figures, it is a removable accessory that fits in the Dremel holder.
+The PCB Mill is shown in the next image, with a pencil tool to draw figures, it is a removable accessory that fits in the Dremel holder.
 
-![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura3.jpg}
-    PCB Mill Completed Structure}
-    	\label{fig:manufactura3}
-    \end{figure}
+![manufactura3](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura3.jpg)
 
-    In figure \ref{machinedpcb} we see the result of a milled FR4 board using the machining parameters stated before.
+PCB Mill Completed Structure
 
-![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/MachinedPBW.jpg}
-    Milled PWB}
-    	\label{machinedpcb}
-    \end{figure}
+In figure machinedpcb we see the result of a milled FR4 board using the machining parameters stated before.
+
+![machinedpcb](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/MachinedPBW.jpg)
+
+Milled PWB
 
 
 ## Parameter Adjustment
@@ -566,12 +564,10 @@ The driver microsteps are configured trough jumpers in the CNC Shield. The pins 
 ## 3D Model test
 
 
+<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/CNC_3dmodel.3mf"></script>
 
-<script src="https://embed.github.com/view/3d/aojedao/microfactory/dev/assets/stl/ASX1_AyASCII.stl"></script>
 
-
-## Roadmap
-
+<!--
 | Feature                       | Module           | Status |
 | :---------------------------- | :--------------: | :----: |
 | CNC Machine Assembly          | CNC              | √      |
@@ -580,3 +576,4 @@ The driver microsteps are configured trough jumpers in the CNC Shield. The pins 
 | Admission module assembly     | Admission        |        |
 | Admission module integration  | Admission        |        |
 | MicroSDV integration          | CNC + Admission  |        |
+-->
