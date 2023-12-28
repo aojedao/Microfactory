@@ -387,7 +387,7 @@ Frequency Estimation using Kopets
 
   Obtaning that $$f=352.79 \, Hz$$.
 
-  \item Using Chopra \cite{choprastructures} method to analyze structures based on multilevel structures, for this case, due to the axial rod and power screw for the x-axis on each end of the y axis (shown in figure vibration1), a two story model was selected. 
+  Using [Chopra](https://eclass.upatras.gr/modules/document/file.php/CIV1527/B_CHOPRA_2014_Dynamics%20of%20structures%20theory%20and%20applications%20to%20earthquake%20engineering_%284th%20Ed%20-%20GLOBAL%29_PEARSON.pdf) method to analyze structures based on multilevel structures, for this case, due to the axial rod and power screw for the x-axis on each end of the y axis (shown in figure vibration1), a two story model was selected. 
     
     
 ![vibration1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration1.png)
@@ -404,27 +404,27 @@ This model has the following characteristics:
 
 The model counts with three types of representation methods the first corresponds to a two level, mass centered structure (vibration2).
 
-![vibration2](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration2.png)
+![vibration2](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/vibration2.png)
 
 Structure model used
 
 The second model is a dynamic model of a mass cart on a friction-less surface, and third the cart's free body diagram, both are shown in figure vibration3. Take into account this representation shows damping, yet the PCB structure has a damping value of $0$.
 
-![vibration3](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration3.png)
+![vibration3](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/vibration3.png)
 
 Other representations of the system
 
 According to [Chopra](https://eclass.upatras.gr/modules/document/file.php/CIV1527/B_CHOPRA_2014_Dynamics%20of%20structures%20theory%20and%20applications%20to%20earthquake%20engineering_%284th%20Ed%20-%20GLOBAL%29_PEARSON.pdf), the deduction of the frequency vector is as follows:
 
- ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration4.png)
+![vibration4](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration4.png)
 
 The stifness of each level is obtained this way:
 
   $$k_j = \sum_{columns} \frac{12 EI_c}{h^3}$$
 
-  $$k_1=2 \frac{12(2EI_c}{h^3} = \frac{48 EI_c}{h^3}$$
+  $$k_1=2 \frac{12(2EI_c)}{h^3} = \frac{48 EI_c}{h^3}$$
 
-  $$k_2 = \frac{12(EI_c}{h^3} = \frac{24 EI_c}{h^3}$$
+  $$k_2 = \frac{12(EI_c)}{h^3} = \frac{24 EI_c}{h^3}$$
 
 
 And the first two modes of vibration are:
