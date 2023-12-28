@@ -320,9 +320,9 @@ In no case was it found that the microprocessor with which the PCB Mill is equip
    $$N=\frac{Cd_r \cdot 10^7}{L^2}$$
   
    where:
-- $N$ is the critical velocity in $rpm$  
-- $d_r$ is the minor diameter (root) of the power screw in $mm$
-- $L$ is the length between supporting bearings in $mm$
+- $$N$$ is the critical velocity in $rpm$  
+- $$d_r$$ is the minor diameter (root) of the power screw in $mm$
+- $$L$$ is the length between supporting bearings in $mm$
     
     $C$ is a coefficient based on the mounting of the brackets in figure coeficient
 
@@ -330,7 +330,7 @@ In no case was it found that the microprocessor with which the PCB Mill is equip
 
 C coeficients by Thomson
 
-The coefficient C depends on the type of mounting of the screw supports. The PCB Mill uses "C"-type supports, so the coefficient C is $0.25$.
+The coefficient C depends on the type of mounting of the screw supports. The PCB Mill uses "C"-type supports, so the coefficient C is $$0.25$$.
 
 The complete range of coeficients are shown in table.
 
@@ -361,17 +361,16 @@ The critical angular velocity of the PCB Mill is 238907.6 rad. It is important t
 
   The capacity of GRBL to transmit data was analyzed. Based on the speed response estimation performed by grblHAL, a modification of GRBL to run on 32-bit devices (such as a Teensy 4.1 microcontroller for example), the following estimation was made.
 
-  Considering that the Nema 17 motors used have $200$ steps per revolution, the power screw of the X axis has a feed of $2\,mm$ per revolution, it is found that every $100$ steps $1\, mm$ will be traveled; likewise, the maximum working speed defined by the design is $60 \frac{mm}{s}$, so that it would have to move $6000$ steps per second, in other words the steps will work at a frequency of $6kHz$, which is within the limit of $30kHz$ offered by a controller such as the Atmega328p that the Arduino UNO has running GRBL.
+  Considering that the Nema 17 motors used have $$200$$ steps per revolution, the power screw of the X axis has a feed of $$2\,mm$$ per revolution, it is found that every $$100$$ steps $$1\, mm$$ will be traveled; likewise, the maximum working speed defined by the design is $$60 \frac{mm}{s}$$, so that it would have to move $$6000$$ steps per second, in other words the steps will work at a frequency of $$6kHz$$, which is within the limit of $$30kHz$$ offered by a controller such as the Atmega328p that the Arduino UNO has running GRBL.
 
-  On the other hand, the motors have a maximum speed of $3000\,rpm$, and considering the feed of $2\,mm$ per revolution, it is found that the maximum feed speed would be $100\frac{mm}{s}$, based on the criteria of the motors.
+  On the other hand, the motors have a maximum speed of $$3000\,rpm$$, and considering the feed of $$2\,mm$$ per revolution, it is found that the maximum feed speed would be $$100\frac{mm}{s}$$, based on the criteria of the motors.
 
 
 ### Vibration Analysis
 
 Multiple methods to analyze the structure natural frequency was used, with different results according to the modelling used.
 
-
-Taking into consideration the model proposed by [Kopets](https://www.mdpi.com/2076-3417/12/9/4514) for the folllwing equation:
+Taking into consideration the model proposed by [Kopets](https://www.mdpi.com/2076-3417/12/9/4514) for the following equation:
 
 $$f=\frac{1}{2 \pi} \sqrt{\frac{\sum_i k_i}{\sum_i J_i}}$$
 
@@ -380,102 +379,93 @@ $$\frac{1}{2 \pi} \sqrt{\frac{4k_1+4k_1+2k_2}{4M_{v1} L_1^{2} + 2M_{v2} L_3^{2}+
     
 |Parameter | Value|
 |:----     |:---  |
-|Torsional Stifness of printed piece k_1 | 1.3572e+04 |
+|Torsional Stifness of printed piece $$k_1$$ | $$1.3572e+04$$ |
 |Torsional stifness of dremel carriage $$k_2$$| $1.7379e+04$|
-Printed support mass $$M_{v1}$$ | $0.059$\\
-Y carriage printed support mass $M_{v2}$| $0.103$\\
-Machine head mass $M_H$| $0.9850$\\
+Printed support mass $$M_{v1}$$ | $$0.059$$\\
+Y carriage printed support mass $$M_{v2}$$| $$0.103$$\\
+Machine head mass $$M_H$$| $$0.9850$$\\
 Motors mass $M_M$| $0.2850$\\
-X axis rod mass $M_{G1}$| $0.2080$\\
-Y axis rod mass $M_{G2}$|$0.12$ \\
-Z axis rod mass $M_{G3}$ | $0.0548$\\
-Base lenght $L_1$| $0.07$\\
-Carriage lenght $L_3$| $0.071$
+X axis rod mass $$M_{G1}$$| $$0.2080$$\\
+Y axis rod mass $$M_{G2}$$|$$0.12$$ \\
+Z axis rod mass $$M_{G3}$$ | $$0.0548$$\\
+Base lenght $$L_1$$| $$0.07$\\
+Carriage lenght $$L_3$$| $$0.071$$
 
 Frequency Estimation using Kopets 
 
-    Obtaning that $f=352.79 \, Hz$.
+  Obtaning that $$f=352.79 \, Hz$$.
 
-    \item Using Chopra \cite{choprastructures} method to analyze structures based on multilevel structures, for this case, due to the axial rod and power screw for the x-axis on each end of the y axis (shown in figure vibration1}), a two story model was selected. 
+  \item Using Chopra \cite{choprastructures} method to analyze structures based on multilevel structures, for this case, due to the axial rod and power screw for the x-axis on each end of the y axis (shown in figure vibration1), a two story model was selected. 
     
     
-![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration1.png}
-    Structure subassembly used for the analisis}
-    	\label{fig:vibration1}
-     \end{figure}
-    
-    This model has the following characteristics:
+![vibration1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration1.png)
 
-     \begin{itemize}
-         \item 2 Degree of freedom system
-         \item No damping support
-         \item First and second vibration mode
-     \end{itemize}
+Structure subassembly used for the analisis
 
-     The model counts with three types of representation methods the first corresponds to a two level, mass centered structure (vibration2}).
-
- ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration2.png}
-    Structure model used}
-    	\label{fig:vibration2}
-     \end{figure}
-
-     The second model is a dynamic model of a mass cart on a friction-less surface, and third the cart's free body diagram, both are shown in figure vibration3}. Take into account this representation shows damping, yet the PCB structure has a damping value of $0$.
-
- ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration3.png}
-    Other representations of the system}
-    	\label{fig:vibration3}
-     \end{figure}
-
-     According to Chopra \cite(), the deduction of the frequency vector is as follows:
-
- ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration4.png}
-     \end{figure}
-
-     The stifness of each level is obtained thiw way:
-
-     $$k_j = \sum_{columns} \frac{12 EI_c}{h^3}$$
-
-     $$k_1=2 \frac{12(2EI_c}{h^3} = \frac{48 EI_c}{h^3}$$
-
-     $$k_2 = \frac{12(EI_c}{h^3} = \frac{24 EI_c}{h^3}$$
+This model has the following characteristics:
 
 
-    And the first two modes of vibration are:
-    
-     $$det[k-\omega_n^{2} m]=0$$
-     $$(2m^2)\omega^4 + (-5km)\omega^2 + 2k^2$$
-     $$w_1 = \sqrt{\frac{k}{2m}}$$
-     $$w_2 = \sqrt{\frac{2k}{m}}$$
-
-     A diagram showing the physical representation is shown in figure \ref{fig:vibration5}.
-
- ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/vibration5.png}
-    FoS on the Angle bracket in its standard functioning}
-    	\label{fig:vibration5}
-     \end{figure}
+- 2 Degree of freedom system
+- No damping support
+- First and second vibration mode
 
 
-     For the machine the values of the equation are:
+The model counts with three types of representation methods the first corresponds to a two level, mass centered structure (vibration2).
 
-     $$I_c=2.53 \cdot10^{-6}$$
-     $$E=2.5 \, GPa$$
-     $$m=1.669\,kg$$
-     $$T=\frac{2\pi}{\omega}$$
-     $$f=\frac{1}{T}$$
+![vibration2](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration2.png)
 
-     For the first vibration mode:
+Structure model used
 
-     $$\omega_1 = 763.86 \, \frac{rad}{s}$$
-     $$T_1=0.0082\,s$$
-     $$f_1=121.57\,Hz$$
-     And for the second mode:
-     $$\omega_2=915.35\, \frac{rad}{s}$$
-     $$T_2=0.0069\,s$$
-     $$f_2=145.68\,Hz$$
+The second model is a dynamic model of a mass cart on a friction-less surface, and third the cart's free body diagram, both are shown in figure vibration3. Take into account this representation shows damping, yet the PCB structure has a damping value of $0$.
+
+![vibration3](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration3.png)
+
+Other representations of the system
+
+According to [Chopra](https://eclass.upatras.gr/modules/document/file.php/CIV1527/B_CHOPRA_2014_Dynamics%20of%20structures%20theory%20and%20applications%20to%20earthquake%20engineering_%284th%20Ed%20-%20GLOBAL%29_PEARSON.pdf), the deduction of the frequency vector is as follows:
+
+ ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/vibration4.png)
+
+The stifness of each level is obtained this way:
+
+  $$k_j = \sum_{columns} \frac{12 EI_c}{h^3}$$
+
+  $$k_1=2 \frac{12(2EI_c}{h^3} = \frac{48 EI_c}{h^3}$$
+
+  $$k_2 = \frac{12(EI_c}{h^3} = \frac{24 EI_c}{h^3}$$
 
 
-    
-\end{itemize}
+And the first two modes of vibration are:
+
+  $$det[k-\omega_n^{2} m]=0$$
+  $$(2m^2)\omega^4 + (-5km)\omega^2 + 2k^2$$
+  $$w_1 = \sqrt{\frac{k}{2m}}$$
+  $$w_2 = \sqrt{\frac{2k}{m}}$$
+
+  A diagram showing the physical representation is shown in figure vibration5.
+
+![vibration5](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/vibration5.png)
+
+FoS on the Angle bracket in its standard functioning
+
+  For the machine the values of the equation are:
+
+  $$I_c=2.53 \cdot10^{-6}$$
+  $$E=2.5 \, GPa$$
+  $$m=1.669\,kg$$
+  $$T=\frac{2\pi}{\omega}$$
+  $$f=\frac{1}{T}$$
+
+  For the first vibration mode:
+
+  $$\omega_1 = 763.86 \, \frac{rad}{s}$$
+  $$T_1=0.0082\,s$$
+  $$f_1=121.57\,Hz$$
+  And for the second mode:
+  $$\omega_2=915.35\, \frac{rad}{s}$$
+  $$T_2=0.0069\,s$$
+  $$f_2=145.68\,Hz$$
+
 
 ## Electronic Design
 
@@ -483,35 +473,30 @@ The machine is equipped with 4 Nema 17 1A motors, four DVR8825 Stepper motor dri
 
 The connection diagram of the electronic components in this machine is observed in figure \ref{cncconnection}.
 
-![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/CNCDiagram.png}
-    CNC connection diagram}
-    	\label{cncconnection}
-    \end{figure}
+![cncconnection](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/CNCDiagram.png)
 
+CNC connection diagram
 
 Initially, it was checked that the motion inputs on the DVR8825 drivers were synchronized, which corresponds to the synchronization of the Arduino outputs, which can be seen in the following two graphs. The first is the analysis of the difference between the Standby value and the pulse value (since it is a square wave).In figure \ref{fig:desfasesubida} the difference between both drivers is shown, with a closer look in figure \ref{fig:desfasetop}.
 
-![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/DesfaseSubida.png}
-    Driver activation signal offset}
-    	\label{fig:desfasesubida}
-    \end{figure}
+![desfasesubida](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/DesfaseSubida.png)
 
-    Upon expanding the measurement spectrum, it is identified that it is a signal whose phase shift is less than 5 ns, the measurement limit on the RIGOL DS 1074Z oscilloscope that was used.
+Driver activation signal offset
 
-![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/desfaseTop.png}
-    Detailed offset on drivers}
-    	\label{fig:desfasetop}
-    \end{figure}
+Upon expanding the measurement spectrum, it is identified that it is a signal whose phase shift is less than 5 ns, the measurement limit on the RIGOL DS 1074Z oscilloscope that was used.
+
+![desfaseto](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/desfaseTop.png)
+
+Detailed offset on drivers
 
 
-    Once it was verified that the reception time of the signal at the drivers did not have a large phase shift compared to the pulse time, the signal was verified in the coils of the motors. Specifically, the A2 coil of each of the motors on the X axis. Similarly to the previous one, the following graphs correspond to a visualization in two different time scales to have more detail about the phase shift.The coarse signal is shown in figure \ref{fig:synch}, and the finer one \ref{fig:syncfino}.
+  Once it was verified that the reception time of the signal at the drivers did not have a large phase shift compared to the pulse time, the signal was verified in the coils of the motors. Specifically, the A2 coil of each of the motors on the X axis. Similarly to the previous one, the following graphs correspond to a visualization in two different time scales to have more detail about the phase shift.The coarse signal is shown in figure, and the finer one syncfino.
 
-![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/SyncMotoresH.png}
-    Motor signal offset}
-    	\label{fig:synch}
-    \end{figure}
+![sync](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/SyncMotoresH.png)
 
-    In this graph, a larger phase shift is found with respect to the input signal of the driver, however, since the signal is 12V, the oscilloscope does not allow visualization below 1us. In the image it can be observed that the phase shift is less than a quarter of the measurement step, so that although the difference is of the order of nanoseconds, the exact value cannot be determined with the equipment used.
+Motor signal offset
+
+  In this graph, a larger phase shift is found with respect to the input signal of the driver, however, since the signal is 12V, the oscilloscope does not allow visualization below 1us. In the image it can be observed that the phase shift is less than a quarter of the measurement step, so that although the difference is of the order of nanoseconds, the exact value cannot be determined with the equipment used.
 
 ![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/SyncMotoresFino.png}
     Motor signal offset in detail}
