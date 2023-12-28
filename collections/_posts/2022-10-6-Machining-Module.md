@@ -24,15 +24,6 @@ The CNC machine was designed by [Julian Luna](https://github.com/juflunaca) and 
 * The machine controller uses an Arduino UNO and a CNC shield board. The firmware running is [GRBL](https://github.com/grbl/grbl).
 
 
-## File preparation
-
- But before that the process needed to design the board requires the following steps.
-
-1. ECAD files: A normal gerber file must be loaded per face to mill, this microfactory was concieved using only one face of the PCW, therefore only one is needed. There are multiple Electronic Computer Aided Design (ECAD) tools like [KiCAD](https://www.kicad.org/), [Proteus](https://www.labcenter.com/) and [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&tab=subscription). Export the gerber files for the next step.
-
-2. CAM files: Here the is where the Gcode files are produced, so there are multiple options to generate these files. Due to the application I recommend using [FlatCAM](http://flatcam.org/), as it has automatic tools for PCB production, like automatic cutting depht calculation given a mill angle and type. 
-
-3. Gcode Sender: Files must be loaded into the Gcode sender software, they only recieve G code files, like `.gcode` or `.nc` files. There are two Gcode sender softwares being used in the moment, [Universal Gcode Sender](https://winder.github.io/ugs_website/) and [CNCjs](https://cnc.js.org/). CNCjs offers the capability of being installed in a debian device (like Raspberry Pi) to be used over a local network via UI at the device IP. Both have the capaciblity of controlling the machine position and reconfiguring GRBL parameters, like `mm/rev` or maximum velocities.
 
 ## Mechanical Design
 ### Torque Calculation
@@ -43,11 +34,11 @@ $$T_R=\frac{F d_m}{2} (\frac{l + f \pi d_m}{\pi d_m - f l})$$
 
 Where:
 
-$T_R$ is the required torque.
-$d_m$ is the mean diameter, or $d_m = d - 0.5p$, where $d$ is the outer diameter and $p$ the pitch
-$f$ is the friction coeficient
-$l$ is the lead
-$F$ is the axial force
+$$T_R$$ is the required torque.
+$$d_m$$ is the mean diameter, or $$d_m = d - 0.5p$$, where $$d$$ is the outer diameter and $$p$$ the pitch
+$$f$$ is the friction coeficient
+$$l$$ is the lead
+$$F$$ is the axial force
 
 And reordering the equation it was obtained that
 
@@ -60,24 +51,25 @@ $$T_R=0.308 \, Nm$$
 
 Angle brackets were designed to support the base structure forces, all the aluminium profiles connect the ends where angle brackets provide support. Due to the load they willl support during the machine operation, forces over the bracket were analyzed, to provide a Factor of Safety (FoS) on the design. The tool used to analyze the FoS was finite element simluation in Autodesk Fusion 360. The force over the bracket is calculated as follows:
 
-$T_R=0.014 \, Nm$
-$d_m=0.007 \, m$
-$f=0.15$, the coeficient between steel and bronze.
-$l=0.008 \,m$
+$$T_R=0.014 \, Nm$$
+$$d_m=0.007 \, m$$
+The coeficient between steel and bronze: $$f=0.15$$ 
+
+$$l=0.008 \,m$$
 $$F=(\frac{2 T_R}{d_m}) (\frac{\pi d_m - fl}{l + f\pi d_m})=7.636 \,N$$
 
-In the scenario where only one bracket is tightened correctly the following figure shows the FoS at the end of the aluminium profile. In this case is $2.948$.
+In the scenario where only one bracket is tightened correctly the following figure shows the FoS at the end of the aluminium profile. In this case is $$2.948$$.
 
 
 ![anglebracket1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/anglebracket1.png)
 
-For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $1.209$.
+For the bracket itself (in the same scenario) the response is shown in the following figure, with a value of $$1.209$$.
 
 ![anglebracket2](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/anglebracket1support.png)
 
 FoS on the Angle bracket for the worst case scenario.
 
-In the general case, the structure will count with two brackets, each with 4 fasteners, so the model obtained for this is shown in the next figure, where the minimal FoS is $8.45$.
+In the general case, the structure will count with two brackets, each with 4 fasteners, so the model obtained for this is shown in the next figure, where the minimal FoS is $$8.45$$.
 
 ![anglebracket4](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/anglebracket4support.png)
 
@@ -86,7 +78,7 @@ FoS on the Angle bracket in its standard functioning
 
 ### Additive Manufacturing
 
-All the printed parts were manufactured in the FDM printer ar the LabFabEx. White PLA by 3DBots was used, with $0.8\,mm$ walls, $70\%$ cubic infill, raft support and a $50\,mm$ printing speed.
+All the printed parts were manufactured in the FDM printer ar the LabFabEx. White PLA by 3DBots was used, with $$0.8\,mm$$ walls, $$70\%$$ cubic infill, raft support and a $$50\,mm$$ printing speed.
 
 ![manufactura15](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/manufactura15.jpg)
 
@@ -111,7 +103,7 @@ In order to verify the tolerance of the 3D FDM Printer at the laboratory, a test
 Printing tolerance validation piece.
 
 
-The measurements were registered in table \ref{tab:tolerancemeasure}, and the error was calculated in it. Measurements were taken using a caliper.
+The measurements were registered in the table ahead, and the error was calculated in it. Measurements were taken using a caliper.
 
 |Reference | Measurement No | Value | Mean Value | Error value |  Absolute Error | Nominal Value | Value with tolerance | Relative error  |
 | :------  |:---            | :---  | :---       | :---        | :---            | :---          | :---                 | :---            |
@@ -141,7 +133,7 @@ The measurements were registered in table \ref{tab:tolerancemeasure}, and the er
 
 
 
-Small holes were also measured using the Zoller machine at the laboratory. The error perceived for the reference $1$ was $1.0740\,mm$, for reference $4$ is $0.088\,mm$, for reference $5.1$ is $0.037\,mm$ and for reference $5.4$ is $0.019\,mm$.
+Small holes were also measured using the Zoller machine at the laboratory. The error perceived for the reference $$1$$ was $$1.0740\,mm$$, for reference $$4$$ is $$0.088\,mm$$, for reference $$5.1$$ is $$0.037\,mm$$ and for reference $$5.4$$ is $$0.019\,mm$$.
 
 Errors found in the measurements are shown in graph the next graph.
 
@@ -263,7 +255,7 @@ Aluminium profile cuts for each phase.
 
 Two types of profiles were used, a long one for the x-axis base, and 5 profiles placed perpendicularly to the x-axis, placed evenly. Due to the use of sliding printed supports, there was no need to have eaxct measurements, but the other profiles needed as much, because a different size meant irregularity in the paralellism. For this reason, they were selected in two groups, one for the ends and another for the interior ones.
 
-To cut the profiles, first a hand saw was used, then a file was used to improve the regularity, and to obtain the final value the Leadwell CNC Machine at LabFabEx was used to mill the ends. In figure profilecut the three phases are shown. In the left, the profile was cut with the handsaw, in the middle it was filed and the final one was after being milled. The ones used at the end were threaded using an M5 tap. A $\frac{5}{32} \, inch$ was tested, but it was too loose to be used.
+To cut the profiles, first a hand saw was used, then a file was used to improve the regularity, and to obtain the final value the Leadwell CNC Machine at LabFabEx was used to mill the ends. In figure profilecut the three phases are shown. In the left, the profile was cut with the handsaw, in the middle it was filed and the final one was after being milled. The ones used at the end were threaded using an M5 tap. A $$\frac{5}{32} \, inch$$ was tested, but it was too loose to be used.
 
 
 ![profilecut](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/profilecut.jpg)
@@ -305,10 +297,10 @@ Leadscrew with the Y axis support
 Three motion characteristics were analyzed, the capacity to generate a higher order motion profile, the maximum rapid motion and the critical angle velocity of the leadscrew.
 
 - Smoothed Jerk Control: The objective of smoothing the control of trajectories is to convert the trapezoidal profile into an S-type profile. To achieve this, the following equipment was researched:  
-    - SmoothieBoard V2: A 32-bit control board (compared to the 8-bit Arduino UNO), using the Smoothie software. The mini version of this board costs $90$ Euros.
+    - SmoothieBoard V2: A 32-bit control board (compared to the 8-bit Arduino UNO), using the Smoothie software. The mini version of this board costs $$90$$ Euros.
     - LinuxCNC: A control software that runs on Linux, but requires a x64 or x86 architecture machine. The user hydroid7 created a branch with a smoothed trajectory planner.
 
-    - Mach4:Through the SmoothStepper board, however, it uses separate drivers, so you have to buy a breakout board. This board costs $226$ US Dollars.
+    - Mach4:Through the SmoothStepper board, however, it uses separate drivers, so you have to buy a breakout board. This board costs $$226$$ US Dollars.
 
 In no case was it found that the microprocessor with which the PCB Mill is equipped does not support the movement of profiles of higher order than trapezoidal, so it would be necessary to modify the control equipment and the board that would have the drivers. Doing so would increase the cost of the machine significantly.
     
@@ -320,11 +312,11 @@ In no case was it found that the microprocessor with which the PCB Mill is equip
    $$N=\frac{Cd_r \cdot 10^7}{L^2}$$
   
    where:
-- $$N$$ is the critical velocity in $rpm$  
+- $$N$$ is the critical velocity in $$rpm$$  
 - $$d_r$$ is the minor diameter (root) of the power screw in $mm$
 - $$L$$ is the length between supporting bearings in $mm$
     
-    $C$ is a coefficient based on the mounting of the brackets in figure coeficient
+$$C$$ is a coefficient based on the mounting of the brackets in figure coeficient
 
 ![coceficient](https://www.thomsonlinear.com/es/training/files/2c7d5826-5281-4a79-bec3-7bc337b87003/End%20supports.jpg)
 
@@ -380,15 +372,15 @@ $$\frac{1}{2 \pi} \sqrt{\frac{4k_1+4k_1+2k_2}{4M_{v1} L_1^{2} + 2M_{v2} L_3^{2}+
 |Parameter | Value|
 |:----     |:---  |
 |Torsional Stifness of printed piece $$k_1$$ | $$1.3572e+04$$ |
-|Torsional stifness of dremel carriage $$k_2$$| $1.7379e+04$|
-Printed support mass $$M_{v1}$$ | $$0.059$$\\
-Y carriage printed support mass $$M_{v2}$$| $$0.103$$\\
-Machine head mass $$M_H$$| $$0.9850$$\\
-Motors mass $M_M$| $0.2850$\\
-X axis rod mass $$M_{G1}$$| $$0.2080$$\\
-Y axis rod mass $$M_{G2}$$|$$0.12$$ \\
-Z axis rod mass $$M_{G3}$$ | $$0.0548$$\\
-Base lenght $$L_1$$| $$0.07$\\
+|Torsional stifness of dremel carriage $$k_2$$| $$1.7379e+04$$|
+Printed support mass $$M_{v1}$$ | $$0.059$$\
+Y carriage printed support mass $$M_{v2}$$| $$0.103$$\
+Machine head mass $$M_H$$| $$0.9850$$\
+Motors mass $$M_M$$| $$0.2850$$\
+X axis rod mass $$M_{G1}$$| $$0.2080$$\
+Y axis rod mass $$M_{G2}$$|$$0.12$$ \
+Z axis rod mass $$M_{G3}$$ | $$0.0548$$\
+Base lenght $$L_1$$| $$0.07$$\
 Carriage lenght $$L_3$$| $$0.071$$
 
 Frequency Estimation using Kopets 
@@ -471,48 +463,43 @@ FoS on the Angle bracket in its standard functioning
 
 The machine is equipped with 4 Nema 17 1A motors, four DVR8825 Stepper motor drivers, a 12V, 10A source. 
 
-The connection diagram of the electronic components in this machine is observed in figure \ref{cncconnection}.
+The connection diagram of the electronic components in this machine is observed in the next image.
 
 ![cncconnection](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/CNCDiagram.png)
 
 CNC connection diagram
 
-Initially, it was checked that the motion inputs on the DVR8825 drivers were synchronized, which corresponds to the synchronization of the Arduino outputs, which can be seen in the following two graphs. The first is the analysis of the difference between the Standby value and the pulse value (since it is a square wave).In figure \ref{fig:desfasesubida} the difference between both drivers is shown, with a closer look in figure \ref{fig:desfasetop}.
+Initially, it was checked that the motion inputs on the DVR8825 drivers were synchronized, which corresponds to the synchronization of the Arduino outputs, which can be seen in the following two graphs. The first is the analysis of the difference between the Standby value and the pulse value (since it is a square wave).In figure desfasesubida the difference between both drivers is shown, with a closer look in the next figure.
 
-![desfasesubida](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/DesfaseSubida.png)
+![desfasesubida](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/DesfaseSubida.png)
 
 Driver activation signal offset
 
 Upon expanding the measurement spectrum, it is identified that it is a signal whose phase shift is less than 5 ns, the measurement limit on the RIGOL DS 1074Z oscilloscope that was used.
 
-![desfaseto](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/desfaseTop.png)
+![desfaseto](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/desfaseTop.png)
 
 Detailed offset on drivers
 
-
   Once it was verified that the reception time of the signal at the drivers did not have a large phase shift compared to the pulse time, the signal was verified in the coils of the motors. Specifically, the A2 coil of each of the motors on the X axis. Similarly to the previous one, the following graphs correspond to a visualization in two different time scales to have more detail about the phase shift.The coarse signal is shown in figure, and the finer one syncfino.
 
-![sync](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/SyncMotoresH.png)
+![sync](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/SyncMotoresH.png)
 
 Motor signal offset
 
   In this graph, a larger phase shift is found with respect to the input signal of the driver, however, since the signal is 12V, the oscilloscope does not allow visualization below 1us. In the image it can be observed that the phase shift is less than a quarter of the measurement step, so that although the difference is of the order of nanoseconds, the exact value cannot be determined with the equipment used.
 
-![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/PCBMill/SyncMotoresFino.png}
-    Motor signal offset in detail}
-    	\label{fig:syncfino}
-    \end{figure}
+![syncfino](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/SyncMotoresFino.png)
 
-\subsubsection{File preparation}
-But before that the process needed to design the board requires the following steps.
+Motor signal offset in detail
 
-\begin{enumerate}
-    \item ECAD files: A normal gerber file must be loaded per face to mill, this microfactory was concieved using only one face of the PCW, therefore only one is needed. There are multiple Electronic Computer Aided Design (ECAD) tools like KiCAD, Proteus and Autodesk Fusion 360.  For the next step Gerber files were exported.
+### File preparation
 
-    \item CAM files: In this section the Gcode files are produced, so there are multiple options to generate these files. FlatCAM was selected as it has automatic tools for PCB production, like automatic cutting depht calculation given a mill angle and type.
+1. ECAD files: A normal gerber file must be loaded per face to mill, this microfactory was concieved using only one face of the PCW, therefore only one is needed. There are multiple Electronic Computer Aided Design (ECAD) tools like [KiCAD](https://www.kicad.org/), [Proteus](https://www.labcenter.com/) and [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&tab=subscription). Export the gerber files for the next step.
 
-    \item Gcode Sender: Files must be loaded into the Gcode sender software, they only recieve G code files, like .gcode or .nc files. There are two Gcode sender softwares being used in the moment, Universal Gcode Sender and CNCjs. CNCjs offers the capability of being installed in a debian device (like Raspberry Pi) to be used over a local network via UI at the device IP. Both have the capaciblity of controlling the machine position and reconfiguring GRBL parameters, like mm/rev or maximum velocities.
-\end{enumerate}
+2. CAM files: Here the is where the Gcode files are produced, so there are multiple options to generate these files. Due to the application I recommend using [FlatCAM](http://flatcam.org/), as it has automatic tools for PCB production, like automatic cutting depht calculation given a mill angle and type. 
+
+3. Gcode Sender: Files must be loaded into the Gcode sender software, they only recieve G code files, like `.gcode` or `.nc` files. There are two Gcode sender softwares being used in the moment, [Universal Gcode Sender](https://winder.github.io/ugs_website/) and [CNCjs](https://cnc.js.org/). CNCjs offers the capability of being installed in a debian device (like Raspberry Pi) to be used over a local network via UI at the device IP. Both have the capaciblity of controlling the machine position and reconfiguring GRBL parameters, like `mm/rev` or maximum velocities.
 
 First the maximum current allowed by the DRV8825 drivers is set by adjusting the potentiometer (with a philips screwdriver) voltage according to the following expression.
 
@@ -529,20 +516,19 @@ And afterward, the advance per axis was configured with the code \$ 100=50. This
 
 The driver microsteps are configured trough jumpers in the CNC Shield. The pins in the connectors on M0, M1 and M2.
 
-The machining process is currently using a $60 \; \frac{mm}{s}$ feed rate, at a $10000 \; rpm$ spindle speed and a cut depht of $0.5\, mm$. It's current precision is under a milimeter fraction.The machine is built using PLA printed parts with a 60\% cubic pattern infill. It counts with 4 Nema 17 17HS4401S motors, with two parallel $8 \; mm$ pitch power screws and A36 steel rods. It counts with a 10A 12V power source connected trough 16AWG gauge wire.
+The machining process is currently using a $$60 \; \frac{mm}{s}$$ feed rate, at a $$10000 \; rpm$$ spindle speed and a cut depht of $$0.5\, mm$$. It's current precision is under a milimeter fraction.The machine is built using PLA printed parts with a 60\% cubic pattern infill. It counts with 4 Nema 17 17HS4401S motors, with two parallel $$8 \; mm$$ pitch power screws and A36 steel rods. It counts with a 10A 12V power source connected trough 16AWG gauge wire.
 
 Currently the software usde is UGS, since the classic version offers a Command Line Interface (CLI) to execute tasks, specifically, it allows to run a Java command to mill a .gcode file. To do this, the device port must be allowed full access. Afterwards, the bin file in the Java folder is executed. 
 
-![gdt1](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/CNCPriaIntegration.png}
-    PRIA integration}
-    	\label{priacnc}
-    \end{figure}
+![priacnc](https://raw.githubusercontent.com/aojedao/Microfactory/dev/assets/img/PCBMill/CNCPriaIntegration.png)
 
-    The deployment of the server is expected to be in either a Raspberry Pi device, or a Computer, as the host controller and Gcode sender software. Figure \ref{priacnc} illustrates an example on a Raspberry Pi, with a Docker image containing the required packages to run the ROS nodes.
+PRIA integration
+
+The deployment of the server is expected to be in either a Raspberry Pi device, or a Computer, as the host controller and Gcode sender software. Figure \ref{priacnc} illustrates an example on a Raspberry Pi, with a Docker image containing the required packages to run the ROS nodes.
 
     
 
-\subsection{Completed Machine}
+## Completed Machine
 
     The PCB Mill is shown in figure \ref{fig:manufactura3}, with a pencil tool to draw figures, it is a removable accessory that fits in the Dremel holder.
 
